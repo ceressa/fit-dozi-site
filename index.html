@@ -3,324 +3,419 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Fit Dozi — AI Destekli Gıda Analizi | Ne Yediğini Keşfet</title>
-  <meta name="description" content="Barkodu okut, etiketi fotoğrafla, saniyeler içinde Nutri-Score, alerjen uyarısı ve daha iyi alternatif. Yapay zeka destekli, bilimsel temelli gıda ürün analizi." />
-  <meta property="og:title" content="Fit Dozi — Ne Yediğini Keşfet" />
-  <meta property="og:description" content="AI destekli gıda ürün analizi. Nutri-Score · Alerjen uyarısı · Bilimsel temel · Daha iyi alternatif." />
+
+  <meta http-equiv="X-Content-Type-Options" content="nosniff" />
+  <meta http-equiv="X-Frame-Options" content="SAMEORIGIN" />
+  <meta name="referrer" content="strict-origin-when-cross-origin" />
+
+  <title>Fit Dozi — AI Destekli Gıda Analizi | Nutri-Score, NOVA, Alerjen</title>
+  <meta name="description" content="Fit Dozi barkodu okutur, etiketi fotoğraflatır; Nutri-Score, NOVA sınıflandırması, 14 alerjen sınıfı ve EFSA katkı maddesi verisiyle bilimsel temelli analiz sunar." />
+  <meta name="keywords" content="nutri-score, nova sınıflandırması, gıda analizi, etiket okuma, alerjen uyarısı, ultra işlenmiş gıda, efsa, yapay zeka beslenme" />
+  <meta name="author" content="Bardino Technology" />
+  <meta name="robots" content="index, follow, max-image-preview:large" />
+
+  <link rel="canonical" href="https://fit.dozi.app/" />
+
   <meta property="og:type" content="website" />
-  <meta property="og:url" content="https://fit.dozi.app" />
+  <meta property="og:url" content="https://fit.dozi.app/" />
+  <meta property="og:title" content="Fit Dozi — Ne Yediğini Keşfet" />
+  <meta property="og:description" content="Nutri-Score, NOVA ve 14 alerjen sınıfına dayalı bilimsel temelli AI gıda analizi." />
   <meta property="og:image" content="https://fit.dozi.app/assets/fit_dozi_main.webp" />
-  <meta name="theme-color" content="#ff7a45" />
-  <link rel="icon" href="/assets/icon.webp" type="image/webp" />
+  <meta property="og:locale" content="tr_TR" />
+  <meta property="og:site_name" content="Fit Dozi" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Fit Dozi — AI Gıda Analizi" />
+  <meta name="twitter:image" content="https://fit.dozi.app/assets/fit_dozi_main.webp" />
+
+  <meta name="theme-color" content="#10b981" />
+  <link rel="icon" type="image/webp" href="/assets/icon.webp" />
   <link rel="apple-touch-icon" href="/assets/icon.webp" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Lora:ital@0;1&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="/style.css" />
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "MobileApplication",
+    "name": "Fit Dozi",
+    "operatingSystem": "Android, iOS",
+    "applicationCategory": "HealthApplication",
+    "description": "AI destekli gıda etiket analizi: Nutri-Score, NOVA ve EFSA katkı maddesi verisiyle.",
+    "url": "https://fit.dozi.app/",
+    "image": "https://fit.dozi.app/assets/fit_dozi_main.webp",
+    "publisher": {
+      "@type": "Organization",
+      "name": "Bardino Technology",
+      "url": "https://www.bardino.com.tr"
+    }
+  }
+  </script>
 </head>
 <body>
-  <nav class="top">
-    <a href="/" class="brand">
-      <img src="/assets/fit_dozi_logo_transparent.webp" alt="Fit Dozi" />
-      <span>Fit Dozi</span>
-    </a>
-    <div class="nav-links">
-      <a href="#features">Özellikler</a>
-      <a href="#science">Bilim</a>
-      <a href="/blog.html">Blog</a>
-      <a href="#ecosystem">Dozi Ailesi</a>
-      <a href="#download" class="cta">İndir</a>
+  <nav class="navbar">
+    <div class="nav-container">
+      <a href="/" class="nav-logo">
+        <img src="/assets/fit_dozi_logo_transparent.webp" alt="Fit Dozi" />
+        <span>Fit Dozi</span>
+      </a>
+      <ul class="nav-links">
+        <li><a href="#features">Özellikler</a></li>
+        <li><a href="#science">Bilim</a></li>
+        <li><a href="/blog/">Blog</a></li>
+        <li><a href="#family">Dozi Ailesi</a></li>
+        <li><a href="#download" class="nav-cta">Bildirim Al</a></li>
+      </ul>
     </div>
   </nav>
 
   <section class="hero">
-    <div class="hero-text">
-      <div class="badge">
-        <span>🇹🇷</span>
-        <span>Türkiye'de Geliştirildi · Bilimsel Temelli</span>
-      </div>
-      <h1>
-        Ne Yediğini<br />
-        <span class="highlight">Keşfet.</span>
-      </h1>
-      <p class="tagline">Cebindeki gıda uzmanı.</p>
-      <p class="description">
-        Barkodu okut, etiketi fotoğrafla ya da kodu yaz — saniyeler içinde
-        Nutri-Score, alerjen uyarısı ve daha iyi alternatif önerisi.
-        Fransa Halk Sağlığı ajansının bilimsel modeline dayanır,
-        yapay zekâyla ailenin beslenmesini güvende tutar.
-      </p>
+    <div class="hero-container">
+      <div class="hero-content">
+        <div class="hero-badge">
+          <span>🇹🇷</span>
+          <span>Bilimsel Temelli · Türkiye'de Geliştirildi</span>
+        </div>
+        <h1>Ne Yediğini<br /><span class="gradient">Keşfet.</span></h1>
+        <p class="hero-tagline">Cebindeki gıda uzmanı.</p>
+        <p class="hero-description">
+          Barkodu okut, etiketi fotoğrafla — saniyeler içinde Fransa Halk Sağlığı
+          Ajansı'nın <strong>Nutri-Score</strong> algoritması, São Paulo Üniversitesi'nin
+          <strong>NOVA</strong> işlenmişlik sınıflandırması ve <strong>EFSA</strong>'nın katkı
+          maddesi değerlendirmesine dayalı analiz. Ailene uygun, rafta bilinçli karar.
+        </p>
 
-      <div class="metrics">
-        <div class="metric">
-          <div class="value">19K+</div>
-          <div class="label">Gömülü barkod</div>
+        <div class="hero-stats">
+          <div class="hero-stat">
+            <div class="value">19K+</div>
+            <div class="label">Gömülü barkod</div>
+          </div>
+          <div class="hero-stat">
+            <div class="value">14</div>
+            <div class="label">Alerjen sınıfı</div>
+          </div>
+          <div class="hero-stat">
+            <div class="value">A–E</div>
+            <div class="label">Nutri-Score</div>
+          </div>
+          <div class="hero-stat">
+            <div class="value">NOVA 1–4</div>
+            <div class="label">İşlenmişlik</div>
+          </div>
         </div>
-        <div class="metric">
-          <div class="value">14</div>
-          <div class="label">Alerjen sınıfı</div>
-        </div>
-        <div class="metric">
-          <div class="value">A–E</div>
-          <div class="label">Nutri-Score</div>
-        </div>
-        <div class="metric">
-          <div class="value">AI</div>
-          <div class="label">Gemini 2.0</div>
+
+        <div class="hero-buttons">
+          <a href="#download" class="btn btn-primary">
+            <span>📱</span>
+            <span>Lansman Bildirimi Al</span>
+          </a>
+          <a href="#science" class="btn btn-secondary">
+            <span>🧪</span>
+            <span>Bilimsel Temel</span>
+          </a>
         </div>
       </div>
 
-      <div class="cta-row">
-        <a href="#download" class="btn btn-primary">
-          <span>📱</span>
-          <span>App Store'da Yakında</span>
-        </a>
-        <a href="#features" class="btn">Özellikleri Gör</a>
-      </div>
-    </div>
-
-    <div class="hero-visual">
-      <div class="mascot-wrap">
-        <div class="mascot-glow"></div>
-        <img src="/assets/fit_dozi_main.webp" alt="Fit Dozi maskotu" class="mascot-img" />
-        <div class="floating-badge top-left">
-          <span class="icon">✓</span>
+      <div class="hero-visual">
+        <div class="hero-glow"></div>
+        <img src="/assets/fit_dozi_main.webp" alt="Fit Dozi maskotu" class="hero-mascot" />
+        <div class="floating-card fc-1">
+          <span class="fc-icon">✓</span>
           <span>Nutri-Score A</span>
         </div>
-        <div class="floating-badge top-right">
-          <span class="icon">⚠️</span>
-          <span>Alerjen var</span>
+        <div class="floating-card fc-2">
+          <span class="fc-icon">⚠️</span>
+          <span>Gluten var</span>
         </div>
-        <div class="floating-badge bottom-left">
-          <span class="icon">🏆</span>
+        <div class="floating-card fc-3">
+          <span class="fc-icon">🧪</span>
+          <span>NOVA 4</span>
+        </div>
+        <div class="floating-card fc-4">
+          <span class="fc-icon">🏆</span>
           <span>Daha iyi seçenek</span>
-        </div>
-        <div class="floating-badge bottom-right">
-          <span class="icon">👨‍👩‍👧</span>
-          <span>Aile takibi</span>
         </div>
       </div>
     </div>
   </section>
 
-  <section class="features" id="features">
+  <div class="stats-bar">
+    <div class="stats-container">
+      <div class="stat-item">
+        <div class="stat-value">%57</div>
+        <div class="stat-label">Türk tüketicisi etiketi okumuyor¹</div>
+      </div>
+      <div class="stat-item">
+        <div class="stat-value">+%12</div>
+        <div class="stat-label">Nutri-Score ile sağlıklı seçim artışı²</div>
+      </div>
+      <div class="stat-item">
+        <div class="stat-value">%10 → +%12</div>
+        <div class="stat-label">Ultra-işlenmişlikte kalp riski³</div>
+      </div>
+      <div class="stat-item">
+        <div class="stat-value">14</div>
+        <div class="label stat-label">TGK zorunlu alerjen sınıfı</div>
+      </div>
+    </div>
+  </div>
+
+  <section class="page-section" id="features">
     <div class="section-title">
       <span class="eyebrow">Özellikler</span>
       <h2>Neyi Farklı Yapıyor?</h2>
-      <p>Raftaki her ürünün arkasını gör. AI ile saniyeler içinde karar ver.</p>
+      <p>Raftaki her ürünün arkasını üç farklı bilimsel katmanla görün: besin kalitesi, işlenmişlik ve güvenlik.</p>
     </div>
 
     <div class="feature-grid">
       <div class="feature-card">
         <div class="icon">🔍</div>
-        <h3>Anında Analiz</h3>
-        <p>Barkod okut ya da etiket fotoğrafla. Nutri-Score, katkı maddeleri ve besin değerleri saniyeler içinde önünde.</p>
+        <h3>Çok Katmanlı Analiz</h3>
+        <p>Nutri-Score (FSAm-NPS) + NOVA sınıfı + EFSA katkı maddesi risk puanı. Tek skor değil, üç perspektif.</p>
       </div>
-
-      <div class="feature-card emerald">
+      <div class="feature-card accent">
         <div class="icon">⚠️</div>
-        <h3>Kişisel Alerjen Uyarısı</h3>
-        <p>Aile üyelerinin alerjenlerine göre risk bildirimi. Çocuğuna "gluten yok" dersin, ona göre uyarı gelir.</p>
+        <h3>Kişisel Alerjen Profili</h3>
+        <p>Her aile üyesi için 14 alerjen sınıfı ayarlanır. Çapraz bulaşma ("içerebilir") ağır alerjilerde bağlayıcı işlenir.</p>
       </div>
-
       <div class="feature-card">
         <div class="icon">🏆</div>
         <h3>Daha İyi Alternatif</h3>
-        <p>Kötü skor alan üründe aynı kategoride daha iyisini öner. Sadece "yeme" değil, "bunu yesen" diyor.</p>
+        <p>Düşük skorlu üründe aynı kategoriden NOVA 1-3, Nutri-Score A/B alternatif önerilir. "Yeme" değil, "bunu yesen".</p>
       </div>
-
-      <div class="feature-card emerald">
+      <div class="feature-card accent">
         <div class="icon">📊</div>
-        <h3>Nutri-Score Renkli</h3>
-        <p>A'dan E'ye yeşil–kırmızı skala. Fransa Halk Sağlığı Ajansı'nın doğrulanmış algoritmasıyla hesaplanır.</p>
+        <h3>Porsiyon Gerçeği</h3>
+        <p>Etikette "100 g için" yazar ama siz 250 ml içersiniz. Fit Dozi gerçek porsiyona çevirir, WHO günlük eşikle karşılaştırır.</p>
       </div>
-
       <div class="feature-card">
         <div class="icon">👨‍👩‍👧‍👦</div>
         <h3>Aile Profilleri</h3>
-        <p>Her üyenin alerjen ve tercih profili ayrı. Tek tarama, herkes için ayrı değerlendirme.</p>
+        <p>Çocuk, hamile, diyabetli, yaşlı — her birinin farklı eşikleri vardır. Tek tarama, farklı sonuçlar.</p>
       </div>
-
-      <div class="feature-card emerald">
+      <div class="feature-card accent">
         <div class="icon">🔒</div>
         <h3>KVKK + GDPR</h3>
-        <p>Verilerin Google Cloud'da şifreli. İstediğin anda sil, istediğin anda indir. Gıda verin sana ait.</p>
+        <p>Sağlık verisi özel kategoridir. Google Cloud'da şifreli, istediğin anda sil ve indir. Reklam için satılmaz.</p>
       </div>
     </div>
   </section>
 
-  <section class="features" id="how">
+  <section class="page-section" id="how">
     <div class="section-title">
       <span class="eyebrow">Nasıl Çalışır</span>
-      <h2>Üç Adım, Tek Amaç</h2>
-      <p>Raftan doğru ürünü al. Süpermarkette tereddüt etme.</p>
+      <h2>Üç Adım, Bilinçli Karar</h2>
+      <p>Süpermarkette beş saniye. Ailenizin sağlığı için ömür boyu katkı.</p>
     </div>
 
     <div class="feature-grid">
       <div class="feature-card">
         <div class="icon">1️⃣</div>
         <h3>Tara</h3>
-        <p>Barkod okut, etiketi fotoğrafla veya kodu yaz. Üç yol da saniye farkı yaratmaz.</p>
+        <p>Barkod okut veya etiketi fotoğrafla. 19.000'i aşkın ürün cihazda önbelleklenir; internetsiz de çalışır.</p>
       </div>
-
-      <div class="feature-card">
+      <div class="feature-card accent">
         <div class="icon">2️⃣</div>
         <h3>Değerlendir</h3>
-        <p>AI, Nutri-Score + alerjen + katkı maddesi risk düzeyini hesaplar. "Uygun", "dikkat", "alternatif var" şeklinde 3 sonuç.</p>
+        <p>Gemini 2.0 Vision OCR + kural tabanlı motor. FSAm-NPS formülü yerelde hesaplanır, AI etikette yalnızca çıkarım yapar.</p>
       </div>
-
       <div class="feature-card">
         <div class="icon">3️⃣</div>
         <h3>Karar Ver</h3>
-        <p>Sonuç ekranında üretici etiketi, Nutri-Score ve alternatif öneri. Bilinçli seç.</p>
+        <p>Üç pencere: "Uygun", "Dikkat", "Alternatif var". Hangi bileşen puanını düşürdü, hangi katkı neden uyarı aldı — şeffaf.</p>
       </div>
     </div>
   </section>
 
-  <section class="science" id="science">
+  <section class="page-section" id="science">
     <div class="section-title">
       <span class="eyebrow">Bilimsel Temel</span>
-      <h2>Tahminle Değil, Veriyle Konuşur</h2>
-      <p>Fit Dozi'nin analiz motoru hakemli yayınlara, Türk Gıda Kodeksi'ne ve uluslararası etiket standartlarına dayanır.</p>
+      <h2>Tahminle Değil, Kanıtla Konuşur</h2>
+      <p>Fit Dozi'nin her skor ve uyarısı hakemli literatüre, resmi kurum kılavuzlarına ve yerel mevzuata oturur.</p>
     </div>
 
     <div class="science-grid">
       <div class="ref-card">
-        <span class="tag">BMJ · 2021</span>
-        <h3>Nutri-Score'un mortalite ile ilişkisi: Avrupa çapında kohort çalışması</h3>
-        <p class="authors">Deschasaux-Tanguy M. ve ark. — 501.851 katılımcı, 10 Avrupa ülkesi.</p>
-        <p>Kötü Nutri-Score (D/E) ile daha yüksek tüm-nedenli mortalite arasında doğrudan ilişki. Fit Dozi'nin ana puanlama motoru bu modele dayanır.</p>
-        <a class="read-more" href="https://www.bmj.com/content/370/bmj.m3173" target="_blank" rel="noopener">Makaleyi oku →</a>
+        <span class="tag">BMJ · 2020</span>
+        <h3>Nutri-Score & tüm-nedenli mortalite (EPIC kohortu)</h3>
+        <p class="authors">Deschasaux-Tanguy M. ve ark. — n=521.324, 10 Avrupa ülkesi, 17 yıl takip</p>
+        <p class="effect-size">Kötü FSAm-NPS skoru → HR 1.07 (95% GA 1.03–1.10) tüm-nedenli ölüm.</p>
+        <p>501 binden fazla katılımcıda Nutri-Score'un temelindeki FSAm-NPS algoritmasının mortalite belirteci olarak doğrulandığı temel çalışma.</p>
+        <a class="read-more" href="https://www.bmj.com/content/370/bmj.m3173" target="_blank" rel="noopener">BMJ 2020;370:m3173 →</a>
       </div>
 
       <div class="ref-card">
-        <span class="tag">The Lancet · 2019</span>
-        <h3>Ultra-işlenmiş gıdalar ve kardiyovasküler hastalık riski</h3>
-        <p class="authors">Srour B. ve ark. — NutriNet-Santé kohortu.</p>
-        <p>Diyette ultra-işlenmiş gıda oranı %10 arttıkça kardiyovasküler hastalık riski %12 artıyor. Fit Dozi, NOVA sınıflandırmasını arka planda kullanır.</p>
-        <a class="read-more" href="https://www.bmj.com/content/365/bmj.l1451" target="_blank" rel="noopener">Makaleyi oku →</a>
+        <span class="tag">BMJ · 2019</span>
+        <h3>Ultra-işlenmiş gıda & kardiyovasküler hastalık</h3>
+        <p class="authors">Srour B. ve ark. — NutriNet-Santé kohortu, n=105.159, 5 yıl takip</p>
+        <p class="effect-size">Diyette %10 ↑ UİG → KVH riski +%12 (HR 1.12, GA 1.05–1.20).</p>
+        <p>NOVA grup 4 gıdaların kardiyovasküler ve serebrovasküler hastalıkla doğrudan ilişkisini ortaya koyan ve ardışık meta-analizlerde tekrar doğrulanan çalışma.</p>
+        <a class="read-more" href="https://www.bmj.com/content/365/bmj.l1451" target="_blank" rel="noopener">BMJ 2019;365:l1451 →</a>
+      </div>
+
+      <div class="ref-card">
+        <span class="tag">The Lancet · 2024</span>
+        <h3>UİG tüketimi & mortalite — 8 kohortun umbrella analizi</h3>
+        <p class="authors">Lane MM. ve ark. — 14 meta-analiz, n>9.8 milyon, 45 sağlık sonucu</p>
+        <p class="effect-size">En yüksek UİG tüketimi → tüm-nedenli mortalite +%21, Tip 2 diyabet +%40, depresyon +%22.</p>
+        <p>Ultra-işlenmiş gıdanın sağlık etkilerinin bugüne kadarki en kapsamlı kanıt sentezi. Fit Dozi'nin NOVA filtresi bu kanıt piramidine dayanır.</p>
+        <a class="read-more" href="https://www.bmj.com/content/384/bmj-2023-077310" target="_blank" rel="noopener">BMJ 2024;384:e077310 →</a>
+      </div>
+
+      <div class="ref-card">
+        <span class="tag">Nature · 2022</span>
+        <h3>Emülgatörler & bağırsak mikrobiyotası</h3>
+        <p class="authors">Chassaing B. ve ark. — çift-kör RCT, n=18, 11 hafta</p>
+        <p class="effect-size">Karboksimetilselüloz (E466) → mikrobiyota çeşitliliğinde anlamlı azalma ve mukozal bariyer bozulması.</p>
+        <p>Sık kullanılan gıda emülgatörlerinin insan mikrobiyomuna etkisini çift-kör deneyle gösteren öncü çalışma. Fit Dozi, risk grubu emülgatörleri belirli profillerde uyarır.</p>
+        <a class="read-more" href="https://www.gastrojournal.org/article/S0016-5085(21)03633-4/fulltext" target="_blank" rel="noopener">Gastroenterology 2022;162:743–756 →</a>
       </div>
 
       <div class="ref-card">
         <span class="tag">EFSA · 2023</span>
-        <h3>Gıda katkı maddelerinin güvenlik değerlendirmesi</h3>
-        <p class="authors">Avrupa Gıda Güvenliği Otoritesi — E-kodları yeniden değerlendirme programı.</p>
-        <p>Her E-kodunun kabul edilebilir günlük alım (ADI) eşiği ve çocuklar için özel uyarıları. Fit Dozi, EFSA güncel tebliğlerini takip eder.</p>
-        <a class="read-more" href="https://www.efsa.europa.eu/en/topics/topic/food-additives" target="_blank" rel="noopener">EFSA portalına git →</a>
+        <h3>Aspartam yeniden değerlendirme ve IARC sınıflandırması</h3>
+        <p class="authors">IARC Monographs Vol. 134 + EFSA ANS Panel</p>
+        <p class="effect-size">IARC: Grup 2B (insanda olası kanserojen) · EFSA: ADI 40 mg/kg/gün korunuyor.</p>
+        <p>Aspartamın IARC tarafından "olası kanserojen" olarak sınıflandırılması sonrası EFSA'nın pozisyonu. Fit Dozi ilgili tatlandırıcıları çocuk ve hamile profilinde özel olarak işaretler.</p>
+        <a class="read-more" href="https://www.efsa.europa.eu/en/news/aspartame-no-change-recommended-intake" target="_blank" rel="noopener">EFSA aspartam dosyası →</a>
       </div>
 
       <div class="ref-card">
-        <span class="tag">TGK · 2022</span>
-        <h3>Türk Gıda Kodeksi Etiketleme ve Tüketicileri Bilgilendirme Yönetmeliği</h3>
-        <p class="authors">T.C. Tarım ve Orman Bakanlığı.</p>
-        <p>14 zorunlu alerjen sınıfı, besin değeri beyanı ve menşe kuralları. Fit Dozi'nin alerjen motoru Türk pazarı için bu mevzuatla hizalanmıştır.</p>
-        <a class="read-more" href="https://www.resmigazete.gov.tr/" target="_blank" rel="noopener">Mevzuat →</a>
+        <span class="tag">WHO · 2023</span>
+        <h3>Serbest şeker ve sodyum üst sınırları</h3>
+        <p class="authors">WHO Guideline on Sugars Intake + SHAKE Technical Package</p>
+        <p class="effect-size">Serbest şeker < günlük enerjinin %10'u (güçlü) · tercihen %5 altı · Sodyum < 2 g/gün.</p>
+        <p>Fit Dozi her porsiyon için WHO eşiğine yaklaşım yüzdesi gösterir. "100 g için 8 g şeker"den ziyade "günlük sınırın %32'si" mesajı.</p>
+        <a class="read-more" href="https://www.who.int/publications/i/item/9789241549028" target="_blank" rel="noopener">WHO şeker kılavuzu →</a>
       </div>
     </div>
 
-    <div style="text-align:center; margin-top: 40px;">
-      <a href="/science.html" class="btn btn-secondary">
+    <div style="text-align: center; margin-top: 2.5rem;">
+      <a href="/science.html" class="btn btn-light">
         <span>🧪</span>
         <span>Tüm Bilimsel Temelleri İncele</span>
       </a>
     </div>
   </section>
 
-  <section id="blog">
+  <section class="page-section" id="blog">
     <div class="section-title">
       <span class="eyebrow">Blog</span>
       <h2>Bilinçli Beslenmenin Rehberi</h2>
-      <p>Kısa, kaynaklı, aksiyona dönüştürülebilir yazılar. Raf okumasını kolaylaştırır.</p>
+      <p>Kaynaklı, uygulanabilir yazılar. Raf okumasını beş dakikada kolaylaştırır.</p>
     </div>
 
-    <div class="blog-grid">
-      <a href="/blog.html#nutri-score" class="blog-card emerald-cover">
+    <div class="blog-preview-grid">
+      <a href="/blog/nutri-score-nedir.html" class="blog-preview-card">
         <div class="cover">🥗</div>
         <div class="body">
-          <div class="meta">Eğitim · 5 dk okuma</div>
+          <span class="tag">Eğitim</span>
           <h3>Nutri-Score Nedir, Nasıl Hesaplanır?</h3>
-          <p>A'dan E'ye renkli skala nasıl çalışıyor? Puan hesabının arkasındaki formülü adım adım açıklıyoruz.</p>
-          <span class="read-more">Yazıyı oku →</span>
+          <p>FSAm-NPS algoritması, Avrupa'daki 7 resmi ülke, 2024 revizyonu ve BMJ validasyonları.</p>
+          <span class="meta">⏱️ 6 dk okuma · 9 kaynak</span>
         </div>
       </a>
-
-      <a href="/blog.html#ultra-islenmis" class="blog-card warm-cover">
+      <a href="/blog/ultra-islenmis-gidalar-nova.html" class="blog-preview-card warm">
         <div class="cover">🍟</div>
         <div class="body">
-          <div class="meta">Araştırma · 7 dk okuma</div>
-          <h3>Ultra-İşlenmiş Gıda: NOVA Sınıflandırması</h3>
-          <p>Hangi ürün neden "ultra-işlenmiş" sayılır? NOVA skalası ve sağlık sonuçları üzerine güncel veriler.</p>
-          <span class="read-more">Yazıyı oku →</span>
+          <span class="tag">Araştırma</span>
+          <h3>Ultra-İşlenmiş Gıdalar: NOVA Nedir?</h3>
+          <p>2024 Lancet umbrella analizi, 45 sağlık sonucu, NOVA 4 tanı kriterleri ve pratik örnekler.</p>
+          <span class="meta">⏱️ 8 dk okuma · 11 kaynak</span>
         </div>
       </a>
-
-      <a href="/blog.html#alerjen" class="blog-card">
+      <a href="/blog/cocukta-gida-alerjisi-etiket.html" class="blog-preview-card dark">
         <div class="cover">⚠️</div>
         <div class="body">
-          <div class="meta">Aile · 4 dk okuma</div>
-          <h3>Çocukta Gıda Alerjisi: Etiket Okuma Rehberi</h3>
-          <p>14 zorunlu alerjen, çapraz bulaşma uyarıları ve market kararlarını kolaylaştıran pratik ipuçları.</p>
-          <span class="read-more">Yazıyı oku →</span>
+          <span class="tag">Aile</span>
+          <h3>Çocukta Gıda Alerjisi: Etiket Rehberi</h3>
+          <p>14 zorunlu alerjen, çapraz bulaşma ifadeleri, EAACI 2023 yönetim kılavuzu özeti.</p>
+          <span class="meta">⏱️ 5 dk okuma · 7 kaynak</span>
         </div>
       </a>
-    </div>
-
-    <div style="text-align:center; margin-top: 40px;">
-      <a href="/blog.html" class="btn">
-        <span>📚</span>
-        <span>Tüm Yazıları Gör</span>
+      <a href="/blog/katki-maddeleri-e-kodlari.html" class="blog-preview-card">
+        <div class="cover">🧪</div>
+        <div class="body">
+          <span class="tag">Bilim</span>
+          <h3>Emülgatörler ve Mikrobiyom: E-Kodlarının Arkası</h3>
+          <p>E466, E433, karragenan üzerine RCT kanıtları, EFSA yeniden değerlendirme programı.</p>
+          <span class="meta">⏱️ 7 dk okuma · 10 kaynak</span>
+        </div>
+      </a>
+      <a href="/blog/gizli-seker-tuz-paketli-gidalar.html" class="blog-preview-card warm">
+        <div class="cover">🧂</div>
+        <div class="body">
+          <span class="tag">Pratik</span>
+          <h3>Gizli Şeker & Tuz: Türk Market Raflarında</h3>
+          <p>WHO sınırları, etikette 61 şeker sinoniminin listesi ve yerel ürünlerde somut örnekler.</p>
+          <span class="meta">⏱️ 6 dk okuma · 8 kaynak</span>
+        </div>
+      </a>
+      <a href="/blog/" class="blog-preview-card dark">
+        <div class="cover">📚</div>
+        <div class="body">
+          <span class="tag">Tümü</span>
+          <h3>Blog Ana Sayfası</h3>
+          <p>Yeni yazılar, kategoriler ve arşiv. Haftada iki yazı yayımlanır.</p>
+          <span class="meta">Tüm yazıları gör →</span>
+        </div>
       </a>
     </div>
   </section>
 
-  <section id="ecosystem">
+  <section class="page-section" id="family">
     <div class="section-title">
       <span class="eyebrow">Dozi Ailesi</span>
-      <h2>Bardino'nun Uygulama Ekosistemi</h2>
-      <p>Fit Dozi tek başına çalışır, ama kardeşleri var. Her biri günlük hayatın bir köşesini kolaylaştırıyor.</p>
+      <h2>Bardino'nun Canlı Uygulamaları</h2>
+      <p>Fit Dozi yakında. Diğer kardeşler şu an App Store ve Google Play'de.</p>
     </div>
 
     <div class="ecosystem-grid">
-      <a href="https://dozi.app" class="eco-card" target="_blank" rel="noopener">
-        <div class="logo">🤖</div>
-        <h3>Dozi</h3>
-        <p>Günlük sağlıklı yaşam asistanın. Su, adım, uyku — hepsi tek ekranda.</p>
+      <a href="https://www.dozi.app" class="eco-card dozi" target="_blank" rel="noopener">
+        <div class="eco-logo"><img src="/assets/dozi_brand.png" alt="Dozi" /></div>
+        <div class="eco-info">
+          <span class="eco-tag">🟢 Canlı</span>
+          <h3>Dozi</h3>
+          <p>İlaç hatırlatma ve aile takibi. Yapay zekâ destekli doz yönetimi, Badi sistemiyle uzaktan aile görünürlüğü.</p>
+          <span class="eco-link">dozi.app →</span>
+        </div>
       </a>
 
-      <a href="https://zodi.app" class="eco-card" target="_blank" rel="noopener">
-        <div class="logo">✨</div>
-        <h3>Zodi</h3>
-        <p>AI destekli astroloji ve günlük karakter analizi. Burç değil, bütüncül.</p>
-      </a>
-
-      <a href="https://decimo.app" class="eco-card" target="_blank" rel="noopener">
-        <div class="logo">📊</div>
-        <h3>Decimo</h3>
-        <p>Kişisel finans takibi. Harcama kategorileri, aylık bütçe, net değer.</p>
-      </a>
-
-      <a href="https://hapsu.app" class="eco-card" target="_blank" rel="noopener">
-        <div class="logo">💊</div>
-        <h3>Hapsu</h3>
-        <p>İlaç ve takviye hatırlatıcı. Doz takvimi, etkileşim uyarısı, aile takibi.</p>
+      <a href="https://astro.dozi.app" class="eco-card astro" target="_blank" rel="noopener">
+        <div class="eco-logo"><img src="/assets/astro_dozi_logo.webp" alt="Astro Dozi" /></div>
+        <div class="eco-info">
+          <span class="eco-tag">🟢 Canlı</span>
+          <h3>Astro Dozi</h3>
+          <p>AI destekli kişisel astroloji: günlük burç, Swiss Ephemeris doğum haritası, tarot yayılımları ve uyum skorları.</p>
+          <span class="eco-link">astro.dozi.app →</span>
+        </div>
       </a>
     </div>
   </section>
 
-  <div class="cta-banner" id="download">
+  <section class="cta-banner" id="download">
     <h2>Beslenmeni AI ile Güvende Tut</h2>
-    <p>Fit Dozi App Store'da ve Google Play'de yakında. Bildirim için e-posta bırak, ilk gün sana haber verelim.</p>
-    <a href="mailto:info@dozi.app?subject=Fit%20Dozi%20Lansman%20Bildirimi" class="btn">
+    <p>Fit Dozi App Store'da ve Google Play'de yakında. Lansmanda ilk sen haberdar ol.</p>
+    <a href="mailto:info@dozi.app?subject=Fit%20Dozi%20Lansman%20Bildirimi" class="btn btn-primary">
       <span>✉️</span>
       <span>Lansman Bildirimi Al</span>
     </a>
-  </div>
+  </section>
 
   <footer class="site">
-    <div>© 2026 Bardino · Fit Dozi</div>
-    <div class="links">
-      <a href="/blog.html">Blog</a>
-      <a href="/science.html">Bilimsel Temel</a>
-      <a href="/privacy.html">Gizlilik Politikası</a>
-      <a href="/terms.html">Kullanım Koşulları</a>
-      <a href="mailto:info@dozi.app">İletişim</a>
+    <div class="footer-inner">
+      <div>© 2026 <strong style="color:#fff">Bardino</strong> · Fit Dozi</div>
+      <div class="links">
+        <a href="/blog/">Blog</a>
+        <a href="/science.html">Bilimsel Temel</a>
+        <a href="https://www.dozi.app" target="_blank" rel="noopener">Dozi</a>
+        <a href="https://astro.dozi.app" target="_blank" rel="noopener">Astro Dozi</a>
+        <a href="/privacy.html">Gizlilik</a>
+        <a href="/terms.html">Koşullar</a>
+        <a href="mailto:info@dozi.app">İletişim</a>
+      </div>
     </div>
   </footer>
 </body>

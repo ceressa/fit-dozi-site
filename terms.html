@@ -5,28 +5,37 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Kullanım Koşulları — Fit Dozi</title>
   <meta name="description" content="Fit Dozi kullanım koşulları: hizmet tanımı, kullanıcı sorumlulukları, tıbbi tavsiye feragati." />
+  <meta name="theme-color" content="#10b981" />
   <link rel="icon" href="/assets/icon.webp" type="image/webp" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Lora:ital@0;1&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="/style.css" />
 </head>
 <body>
-  <nav class="top">
-    <a href="/" class="brand">
-      <img src="/assets/fit_dozi_logo_transparent.webp" alt="Fit Dozi" />
-      <span>Fit Dozi</span>
-    </a>
-    <div class="nav-links">
-      <a href="/blog.html">Blog</a>
-      <a href="/science.html">Bilim</a>
-      <a href="/privacy.html">Gizlilik</a>
-      <a href="mailto:info@dozi.app" class="cta">İletişim</a>
+  <nav class="navbar">
+    <div class="nav-container">
+      <a href="/" class="nav-logo">
+        <img src="/assets/fit_dozi_logo_transparent.webp" alt="Fit Dozi" />
+        <span>Fit Dozi</span>
+      </a>
+      <ul class="nav-links">
+        <li><a href="/#features">Özellikler</a></li>
+        <li><a href="/#science">Bilim</a></li>
+        <li><a href="/blog/">Blog</a></li>
+        <li><a href="/privacy.html">Gizlilik</a></li>
+        <li><a href="/#download" class="nav-cta">Bildirim Al</a></li>
+      </ul>
     </div>
   </nav>
 
-  <div class="legal-container">
-    <div class="breadcrumb"><a href="/">← Fit Dozi</a></div>
-
+  <header class="legal-hero">
     <h1>Kullanım Koşulları</h1>
     <p class="updated">Son güncelleme: 17 Nisan 2026</p>
+  </header>
+
+  <main class="content-wrapper">
+    <a href="/" class="back-link">← Ana sayfa</a>
 
     <p>
       Fit Dozi uygulamasını kullanarak aşağıdaki koşulları kabul etmiş
@@ -36,48 +45,43 @@
     <h2>1. Hizmet Tanımı</h2>
     <p>
       Fit Dozi, gıda ürünlerini barkod veya etiket fotoğrafı ile analiz
-      eden, Nutri-Score, alerjen uyarısı ve besin değeri bilgisi sunan
-      bir mobil uygulamadır.
+      eden; Nutri-Score, NOVA işlenmişlik sınıfı, EFSA katkı maddesi
+      değerlendirmesi ve alerjen uyarısı sunan bir mobil uygulamadır.
     </p>
 
     <div class="warning-box">
-      <strong style="color: #fbbf24;">⚠️ Tıbbi Tavsiye Değildir.</strong>
-      <p style="margin-top: 8px; margin-bottom: 0;">
-        Fit Dozi'nin verdiği bilgiler bilgilendirme amaçlıdır ve tıbbi
-        tavsiye yerine geçmez. Ciddi alerjileriniz veya beslenme
-        kısıtlamalarınız varsa ürün etiketini mutlaka kendiniz kontrol
-        edin ve hekiminize danışın.
-      </p>
+      <h3>⚠️ Tıbbi Tavsiye Değildir</h3>
+      <p>Fit Dozi'nin verdiği bilgiler bilgilendirme amaçlıdır ve tıbbi tavsiye yerine geçmez. Ciddi alerjileriniz veya beslenme kısıtlamalarınız varsa ürün etiketini mutlaka kendiniz kontrol edin ve hekiminize danışın.</p>
     </div>
 
     <h2>2. Hesap ve Güvenlik</h2>
     <ul>
-      <li>Misafir olarak da kullanabilirsiniz, ama verileriniz cihaza bağlı kalır</li>
-      <li>Giriş yaparsanız verileriniz yedeklenir — hesabınızın güvenliğinden siz sorumlusunuz</li>
-      <li>Hesabınızı başkalarıyla paylaşmayın, şüpheli aktivite durumunda bizimle iletişime geçin</li>
+      <li>Misafir olarak da kullanabilirsiniz; verileriniz cihaza bağlı kalır.</li>
+      <li>Giriş yaparsanız verileriniz yedeklenir — hesabınızın güvenliğinden siz sorumlusunuz.</li>
+      <li>Hesabınızı başkalarıyla paylaşmayın, şüpheli aktivite durumunda iletişime geçin.</li>
     </ul>
 
     <h2>3. İçerik ve Doğruluk</h2>
     <ul>
-      <li>Analiz sonuçları Google Gemini AI tarafından üretilir ve Open Food Facts veritabanını kullanır</li>
-      <li>Sonuçların doğruluğu garanti edilmez — AI hata yapabilir, veritabanı eksik/yanlış olabilir</li>
-      <li>Kritik alerjenler veya özel diyet tercihleriniz için üretici etiketini mutlaka kontrol edin</li>
-      <li>Fit Dozi, yanlış bilgi sonucu doğabilecek sağlık problemlerinden sorumlu tutulamaz</li>
+      <li>Analiz sonuçları Google Gemini 2.0 ve kural tabanlı motor tarafından üretilir, Open Food Facts veritabanını kullanır.</li>
+      <li>Sonuçların doğruluğu garanti edilmez — AI hata yapabilir, veritabanı eksik/yanlış olabilir.</li>
+      <li>Kritik alerjenler veya özel diyet tercihleriniz için üretici etiketini mutlaka kontrol edin.</li>
+      <li>Fit Dozi, yanlış bilgi sonucu doğabilecek sağlık problemlerinden sorumlu tutulamaz.</li>
     </ul>
 
     <h2>4. Kabul Edilmeyen Kullanım</h2>
     <p>Uygulamayı aşağıdaki amaçlarla kullanamazsınız:</p>
     <ul>
-      <li>Yasadışı faaliyetler</li>
-      <li>Başkalarının haklarını ihlal etme</li>
-      <li>Uygulamanın veya sunucuların çalışmasını engelleme (scraping, DOS vb.)</li>
-      <li>Tersine mühendislik, kopyalama, modifiye etme</li>
+      <li>Yasadışı faaliyetler.</li>
+      <li>Başkalarının haklarını ihlal etme.</li>
+      <li>Uygulamanın veya sunucuların çalışmasını engelleme (scraping, DOS vb.).</li>
+      <li>Tersine mühendislik, kopyalama, modifiye etme.</li>
     </ul>
 
     <h2>5. Fikri Mülkiyet</h2>
     <p>
-      Uygulamanın tasarımı, logosu, kodu ve içerikleri Bardino'ya aittir.
-      Kişisel kullanım dışında çoğaltılamaz, dağıtılamaz.
+      Uygulamanın tasarımı, logosu, kodu ve içerikleri Bardino Technology'ye
+      aittir. Kişisel kullanım dışında çoğaltılamaz, dağıtılamaz.
     </p>
 
     <h2>6. Hizmetin Değişmesi veya Sona Ermesi</h2>
@@ -112,14 +116,18 @@
       Bu koşullar Türkiye Cumhuriyeti yasalarına tabidir. Anlaşmazlıklar
       İstanbul mahkemelerinde çözümlenir.
     </p>
-  </div>
+  </main>
 
   <footer class="site">
-    <div>© 2026 Bardino · Fit Dozi</div>
-    <div class="links">
-      <a href="/">Ana Sayfa</a>
-      <a href="/privacy.html">Gizlilik Politikası</a>
-      <a href="mailto:info@dozi.app">İletişim</a>
+    <div class="footer-inner">
+      <div>© 2026 <strong style="color:#fff">Bardino</strong> · Fit Dozi</div>
+      <div class="links">
+        <a href="/">Ana Sayfa</a>
+        <a href="/blog/">Blog</a>
+        <a href="/science.html">Bilimsel Temel</a>
+        <a href="/privacy.html">Gizlilik</a>
+        <a href="mailto:info@dozi.app">İletişim</a>
+      </div>
     </div>
   </footer>
 </body>

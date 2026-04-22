@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Nutri-Score Nedir, Nasıl Hesaplanır? | Fit Dozi Blog</title>
+  <meta name="description" content="Nutri-Score'un FSAm-NPS algoritması nasıl çalışır? 521 binlik EPIC kohortu ne buldu? 2024 revizyonuyla neler değişti?" />
+  <meta name="robots" content="index, follow" />
+  <link rel="canonical" href="https://fit.dozi.app/blog/nutri-score-nedir.html" />
+
+  <meta property="og:type" content="article" />
+  <meta property="og:url" content="https://fit.dozi.app/blog/nutri-score-nedir.html" />
+  <meta property="og:title" content="Nutri-Score Nedir, Nasıl Hesaplanır?" />
+  <meta property="og:description" content="FSAm-NPS formülü adım adım, Avrupa'daki 7 resmi ülke ve BMJ'deki 521 binlik validasyon çalışması." />
+  <meta property="og:image" content="https://fit.dozi.app/assets/fit_dozi_main.webp" />
+  <meta property="article:published_time" content="2026-04-18" />
+
+  <meta name="theme-color" content="#10b981" />
+  <link rel="icon" type="image/webp" href="/assets/icon.webp" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Lora:ital@0;1&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="/style.css" />
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Article",
+    "headline": "Nutri-Score Nedir, Nasıl Hesaplanır?",
+    "image": "https://fit.dozi.app/assets/fit_dozi_main.webp",
+    "author": {"@type": "Organization", "name": "Fit Dozi"},
+    "publisher": {"@type": "Organization", "name": "Bardino Technology"},
+    "datePublished": "2026-04-18",
+    "inLanguage": "tr",
+    "mainEntityOfPage": {"@type": "WebPage", "@id": "https://fit.dozi.app/blog/nutri-score-nedir.html"}
+  }
+  </script>
+</head>
+<body>
+  <nav class="navbar">
+    <div class="nav-container">
+      <a href="/" class="nav-logo">
+        <img src="/assets/fit_dozi_logo_transparent.webp" alt="Fit Dozi" />
+        <span>Fit Dozi</span>
+      </a>
+      <ul class="nav-links">
+        <li><a href="/#features">Özellikler</a></li>
+        <li><a href="/#science">Bilim</a></li>
+        <li><a href="/blog/">Blog</a></li>
+        <li><a href="/#family">Dozi Ailesi</a></li>
+        <li><a href="/#download" class="nav-cta">Bildirim Al</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <header class="article-hero">
+    <span class="eyebrow">Eğitim · 6 dk okuma</span>
+    <h1>Nutri-Score Nedir, Nasıl Hesaplanır?</h1>
+    <p class="subtitle">FSAm-NPS algoritması, 2024 revizyonu ve 521 binlik EPIC kohortunun sunduğu kanıt.</p>
+    <div class="mascot"><img src="/assets/fit_dozi_main.webp" alt="Fit Dozi" /></div>
+  </header>
+
+  <main class="content-wrapper">
+    <a href="/blog/" class="back-link">← Tüm Yazılar</a>
+
+    <p class="drop-cap">Nutri-Score, 2017'de Fransa Halk Sağlığı Ajansı (<em>Santé publique France</em>) tarafından tanıtılan ve bugün Fransa, Belçika, Almanya, Hollanda, Lüksemburg, İspanya ve İsviçre'de resmi olarak kabul edilen bir <strong>ön-paket etiketleme</strong> sistemidir. Bir ürünün genel beslenme kalitesini tek harfle (A'dan E'ye, koyu yeşilden koyu kırmızıya) özetler. Ancak "sağlıklı / sağlıksız" damgası değildir — aynı kategori içinde karşılaştırma aracıdır.</p>
+
+    <div class="stats-grid">
+      <div class="stat-card">
+        <div class="num">7</div>
+        <div class="label">Resmi kabul eden Avrupa ülkesi</div>
+      </div>
+      <div class="stat-card">
+        <div class="num">521K</div>
+        <div class="label">EPIC kohort validasyonu (BMJ 2020)</div>
+      </div>
+      <div class="stat-card">
+        <div class="num">2024</div>
+        <div class="label">En güncel algoritma revizyonu</div>
+      </div>
+    </div>
+
+    <h2>FSAm-NPS: Arkada Çalışan Algoritma</h2>
+    <p>
+      Nutri-Score harfinin arkasında <strong>FSAm-NPS</strong> (French Food Standards Agency — Nutrient Profiling System) adında sayısal bir skor vardır. Skor, 100 g veya 100 ml ürün için iki zıt puan kümesinin farkıdır:
+    </p>
+    <ul>
+      <li><strong>Olumsuz puanlar (N, 0–40):</strong> enerji (kJ), doymuş yağ (g), toplam şeker (g), sodyum (mg). Her biri sıfırdan 10'a kadar puanlanır.</li>
+      <li><strong>Olumlu puanlar (P, 0–15):</strong> protein (g), lif (g), meyve-sebze-baklagil-zeytinyağı-kolza-ceviz oranı (%).</li>
+    </ul>
+    <p>
+      Nihai skor <strong>N − P</strong>. Katı gıdalar için: ≤ −1 → A, 0–2 → B, 3–10 → C, 11–18 → D, ≥ 19 → E. İçecekler için eşikler daha sıkıdır; su otomatik A, şekerli içeceklerin büyük çoğunluğu E çıkar<sup>1</sup>.
+    </p>
+
+    <h3>2024 revizyonunda ne değişti?</h3>
+    <p>
+      2023 sonunda yayımlanan ve 2024'te uygulamaya giren revizyonda dört büyük değişiklik yapıldı<sup>2</sup>:
+    </p>
+    <ul>
+      <li><strong>Kırmızı et</strong> ve işlenmiş et farklılaştırıldı; kanatlı et avantajlandırıldı.</li>
+      <li><strong>Süt ürünlerinde</strong> şeker ve tuz ağırlığı artırıldı — aromalı yoğurtlar artık kolayca A alamıyor.</li>
+      <li><strong>Tam tahıl</strong> ekmek ve kahvaltılıklar için lif katkısı güçlendirildi.</li>
+      <li><strong>Tatlandırıcılı içecekler</strong> sade sudan daha kötü skorlanıyor (bu revizyonun en tartışmalı kararıydı).</li>
+    </ul>
+
+    <h2>Bilimsel Validasyon: BMJ, Lancet ve ötesi</h2>
+    <p>
+      Nutri-Score sadece bir işaretleme standardı değil, doğrulanmış bir sağlık belirtecidir.
+    </p>
+
+    <div class="stats-grid">
+      <div class="stat-card">
+        <div class="num">%7</div>
+        <div class="label">Kötü skorla tüm-nedenli mortalite artışı</div>
+      </div>
+      <div class="stat-card">
+        <div class="num">%12</div>
+        <div class="label">Kanser insidansı artışı (en kötü çeyrek)</div>
+      </div>
+      <div class="stat-card">
+        <div class="num">%14</div>
+        <div class="label">KVH insidansı artışı (NutriNet-Santé)</div>
+      </div>
+    </div>
+
+    <p>
+      2020'de <em>BMJ</em>'de yayımlanan EPIC çalışmasında (Deschasaux-Tanguy ve ark., n=521.324, 10 Avrupa ülkesi) katılımcılar diyetlerinin FSAm-NPS ağırlıklı ortalama skoruna göre sıralandı. En kötü beşte birlik dilim, en iyiye kıyasla <strong>%7 daha yüksek tüm-nedenli mortalite riski</strong> (HR 1.07, GA 1.03–1.10) gösterdi<sup>3</sup>. 2018'de aynı grup, 471 bin kişilik NutriNet-Santé kohortunda benzer ilişkiyi <strong>kanser insidansı</strong> için de bulmuştu<sup>4</sup>. Kardiyovasküler hastalık için etki büyüklüğü daha da yüksekti (HR 1.14)<sup>5</sup>.
+    </p>
+
+    <div class="tip-box">
+      <h3>Neden tek başına yetmez?</h3>
+      <p>Nutri-Score işlenmişlik derecesini (NOVA), katkı maddelerinin güvenliğini (EFSA) ve porsiyon büyüklüğünü doğrudan ölçmez. Cips ile bisküvi karşılaştırmanıza yarar — ama bisküvi ile elma karşılaştırmanıza değil. Fit Dozi bu yüzden üç katmanı birden gösterir.</p>
+    </div>
+
+    <h2>Nutri-Score'a Yöneltilen Eleştiriler</h2>
+    <p>
+      İtalya, Yunanistan ve İspanya'daki bazı üretici birlikleri sistem zeytinyağını D'ye yakın skorladığı gerekçesiyle eleştirdi. 2023 revizyonunda bitkisel yağların olumlu puan hesabı yenilendi: zeytinyağı, kolza ve ceviz yağı lehine — palm yağı aleyhine düzenleme yapıldı<sup>2</sup>. Ayrıca 2021'de yayımlanan bir analiz, sistemin <em>porsiyon büyüklüğünü</em> dikkate almamasının özellikle atıştırmalıklarda yanıltıcı olabileceğini gösterdi<sup>6</sup>. Fit Dozi porsiyon düzeltmesini ayrı bir katman olarak sunar.
+    </p>
+
+    <h3>AB düzenlemesi ne aşamada?</h3>
+    <p>
+      Avrupa Komisyonu'nun "Farm to Fork" stratejisi kapsamında tüm AB'de zorunlu bir ön-paket etiket için Nutri-Score en güçlü adaydı. Ancak 2023'te tarım lobilerinin baskısıyla karar ertelendi; bugün sistem yedi ülkede gönüllü olarak kullanılıyor<sup>7</sup>. Türkiye'de henüz resmi bir karşılığı yoktur — bu boşluk, Fit Dozi'nin Türk pazarı için FSAm-NPS'i yerel ürün veritabanıyla birleştirmesini anlamlı kılıyor.
+    </p>
+
+    <div class="warning-box">
+      <h3>Dikkat: Marka etiketi değil, besin profili göstergesi</h3>
+      <p>Bir ürün "Nutri-Score A" aldıysa bu, üretici şirketin genel kalitesinin onaylandığı anlamına gelmez. Skor <strong>yalnızca o spesifik ürünün 100 g başına besin profilini</strong> değerlendirir. Aynı markanın başka ürünü E çıkabilir.</p>
+    </div>
+
+    <h2>Fit Dozi Nutri-Score'u Nasıl Uyguluyor?</h2>
+    <p>
+      Fit Dozi, FSAm-NPS 2023 revizyon formülünü <strong>cihaz üzerinde</strong> (on-device) hesaplar. AI yalnızca etiket OCR'ı için kullanılır; skor hesabı kural tabanlıdır ve her adımı kullanıcıya açıklanır. Örnek:
+    </p>
+    <blockquote style="border-left: 3px solid #10b981; background: #f0fdf4; padding: 1rem 1.25rem; border-radius: 0 12px 12px 0; color: #065f46; font-size: 0.98rem; margin: 1.5rem 0;">
+      <strong>Kahvaltılık gevrek (100 g):</strong><br />
+      Enerji 1710 kJ → 5 puan · Doymuş yağ 2.1 g → 2 · Şeker 22 g → 7 · Sodyum 380 mg → 3.<br />
+      Protein 8 g → 3 · Lif 6 g → 4 · Meyve/sebze %0 → 0.<br />
+      N − P = 17 − 7 = 10 → <strong>C</strong>.
+    </blockquote>
+
+    <div class="source-box">
+      <h3>Kaynaklar</h3>
+      <ol>
+        <li>Santé publique France. <em>Nutri-Score scientific method — algorithm update for general foods</em>, 2023.</li>
+        <li>Santé publique France. <em>Report of the Scientific Committee of the Nutri-Score</em>, Mart 2023 (revizyon raporu).</li>
+        <li>Deschasaux-Tanguy M, Huybrechts I, Julia C, ve ark. <em>Nutritional quality of food as represented by the FSAm-NPS nutrient profiling system and all-cause mortality.</em> BMJ 2020;370:m3173. doi:10.1136/bmj.m3173</li>
+        <li>Deschasaux M, Huybrechts I, Murphy N, ve ark. <em>Nutritional quality of food as represented by the FSAm-NPS nutrient profiling system and cancer risk.</em> PLoS Med 2018;15(9):e1002651.</li>
+        <li>Adriouch S, Julia C, Kesse-Guyot E, ve ark. <em>Prospective association between a dietary quality index based on a nutrient profiling system FSA-NPS DI and cardiovascular diseases risks.</em> Eur J Prev Cardiol 2016;23(15):1669-1676.</li>
+        <li>Carrad A, Louie JCY, Milosavljevic M, Flood VM, Dumbrell S. <em>Consumer support for front-of-pack nutrition labelling: a systematic review.</em> Aust N Z J Public Health 2020;44(3):188-197.</li>
+        <li>European Commission. <em>Farm to Fork Strategy: public consultation on front-of-pack labelling</em>, 2022 kapanış raporu.</li>
+        <li>T.C. Resmî Gazete. <em>Türk Gıda Kodeksi Etiketleme ve Tüketicileri Bilgilendirme Yönetmeliği</em>, 26.01.2017.</li>
+        <li>Julia C, Hercberg S. <em>Development of a new front-of-pack nutrition label in France.</em> Public Health Panorama 2017;3(4):712-725.</li>
+      </ol>
+    </div>
+
+    <div class="article-cta">
+      <h2>Fit Dozi ile Etiketi Saniyede Oku</h2>
+      <p>Barkodu okut — Nutri-Score, NOVA ve alerjen uyarısı aynı ekranda.</p>
+      <a href="/#download" class="btn btn-primary"><span>📱</span><span>Lansman Bildirimi Al</span></a>
+    </div>
+  </main>
+
+  <footer class="site">
+    <div class="footer-inner">
+      <div>© 2026 <strong style="color:#fff">Bardino</strong> · Fit Dozi</div>
+      <div class="links">
+        <a href="/">Ana Sayfa</a>
+        <a href="/blog/">Blog</a>
+        <a href="/science.html">Bilimsel Temel</a>
+        <a href="/privacy.html">Gizlilik</a>
+        <a href="/terms.html">Koşullar</a>
+        <a href="mailto:info@dozi.app">İletişim</a>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>
