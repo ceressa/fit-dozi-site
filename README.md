@@ -1,7 +1,7 @@
 # fit-dozi-site
 
 Static landing + legal pages for **Fit Dozi** iOS app, hosted on
-GitHub Pages at `https://fit.dozi.app`.
+GitHub Pages at `https://fit.bardino.app`.
 
 Content is plain HTML + inline CSS, no build step. Edit files directly
 and push.
@@ -45,13 +45,13 @@ git push -u origin main
 ~1-2 dk sonra sayfa şu adreste çalışır:
 `https://ceressa.github.io/fit-dozi-site/`
 
-### 3. Custom domain (fit.dozi.app) bağla
+### 3. Custom domain (fit.bardino.app) bağla
 
 **GitHub Pages settings**'te aynı sayfada:
-- **Custom domain**: `fit.dozi.app` → Save
+- **Custom domain**: `fit.bardino.app` → Save
 - `Enforce HTTPS` — henüz tıklanamayabilir, DNS propagate olana kadar bekle
 
-**Google Workspace / dozi.app DNS kayıtlarında:**
+**bardino.app DNS kayıtlarında (Cloudflare):**
 
 | Type | Host | Value | TTL |
 |---|---|---|---|
@@ -63,13 +63,13 @@ git push -u origin main
 
 - DNS propagasyonu: 5-60 dk
 - GitHub Pages TLS sertifikası: DNS propagate olduktan sonra ~30 dk otomatik
-- `https://fit.dozi.app` → landing açılır → privacy/terms linkleri çalışır
+- `https://fit.bardino.app` → landing açılır → privacy/terms linkleri çalışır
 
 ### 5. App Store Connect'e URL'i gir
 
 App Store Connect → Fit Dozi → App Information → **Privacy Policy URL**:
 ```
-https://fit.dozi.app/privacy.html
+https://fit.bardino.app/privacy.html
 ```
 
 ## Güncelleme
@@ -86,7 +86,7 @@ GitHub Pages ~1-2 dk içinde otomatik yayınlar, cache invalidation manuel.
 
 ## Notlar
 
-- `info@dozi.app` email'i privacy + terms + landing'de contact olarak geçiyor
+- `info@bardino.app` email'i privacy + terms + landing'de contact olarak geçiyor
   — bu adres Google Workspace'te aktif mi teyit et
 - Site içeriği minimal legal-compliant seviyede tutuldu (Apple approval odaklı).
   Pazarlama sitesi olarak gelecekte genişletilebilir.
