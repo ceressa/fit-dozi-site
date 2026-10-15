@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
     <loc>https://fit.bardino.app/</loc>
     <lastmod>2026-10-15</lastmod>
@@ -10,47 +10,157 @@
   </url>
   <url>
     <loc>https://fit.bardino.app/blog/cocukta-gida-alerjisi-etiket.html</loc>
-    <lastmod>2026-09-14</lastmod>
+    <lastmod>2026-10-15</lastmod>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://fit.bardino.app/blog/cocukta-gida-alerjisi-etiket.html" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://fit.bardino.app/blog/en/food-allergy-labels-children.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://fit.bardino.app/blog/cocukta-gida-alerjisi-etiket.html" />
   </url>
   <url>
     <loc>https://fit.bardino.app/blog/gizli-seker-tuz-paketli-gidalar.html</loc>
-    <lastmod>2026-09-14</lastmod>
+    <lastmod>2026-10-15</lastmod>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://fit.bardino.app/blog/gizli-seker-tuz-paketli-gidalar.html" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://fit.bardino.app/blog/en/hidden-sugar-and-salt.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://fit.bardino.app/blog/gizli-seker-tuz-paketli-gidalar.html" />
   </url>
   <url>
     <loc>https://fit.bardino.app/blog/</loc>
     <lastmod>2026-10-15</lastmod>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://fit.bardino.app/blog/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://fit.bardino.app/blog/en/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://fit.bardino.app/blog/" />
   </url>
   <url>
     <loc>https://fit.bardino.app/blog/gida-etiketi-nasil-okunur.html</loc>
     <lastmod>2026-10-15</lastmod>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://fit.bardino.app/blog/gida-etiketi-nasil-okunur.html" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://fit.bardino.app/blog/en/how-to-read-a-food-label.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://fit.bardino.app/blog/gida-etiketi-nasil-okunur.html" />
   </url>
   <url>
     <loc>https://fit.bardino.app/blog/e-kodlari-listesi.html</loc>
     <lastmod>2026-10-15</lastmod>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://fit.bardino.app/blog/e-kodlari-listesi.html" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://fit.bardino.app/blog/en/e-numbers-list.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://fit.bardino.app/blog/e-kodlari-listesi.html" />
   </url>
   <url>
     <loc>https://fit.bardino.app/blog/cocuk-atistirmaliklari-etiket.html</loc>
     <lastmod>2026-10-15</lastmod>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://fit.bardino.app/blog/cocuk-atistirmaliklari-etiket.html" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://fit.bardino.app/blog/en/baby-and-child-snack-labels.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://fit.bardino.app/blog/cocuk-atistirmaliklari-etiket.html" />
   </url>
   <url>
     <loc>https://fit.bardino.app/blog/diyabet-market-alisverisi-etiket.html</loc>
     <lastmod>2026-10-15</lastmod>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://fit.bardino.app/blog/diyabet-market-alisverisi-etiket.html" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://fit.bardino.app/blog/en/diabetes-grocery-shopping-labels.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://fit.bardino.app/blog/diyabet-market-alisverisi-etiket.html" />
   </url>
   <url>
     <loc>https://fit.bardino.app/blog/glutensiz-urun-secimi.html</loc>
     <lastmod>2026-10-15</lastmod>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://fit.bardino.app/blog/glutensiz-urun-secimi.html" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://fit.bardino.app/blog/en/gluten-free-vs-may-contain-gluten.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://fit.bardino.app/blog/glutensiz-urun-secimi.html" />
   </url>
   <url>
     <loc>https://fit.bardino.app/blog/katki-maddeleri-e-kodlari.html</loc>
-    <lastmod>2026-09-14</lastmod>
+    <lastmod>2026-10-15</lastmod>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://fit.bardino.app/blog/katki-maddeleri-e-kodlari.html" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://fit.bardino.app/blog/en/emulsifiers-gut-microbiome.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://fit.bardino.app/blog/katki-maddeleri-e-kodlari.html" />
   </url>
   <url>
     <loc>https://fit.bardino.app/blog/nutri-score-nedir.html</loc>
-    <lastmod>2026-09-14</lastmod>
+    <lastmod>2026-10-15</lastmod>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://fit.bardino.app/blog/nutri-score-nedir.html" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://fit.bardino.app/blog/en/what-is-nutri-score.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://fit.bardino.app/blog/nutri-score-nedir.html" />
   </url>
   <url>
     <loc>https://fit.bardino.app/blog/ultra-islenmis-gidalar-nova.html</loc>
-    <lastmod>2026-09-14</lastmod>
+    <lastmod>2026-10-15</lastmod>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://fit.bardino.app/blog/ultra-islenmis-gidalar-nova.html" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://fit.bardino.app/blog/en/ultra-processed-foods-nova.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://fit.bardino.app/blog/ultra-islenmis-gidalar-nova.html" />
+  </url>
+  <url>
+    <loc>https://fit.bardino.app/blog/en/food-allergy-labels-children.html</loc>
+    <lastmod>2026-10-15</lastmod>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://fit.bardino.app/blog/cocukta-gida-alerjisi-etiket.html" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://fit.bardino.app/blog/en/food-allergy-labels-children.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://fit.bardino.app/blog/cocukta-gida-alerjisi-etiket.html" />
+  </url>
+  <url>
+    <loc>https://fit.bardino.app/blog/en/hidden-sugar-and-salt.html</loc>
+    <lastmod>2026-10-15</lastmod>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://fit.bardino.app/blog/gizli-seker-tuz-paketli-gidalar.html" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://fit.bardino.app/blog/en/hidden-sugar-and-salt.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://fit.bardino.app/blog/gizli-seker-tuz-paketli-gidalar.html" />
+  </url>
+  <url>
+    <loc>https://fit.bardino.app/blog/en/</loc>
+    <lastmod>2026-10-15</lastmod>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://fit.bardino.app/blog/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://fit.bardino.app/blog/en/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://fit.bardino.app/blog/" />
+  </url>
+  <url>
+    <loc>https://fit.bardino.app/blog/en/how-to-read-a-food-label.html</loc>
+    <lastmod>2026-10-15</lastmod>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://fit.bardino.app/blog/gida-etiketi-nasil-okunur.html" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://fit.bardino.app/blog/en/how-to-read-a-food-label.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://fit.bardino.app/blog/gida-etiketi-nasil-okunur.html" />
+  </url>
+  <url>
+    <loc>https://fit.bardino.app/blog/en/e-numbers-list.html</loc>
+    <lastmod>2026-10-15</lastmod>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://fit.bardino.app/blog/e-kodlari-listesi.html" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://fit.bardino.app/blog/en/e-numbers-list.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://fit.bardino.app/blog/e-kodlari-listesi.html" />
+  </url>
+  <url>
+    <loc>https://fit.bardino.app/blog/en/baby-and-child-snack-labels.html</loc>
+    <lastmod>2026-10-15</lastmod>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://fit.bardino.app/blog/cocuk-atistirmaliklari-etiket.html" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://fit.bardino.app/blog/en/baby-and-child-snack-labels.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://fit.bardino.app/blog/cocuk-atistirmaliklari-etiket.html" />
+  </url>
+  <url>
+    <loc>https://fit.bardino.app/blog/en/diabetes-grocery-shopping-labels.html</loc>
+    <lastmod>2026-10-15</lastmod>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://fit.bardino.app/blog/diyabet-market-alisverisi-etiket.html" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://fit.bardino.app/blog/en/diabetes-grocery-shopping-labels.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://fit.bardino.app/blog/diyabet-market-alisverisi-etiket.html" />
+  </url>
+  <url>
+    <loc>https://fit.bardino.app/blog/en/gluten-free-vs-may-contain-gluten.html</loc>
+    <lastmod>2026-10-15</lastmod>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://fit.bardino.app/blog/glutensiz-urun-secimi.html" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://fit.bardino.app/blog/en/gluten-free-vs-may-contain-gluten.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://fit.bardino.app/blog/glutensiz-urun-secimi.html" />
+  </url>
+  <url>
+    <loc>https://fit.bardino.app/blog/en/emulsifiers-gut-microbiome.html</loc>
+    <lastmod>2026-10-15</lastmod>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://fit.bardino.app/blog/katki-maddeleri-e-kodlari.html" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://fit.bardino.app/blog/en/emulsifiers-gut-microbiome.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://fit.bardino.app/blog/katki-maddeleri-e-kodlari.html" />
+  </url>
+  <url>
+    <loc>https://fit.bardino.app/blog/en/what-is-nutri-score.html</loc>
+    <lastmod>2026-10-15</lastmod>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://fit.bardino.app/blog/nutri-score-nedir.html" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://fit.bardino.app/blog/en/what-is-nutri-score.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://fit.bardino.app/blog/nutri-score-nedir.html" />
+  </url>
+  <url>
+    <loc>https://fit.bardino.app/blog/en/ultra-processed-foods-nova.html</loc>
+    <lastmod>2026-10-15</lastmod>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://fit.bardino.app/blog/ultra-islenmis-gidalar-nova.html" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://fit.bardino.app/blog/en/ultra-processed-foods-nova.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://fit.bardino.app/blog/ultra-islenmis-gidalar-nova.html" />
   </url>
   <url>
     <loc>https://fit.bardino.app/privacy.html</loc>

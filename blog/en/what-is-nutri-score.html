@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>What Is Nutri-Score and How Is It Calculated? | Fit Dozi Blog</title>
+  <meta name="description" content="How Nutri-Score's FSAm-NPS algorithm works, what changed in the updated algorithm, and what the 521,000-person EPIC cohort found." />
+  <meta name="robots" content="index, follow" />
+  <link rel="canonical" href="https://fit.bardino.app/blog/en/what-is-nutri-score.html" />
+  <link rel="alternate" hreflang="tr" href="https://fit.bardino.app/blog/nutri-score-nedir.html" />
+  <link rel="alternate" hreflang="en" href="https://fit.bardino.app/blog/en/what-is-nutri-score.html" />
+  <link rel="alternate" hreflang="x-default" href="https://fit.bardino.app/blog/nutri-score-nedir.html" />
+
+  <meta property="og:type" content="article" />
+  <meta property="og:url" content="https://fit.bardino.app/blog/en/what-is-nutri-score.html" />
+  <meta property="og:title" content="What Is Nutri-Score and How Is It Calculated?" />
+  <meta property="og:description" content="The FSAm-NPS formula step by step, the seven European countries that use it officially, and the 521,000-person validation study in the BMJ." />
+  <meta property="og:image" content="https://fit.bardino.app/assets/fit_dozi_main.webp" />
+  <meta property="og:locale" content="en_GB" />
+  <meta property="og:locale:alternate" content="tr_TR" />
+  <meta property="article:published_time" content="2026-10-15" />
+
+  <meta name="theme-color" content="#10b981" />
+  <link rel="icon" type="image/webp" href="/assets/icon.webp" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Lora:ital@0;1&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="/style.css" />
+  <style>
+    .byline { font-size: 0.9rem; color: #64748b; margin: -0.75rem 0 1.5rem; }
+    .top-row { display: flex; flex-wrap: wrap; justify-content: space-between; align-items: baseline; gap: 0.5rem 1rem; margin-bottom: 1.75rem; }
+    .top-row .back-link { margin-bottom: 0; }
+    .content-wrapper .lang-switch { font-size: 0.9rem; color: #64748b; margin: 0; line-height: 1.5; }
+    .content-wrapper .lang-switch a { font-weight: 700; }
+    .nav-links a.nav-lang { display: inline-block; border: 1px solid rgba(255, 255, 255, 0.4); border-radius: 100px; padding: 0.3rem 0.8rem; font-size: 0.85rem; font-weight: 700; }
+    .source-box li { overflow-wrap: anywhere; }
+    .ai-note { font-size: 0.85rem; color: #64748b; margin: 1rem 0 0; line-height: 1.6; }
+  </style>
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Article",
+    "headline": "What Is Nutri-Score and How Is It Calculated?",
+    "image": "https://fit.bardino.app/assets/fit_dozi_main.webp",
+    "author": {"@type": "Organization", "name": "Bardino"},
+    "publisher": {"@type": "Organization", "name": "Bardino Technology"},
+    "datePublished": "2026-10-15",
+    "inLanguage": "en",
+    "translationOfWork": {"@id": "https://fit.bardino.app/blog/nutri-score-nedir.html"},
+    "mainEntityOfPage": {"@type": "WebPage", "@id": "https://fit.bardino.app/blog/en/what-is-nutri-score.html"}
+  }
+  </script>
+</head>
+<body>
+  <nav class="navbar">
+    <div class="nav-container">
+      <a href="/" class="nav-logo">
+        <img src="/assets/fit_dozi_logo_transparent.webp" alt="Fit Dozi" />
+        <span>Fit Dozi</span>
+      </a>
+      <ul class="nav-links">
+        <li><a href="/">Home</a></li>
+        <li><a href="/blog/en/">Blog</a></li>
+        <li><a href="/blog/nutri-score-nedir.html" class="nav-lang" hreflang="tr" lang="tr" title="Bu yazının Türkçesi">TR</a></li>
+        <li><a href="https://apps.apple.com/app/fit-dozi/id6762354057" class="nav-cta" target="_blank" rel="noopener">App Store</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <header class="article-hero">
+    <span class="eyebrow">Explainer · 5 min read</span>
+    <h1>What Is Nutri-Score and How Is It Calculated?</h1>
+    <p class="subtitle">The FSAm-NPS algorithm, the updated calculation, and the evidence from the 521,000-person EPIC cohort.</p>
+    <div class="mascot"><img src="/assets/fit_dozi_main.webp" alt="Fit Dozi" /></div>
+  </header>
+
+  <main class="content-wrapper">
+    <div class="top-row">
+      <a href="/blog/en/" class="back-link">← All articles</a>
+      <p class="lang-switch">English · <a href="/blog/nutri-score-nedir.html" hreflang="tr" lang="tr">Türkçe</a></p>
+    </div>
+    <p class="byline">Bardino · 15 October 2026</p>
+
+    <p class="drop-cap">Nutri-Score is a <strong>front-of-pack labelling</strong> system that France adopted officially in October 2017 through an inter-ministerial order, and that is officially recognised today in France, Belgium, Germany, the Netherlands, Luxembourg, Spain and Switzerland<sup>1</sup>. It sums up a product's overall nutritional quality in a single letter, from A (dark green) to E (dark orange). It is not a "healthy / unhealthy" stamp, though; it is a tool for comparing products within the same category.</p>
+
+    <div class="stats-grid">
+      <div class="stat-card">
+        <div class="num">7</div>
+        <div class="label">European countries that officially recognise it</div>
+      </div>
+      <div class="stat-card">
+        <div class="num">521K</div>
+        <div class="label">EPIC cohort validation (BMJ 2020)</div>
+      </div>
+      <div class="stat-card">
+        <div class="num">2022-23</div>
+        <div class="label">Latest update of the algorithm (foods 2022, beverages 2023)</div>
+      </div>
+    </div>
+
+    <h2>FSAm-NPS: The Algorithm Behind the Letter</h2>
+    <p>
+      Behind the Nutri-Score letter is a numerical score called <strong>FSAm-NPS</strong> (<em>Food Standards Agency modified Nutrient Profiling System</em>). In the updated algorithm, the score for 100 g of product is the difference between two opposing sets of points<sup>2</sup>:
+    </p>
+    <ul>
+      <li><strong>Negative points (N, up to 55):</strong> energy (kJ, 0-10), sugars (g, 0-15), saturated fat (g, 0-10), salt (g, 0-20).</li>
+      <li><strong>Positive points (up to 17):</strong> protein (g, 0-7; for red meat no more than 2), fibre (g, 0-5), share of fruit, vegetables and legumes (%, 0-5). In the general algorithm, nuts and oils no longer count towards this last component; fats, oils, nuts and seeds are scored with a separate table.</li>
+    </ul>
+    <p>
+      If the negative points total 11 or more, protein is not counted (except for cheese). The final score gives the letter: 0 or less is A, 1-2 is B, 3-10 is C, 11-18 is D, and 19 or more is E<sup>2</sup>. Beverages have their own algorithm; water is the only beverage that can get an A<sup>3</sup>.
+    </p>
+
+    <h3>What changed in the updated algorithm?</h3>
+    <p>
+      The Nutri-Score scientific committee approved its report on foods in June 2022 and its report on beverages in February 2023<sup>2, 3</sup>. France made the updated calculation official with an order dated 14 March 2025 and gave manufacturers two years to update their packaging<sup>4</sup>. The main changes:
+    </p>
+    <ul>
+      <li><strong>Red meat:</strong> its protein points are capped at 2, which separates red meat from poultry<sup>2</sup>.</li>
+      <li><strong>Sugar and salt:</strong> the point scales were extended and tightened for all foods (up to 15 negative points for sugars and 20 for salt)<sup>2</sup>. In 2023, milk and drinkable yoghurts were moved into the beverage algorithm<sup>3</sup>.</li>
+      <li><strong>Fibre:</strong> the scale was reworked to separate wholegrain products from refined ones; full points now need more than 7.4 g of fibre per 100 g<sup>2</sup>.</li>
+      <li><strong>Sweetened beverages:</strong> beverages containing non-sugar sweeteners get 4 extra negative points; water is still the only beverage that can get an A<sup>3</sup>.</li>
+      <li><strong>Vegetable oils:</strong> the aim was for vegetable oils rich in unsaturated fat to move from C to B; most olive, rapeseed and walnut oils now get B, while most coconut oil stays at E<sup>2, 4</sup>.</li>
+    </ul>
+
+    <h2>Scientific Validation: BMJ, PLoS Medicine and Beyond</h2>
+    <p>
+      The nutrient profile score that Nutri-Score is based on, calculated with the earlier (pre-2022) version of the algorithm, has been linked with health outcomes in large cohorts. These links are observational and do not prove cause and effect on their own.
+    </p>
+
+    <div class="stats-grid">
+      <div class="stat-card">
+        <div class="num">7%</div>
+        <div class="label">Higher risk of death from all causes, worst fifth (EPIC, 2020)</div>
+      </div>
+      <div class="stat-card">
+        <div class="num">7%</div>
+        <div class="label">Higher cancer risk, worst fifth (EPIC, 2018)</div>
+      </div>
+      <div class="stat-card">
+        <div class="num">14%</div>
+        <div class="label">Higher cardiovascular disease risk for each 1-point worsening of the score (SU.VI.MAX)</div>
+      </div>
+    </div>
+
+    <p>
+      In the EPIC study published in the <em>BMJ</em> in 2020 (Deschasaux et al., 10 European countries, 521,324 participants, of whom 501,594 were analysed), participants were ranked by the FSAm-NPS score of their diet. The worst fifth showed a <strong>7% higher risk of death from all causes</strong> than the best fifth (HR 1.07, 95% CI 1.03-1.10)<sup>5</sup>. In 2018 the same group had found a similar link with <strong>cancer</strong>, again in the EPIC cohort (471,495 people): HR 1.07 between the worst and best fifths<sup>6</sup>. In France's SU.VI.MAX cohort, each 1-point worsening of an index based on the FSA score was linked with a 14% higher risk of cardiovascular disease (HR 1.14); between the worst and best quarters the HR was 1.61<sup>7</sup>.
+    </p>
+
+    <div class="tip-box">
+      <h3>Why it is not enough on its own</h3>
+      <p>Nutri-Score does not directly measure the degree of processing (NOVA), the safety of additives (EFSA) or portion size. It helps you compare crisps with biscuits, but not biscuits with an apple.</p>
+    </div>
+
+    <h2>Criticism of Nutri-Score</h2>
+    <p>
+      Some of the criticism focused on the letters given to traditional products, with olive oil the best-known example. Most olive, rapeseed and walnut oils, which got C under the old algorithm, moved to B under the updated one<sup>2, 4</sup>. Another limit comes from the design itself: because the score is calculated per 100 g or 100 ml, it does not take into account the size of the portion you actually eat.
+    </p>
+
+    <h3>Where does EU regulation stand?</h3>
+    <p>
+      In its Farm to Fork strategy, the European Commission had planned to propose a harmonised, mandatory front-of-pack nutrition label across the EU by the end of 2022. The Commission ran a public consultation on this from 13 December 2021 to 7 March 2022; at the European Parliament's last update on the file (December 2024), the proposal had still not been tabled<sup>8</sup>. Today Nutri-Score is used voluntarily in the seven countries listed above<sup>1</sup>; Turkey is not one of them.
+    </p>
+
+    <div class="warning-box">
+      <h3>A nutrient-profile indicator, not a brand rating</h3>
+      <p>If a product scores "Nutri-Score A", that does not mean the manufacturer's overall quality has been approved. The score rates <strong>only the nutrient profile of that specific product per 100 g</strong>. Another product from the same brand can score E.</p>
+    </div>
+
+    <h2>How Fit Dozi Uses Nutri-Score</h2>
+    <p>
+      In Fit Dozi, the Nutri-Score letter is set by AI (Google Gemini) on photo scans and for products in the app's own barcode list; for other barcodes, the letter comes from the Open Food Facts database. So the letter is not produced by a step-by-step calculation like the one below. The example shows how the updated algorithm is calculated by hand<sup>2</sup>:
+    </p>
+    <blockquote style="border-left: 3px solid #10b981; background: #f0fdf4; padding: 1rem 1.25rem; border-radius: 0 12px 12px 0; color: #065f46; font-size: 0.98rem; margin: 1.5rem 0;">
+      <strong>Breakfast cereal (100 g):</strong><br />
+      Energy 1710 kJ → 5 points · Sugars 22 g → 6 · Saturated fat 2.1 g → 2 · Salt 0.95 g (380 mg sodium × 2.5) → 4. Negative points: 17.<br />
+      Because the negative points are above 11, protein is not counted. Fibre 6 g → 3 · Fruit/vegetables 0% → 0.<br />
+      17 − 3 = 14 → <strong>D</strong>.
+    </blockquote>
+    <p>
+      To see where Nutri-Score sits among the other lines on a label, read our <a href="/blog/en/how-to-read-a-food-label.html">food label guide</a>; for the degree of processing, which Nutri-Score does not measure, see our <a href="/blog/en/ultra-processed-foods-nova.html">article on ultra-processed foods and NOVA</a>.
+    </p>
+
+    <div class="source-box">
+      <h3>Sources</h3>
+      <ol>
+        <li>Assemblée nationale (France), 17th legislature, written question no. 6946 and the answer from the Ministry of Health (Journal officiel, 29 July 2025). <a href="https://questions.assemblee-nationale.fr/q17/17-6946QE.htm" target="_blank" rel="noopener">assemblee-nationale.fr</a></li>
+        <li>Scientific Committee of the Nutri-Score. <em>Update of the Nutri-Score algorithm. Update report from the Scientific Committee of the Nutri-Score 2022</em> (29 June 2022), algorithm summary tables. <a href="https://mpc.gouvernement.lu/dam-assets/le-minist%C3%A8re/consodur/2022-main-algorithm-report-update-final.pdf" target="_blank" rel="noopener">Copy on gouvernement.lu (PDF)</a></li>
+        <li>Scientific Committee of the Nutri-Score. <em>Update of the Nutri-Score algorithm for beverages. Second update report</em> (V2-2023, 1 February 2023). <a href="https://edepot.wur.nl/629571" target="_blank" rel="noopener">Copy in the Wageningen University &amp; Research repository (PDF)</a></li>
+        <li>Service-public.fr. <em>Ce qu'il faut savoir sur le nouveau Nutri-Score</em> (on the order of 14 March 2025), 20 March 2025. <a href="https://www.service-public.gouv.fr/particuliers/actualites/A18128" target="_blank" rel="noopener">service-public.gouv.fr</a></li>
+        <li>Deschasaux M, Huybrechts I, Julia C, et al. <em>Association between nutritional profiles of foods underlying Nutri-Score front-of-pack labels and mortality: EPIC cohort study in 10 European countries.</em> BMJ 2020;370:m3173. <a href="https://doi.org/10.1136/bmj.m3173" target="_blank" rel="noopener">doi:10.1136/bmj.m3173</a></li>
+        <li>Deschasaux M, Huybrechts I, Murphy N, et al. <em>Nutritional quality of food as represented by the FSAm-NPS nutrient profiling system underlying the Nutri-Score label and cancer risk in Europe: results from the EPIC prospective cohort study.</em> PLoS Med 2018;15(9):e1002651. <a href="https://doi.org/10.1371/journal.pmed.1002651" target="_blank" rel="noopener">doi:10.1371/journal.pmed.1002651</a></li>
+        <li>Adriouch S, Julia C, Kesse-Guyot E, et al. <em>Prospective association between a dietary quality index based on a nutrient profiling system and cardiovascular disease risk.</em> Eur J Prev Cardiol 2016;23(15):1669-1676. <a href="https://doi.org/10.1177/2047487316640659" target="_blank" rel="noopener">doi:10.1177/2047487316640659</a></li>
+        <li>European Commission. <em>Proposal for a revision of the Regulation on food information to consumers</em> (Farm to Fork action plan; public consultation 13 December 2021 - 7 March 2022). <a href="https://food.ec.europa.eu/food-safety/labelling-and-nutrition/food-information-consumers-legislation/proposal-revision-regulation-fic_en" target="_blank" rel="noopener">food.ec.europa.eu</a>; European Parliament, Legislative Train Schedule, <em>Mandatory front-of-pack nutrition labelling</em>. <a href="https://www.europarl.europa.eu/legislative-train/theme-a-european-green-deal/file-mandatory-front-of-pack-nutrition-labelling" target="_blank" rel="noopener">europarl.europa.eu</a></li>
+      </ol>
+    </div>
+
+    <p style="margin: 2rem 0 0; padding: 1rem 1.25rem; border-left: 4px solid #f59e0b; background: #fef3c7; color: #78350f; font-size: 0.9rem; line-height: 1.6; border-radius: 8px;"><strong>Note:</strong> This content is for information only and does not replace advice from a doctor or dietitian. If you have a food allergy, coeliac disease, diabetes or are pregnant, plan your diet with your doctor or dietitian.</p>
+    <p class="ai-note">This article was prepared with the help of AI (Claude). Sources were checked on 15 October 2026. It has not been reviewed by a doctor or dietitian.</p>
+
+    <div class="article-cta">
+      <h2>Read a Label in Seconds with Fit Dozi</h2>
+      <p>Scan a barcode: the Nutri-Score letter and allergen warnings on the same screen.</p>
+      <a href="https://apps.apple.com/app/fit-dozi/id6762354057" class="btn btn-primary" target="_blank" rel="noopener"><span>📱</span><span>Download on the App Store</span></a>
+    </div>
+  </main>
+
+  <footer class="site">
+    <div class="footer-inner">
+      <div>© 2026 <strong style="color:#fff">Bardino</strong> · Fit Dozi</div>
+      <div class="links">
+        <a href="/">Home (Turkish)</a>
+        <a href="/blog/en/">Blog</a>
+        <a href="/blog/" hreflang="tr">Türkçe blog</a>
+        <a href="/science.html" hreflang="tr">Science (Turkish)</a>
+        <a href="/privacy.html" hreflang="tr">Privacy (Turkish)</a>
+        <a href="/terms.html" hreflang="tr">Terms (Turkish)</a>
+        <a href="mailto:info@bardino.app">Contact</a>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>
