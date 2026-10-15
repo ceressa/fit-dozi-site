@@ -32,6 +32,12 @@
     .data-table th { background: #f8faf8; color: #1e293b; font-weight: 700; }
     .data-table sup { font-size: 0.7em; }
     .ai-note { font-size: 0.85rem; color: #64748b; margin: 1rem 0 0; line-height: 1.6; }
+    .top-row { display: flex; flex-wrap: wrap; justify-content: space-between; align-items: baseline; gap: 0.5rem 1rem; margin-bottom: 1.75rem; }
+    .top-row .back-link { margin-bottom: 0; }
+    .content-wrapper .lang-switch { font-size: 0.9rem; color: #64748b; margin: 0; line-height: 1.5; }
+    .content-wrapper .lang-switch a { font-weight: 700; }
+    .nav-links a.nav-lang { display: inline-block; border: 1px solid rgba(255, 255, 255, 0.4); border-radius: 100px; padding: 0.3rem 0.8rem; font-size: 0.85rem; font-weight: 700; }
+    @media (max-width: 960px) { .nav-links li:has(> a:not(.nav-cta):not(.nav-lang)) { display: none; } }
   </style>
 
   <script type="application/ld+json">
@@ -60,6 +66,7 @@
         <li><a href="/#science">Bilim</a></li>
         <li><a href="/blog/">Blog</a></li>
         <li><a href="/#family">Dozi Ailesi</a></li>
+        <li><a href="/blog/en/gluten-free-vs-may-contain-gluten.html" class="nav-lang" hreflang="en" lang="en" title="Read this article in English">EN</a></li>
         <li><a href="https://apps.apple.com/tr/app/fit-dozi/id6762354057" class="nav-cta" target="_blank" rel="noopener">App Store</a></li>
       </ul>
     </div>
@@ -73,14 +80,17 @@
   </header>
 
   <main class="content-wrapper">
-    <a href="/blog/" class="back-link">← Tüm Yazılar</a>
+    <div class="top-row">
+      <a href="/blog/" class="back-link">← Tüm Yazılar</a>
+      <p class="lang-switch">Türkçe · <a href="/blog/en/gluten-free-vs-may-contain-gluten.html" hreflang="en" lang="en">English</a></p>
+    </div>
     <p class="byline">Bardino · 15 Ekim 2026</p>
 
     <p class="drop-cap">"Glutensiz" bir ölçüm sınırıdır: Türk Gıda Kodeksi'ne göre bu ifade, satıldığı haliyle kilogramında en fazla 20 mg gluten bulunan gıdalarda kullanılabilir<sup>1</sup>. "Gluten içerebilir" ya da "eser miktarda gluten içerebilir" ise bir ölçüm değil, isteğe bağlı bir uyarıdır: üretimde istem dışı bulaşmanın kaçınılmaz olduğunu bildirir; yönetmelikte ve Bakanlık kılavuzunda bu ifade için sayısal bir sınır tanımlanmamıştır<sup>1, 2</sup>. Yani ilki ürünün en fazla ne kadar gluten içerebileceğini söyler, ikincisi söylemez.</p>
 
     <h2>Mevzuattaki Gluten İfadeleri</h2>
     <p>
-      Gıda Etiketleme ve Tüketicileri Bilgilendirme Yönetmeliği, glutenin yokluğu ya da azaltılmış varlığı hakkında yalnızca Ek-16'da sayılan ifadelere izin verir<sup>1</sup>. Tarım ve Orman Bakanlığı'nın etiketleme kılavuzu bu ifadeleri ve "içerebilir" uyarısının koşullarını ayrıntılandırır<sup>2</sup>. Gıda işletmecileri 2024'ten beri bu kılavuza da uymak zorundadır<sup>3</sup>.
+      Gıda Etiketleme ve Tüketicileri Bilgilendirme Yönetmeliği, glutenin yokluğu ya da azaltılmış varlığı hakkında yalnızca Ek-16'da sayılan ifadelere izin verir<sup>1</sup>. Tarım ve Orman Bakanlığı'nın etiketleme kılavuzu bu ifadeleri ve "içerebilir" uyarısının koşullarını ayrıntılandırır<sup>2</sup>. 2024 değişikliği (madde 6) gıda işletmecilerini bu kılavuzlara uymakla da yükümlü kıldı; kılavuzla getirilen yeni hükümlere uyum için son tarih 31 Aralık 2026<sup>2, 3</sup>.
     </p>
 
     <div class="table-wrap">
@@ -90,7 +100,7 @@
         </thead>
         <tbody>
           <tr><td>"Glutensiz", "Gluten içermez", "Gluten yoktur"</td><td>Son tüketiciye satıldığı haliyle en fazla 20 mg/kg gluten</td><td>Yönetmelik Ek-16; Kılavuz 17.1<sup>1, 2</sup></td></tr>
-          <tr><td>"Çok düşük gluten" / "Çok düşük glutenli"</td><td>Buğday, çavdar, arpa, yulaf ya da melezlerinden oluşan, gluteni özel işlemle azaltılmış ürün; en fazla 100 mg/kg</td><td>Yönetmelik Ek-16; Kılavuz 17.3<sup>1, 2</sup></td></tr>
+          <tr><td>"Çok düşük gluten" / "Çok düşük glutenli"</td><td>Buğday, çavdar, arpa, yulaf ya da melezlerinden oluşan ya da bunları içeren, gluteni özel işlemle azaltılmış ürün; en fazla 100 mg/kg</td><td>Yönetmelik Ek-16; Kılavuz 17.3<sup>1, 2</sup></td></tr>
           <tr><td>"Çölyak hastaları için uygundur", "Gluten intoleransı olan bireyler için uygundur"</td><td>Yukarıdaki iki ifadeden birine ek olarak kullanılabilir</td><td>Yönetmelik madde 45/2<sup>1</sup></td></tr>
           <tr><td>"… için özel olarak formüle edilmiştir"</td><td>Gluten içeren bileşenin gluteni azaltılarak ya da doğal olarak glutensiz bileşenlerle değiştirilerek özel olarak üretilmiş ürün</td><td>Yönetmelik madde 45/3<sup>1</sup></td></tr>
           <tr><td>"Gluten içeriği 20 mg/kg'dan azdır"</td><td>Gluten miktarının isteğe bağlı bildirimi</td><td>Kılavuz 17.6<sup>2</sup></td></tr>
@@ -119,7 +129,7 @@
       Yönetmeliğin Ek-1'inde gluten için alerjen grubu "gluten içeren tahıllar"dır: buğday (kılçıksız buğday ve kamut dahil), çavdar, arpa, yulaf, bunların melezleri ve bunlardan yapılan ürünler<sup>1</sup>. Bu tahıllar içindekiler listesinde, adlarıyla ve diğer bileşenlerden ayrılacak şekilde vurgulanarak yazılır. Kılavuzdaki örnekler: "buğday unu (gluten)", "kamut (buğday)", "arpa"<sup>2</sup>.
     </p>
     <p>
-      Ek-1 bazı bileşenleri bu vurgulama zorunluluğunun dışında tutar: dekstroz dahil buğday bazlı glukoz şurupları, buğday bazlı maltodekstrinler, arpa bazlı glukoz şurupları ve alkollü içki distilatında kullanılan tahıllar. Buğday bazlı olanlar için ekteki dipnot, uygulanan işlemin alerjenite düzeyini arttırmaması koşulunu getirir<sup>1</sup>. Listede "buğday bazlı glukoz şurubu" görüp vurgu görmüyorsanız etiket bu istisnaya dayanıyor olabilir; aklınıza takılırsa üreticiye ya da diyetisyeninize sorun.
+      Ek-1 bazı bileşenleri alerjen bildiriminin tamamen dışında tutar: dekstroz dahil buğday bazlı glukoz şurupları, buğday bazlı maltodekstrinler, arpa bazlı glukoz şurupları ve alkollü içki distilatında kullanılan tahıllar. Dipnota göre buğday bazlı olanlardan elde edilen ürünler de, uygulanan işlem alerjenite düzeyini arttırmadıkça bu istisnaya girer<sup>1</sup>. Listede "buğday bazlı glukoz şurubu" görüp vurgu görmüyorsanız etiket bu istisnaya dayanıyor olabilir; aklınıza takılırsa üreticiye ya da diyetisyeninize sorun.
     </p>
     <p>
       NHS, özellikle işlenmiş gıdalarda malt aroması gibi gluten içeren bileşenler bulunabildiğini belirtiyor ve aldığınız her ürünün etiketini her seferinde kontrol etmenizi öneriyor<sup>4</sup>.
@@ -132,12 +142,12 @@
 
     <h2>Yulaf Neden Ayrı Bir Konu?</h2>
     <p>
-      Türk mevzuatında yulaf, gluten içeren tahıllar arasında sayılır<sup>1</sup>. NHS ise yulafın gluten içermediğini, ancak gluten içeren tahıllarla bulaşabildiği için çölyak hastalarının birçoğunun yulaftan kaçındığını yazıyor. Yulaftaki avenin proteininin çok az sayıda kişide bulaşma olmasa da belirti yapabileceğine dair bazı kanıtlar bulunduğunu da ekliyor. Yulafı diyete eklemeyi sağlık ekibiyle konuştuktan sonra ve yalnızca glutensiz etiketli saf yulafla öneriyor<sup>4</sup>. Mevzuat da bu noktada net: "glutensiz" ya da "çok düşük gluten" olarak satılan bir üründeki yulaf, buğday, çavdar ve arpayla bulaşmayı önleyecek şekilde özel olarak üretilmiş olmalı ve gluten içeriği 20 mg/kg'ı geçmemelidir<sup>1</sup>.
+      Türk mevzuatında yulaf, gluten içeren tahıllar arasında sayılır<sup>1</sup>. NHS ise yulafın gluten içermediğini, ancak gluten içeren tahıllarla bulaşabildiği için çölyak hastalarının birçoğunun yulaftan kaçındığını yazıyor. Yulaftaki avenin proteininin çok az sayıda kişide bulaşma olmasa da belirti yapabileceğine dair bazı kanıtlar bulunduğunu da ekliyor. Yulafı diyete eklemek isteyenlerin bunu sağlık ekibiyle konuştuktan sonra yapmasını, yulafın saf olduğunu kontrol etmesini ve glutensiz etiketi taşımayan yulaftan kaçınmasını söylüyor<sup>4</sup>. Mevzuat da bu noktada net: "glutensiz" ya da "çok düşük gluten" olarak satılan bir üründeki yulaf, buğday, çavdar ve arpayla bulaşmayı önleyecek şekilde özel olarak üretilmiş olmalı ve gluten içeriği 20 mg/kg'ı geçmemelidir<sup>1</sup>.
     </p>
 
     <h2>Raftan Önce: Tanı ve Diyetisyen</h2>
     <p>
-      Çölyak hastalığının tedavisi glutenin diyetten ömür boyu çıkarılmasıdır ve NHS'e göre yeni tanı alan hastalar diyetisyene yönlendirilir<sup>4</sup>. Tanıdan önce kendi başınıza glutensiz diyete başlamayın: NHS, testler sırasında doğru sonuç için gluten yemeye devam edilmesini ve tanı bir uzmanca doğrulanmadan glutensiz diyete geçilmemesini öneriyor<sup>5</sup>. Evde glutensiz ve gluten içeren yiyeceklerin birlikte hazırlanması da bulaşmaya yol açabilir<sup>4</sup>.
+      Çölyak hastalığının tedavisi glutenin diyetten ömür boyu çıkarılmasıdır ve NHS'e göre yeni tanı alan hastalar diyetisyene yönlendirilir<sup>4</sup>. Tanıdan önce kendi başınıza glutensiz diyete başlamayın: NHS, testler sırasında doğru sonuç için gluten yemeye devam edilmesini ve tanı bir uzmanca doğrulanmadan glutensiz diyete geçilmemesini öneriyor<sup>5</sup>. Glutensiz ve gluten içeren yiyecekler birlikte hazırlanır ya da aynı gereçlerle servis edilirse bulaşma olabilir<sup>4</sup>.
     </p>
 
     <h2>Rafta Dört Soru</h2>
@@ -153,14 +163,14 @@
 
     <h2>Fit Dozi'de Alerjen Profili</h2>
     <p>
-      Fit Dozi'de her aile üyesi için 14 alerjen sınıfı ayrı ayrı ayarlanır; gluten içeren tahıllar bunlardan biridir. "İçerebilir" türündeki çapraz bulaşma ifadeleri, ağır alerjisi olan profillerde bağlayıcı olarak işlenir. Uygulama etiketi okur, ürünün gluten içeriğini ölçmez: etikette yazmayan bir bulaşmayı bilemez. Çölyak tanınız varsa ürün seçimini diyetisyeninizin önerileriyle birlikte yapın.
+      Fit Dozi'de her aile üyesi için ayrı bir alerjen listesi tutabilirsiniz; taranan ürünün alerjenleri bu listeyle eşleşirse uygulama uyarır. Bilgi fotoğrafla taramada yapay zekâdan (Google Gemini), barkodla taramada çoğunlukla Open Food Facts veritabanından gelir. Uygulama etiketi ya da veritabanı kaydını okur, ürünün gluten içeriğini ölçmez: etikette yazmayan bir bulaşmayı bilemez. Çölyak tanınız varsa ürün seçimini diyetisyeninizin önerileriyle birlikte yapın.
     </p>
 
     <div class="source-box">
       <h3>Kaynaklar</h3>
       <ol>
         <li>T.C. Resmî Gazete, 26.01.2017, Sayı 29960 (Mükerrer). <em>Türk Gıda Kodeksi Gıda Etiketleme ve Tüketicileri Bilgilendirme Yönetmeliği</em>, madde 4, 15, 24, 43, 45, 46; Ek-1, Ek-16. <a href="https://www.resmigazete.gov.tr/eskiler/2017/01/20170126M1-6.htm" target="_blank" rel="noopener">Metin</a> · <a href="https://www.resmigazete.gov.tr/eskiler/2017/01/20170126M1-6-1.pdf" target="_blank" rel="noopener">Ekler (PDF)</a></li>
-        <li>T.C. Tarım ve Orman Bakanlığı, Gıda ve Kontrol Genel Müdürlüğü. <em>Türk Gıda Kodeksi Gıda Etiketleme ve Tüketicileri Bilgilendirme Yönetmeliği Kılavuzu</em>, Revizyon 002, 10.03.2026, madde 17, 18.1, 19.7, 20, 21. <a href="https://kms.kaysis.gov.tr/Home/Goster/204259" target="_blank" rel="noopener">KAYSİS</a></li>
+        <li>T.C. Tarım ve Orman Bakanlığı, Gıda ve Kontrol Genel Müdürlüğü. <em>Türk Gıda Kodeksi Gıda Etiketleme ve Tüketicileri Bilgilendirme Yönetmeliği Kılavuzu</em>, Revizyon 002, 10.03.2026, madde 17, 18.1, 19.7, 20, 21, 46. <a href="https://kms.kaysis.gov.tr/Home/Goster/204259" target="_blank" rel="noopener">KAYSİS</a></li>
         <li>T.C. Resmî Gazete, 06.04.2024, Sayı 32512. <em>Türk Gıda Kodeksi Gıda Etiketleme ve Tüketicileri Bilgilendirme Yönetmeliğinde Değişiklik Yapılmasına Dair Yönetmelik</em>, madde 6. <a href="https://www.resmigazete.gov.tr/eskiler/2024/04/20240406-17.htm" target="_blank" rel="noopener">Metin</a></li>
         <li>NHS. <em>Coeliac disease: Treatment.</em> <a href="https://www.nhs.uk/conditions/coeliac-disease/treatment/" target="_blank" rel="noopener">nhs.uk</a></li>
         <li>NHS. <em>Coeliac disease: Diagnosis.</em> <a href="https://www.nhs.uk/conditions/coeliac-disease/diagnosis/" target="_blank" rel="noopener">nhs.uk</a></li>
@@ -168,7 +178,7 @@
     </div>
 
     <p style="margin: 2rem 0 0; padding: 1rem 1.25rem; border-left: 4px solid #f59e0b; background: #fef3c7; color: #78350f; font-size: 0.9rem; line-height: 1.6; border-radius: 8px;"><strong>Uyarı:</strong> Bu içerik bilgilendirme amaçlıdır; hekim veya diyetisyen tavsiyesinin yerine geçmez. Gıda alerjisi, çölyak, diyabet, hamilelik gibi durumlarda beslenmenizi hekiminizle ya da diyetisyeninizle planlayın.</p>
-    <p class="ai-note">Bu yazı yapay zekâ (Claude) yardımıyla hazırlandı. Kaynaklar 15 Ekim 2026'da kontrol edildi. Hekim veya diyetisyen tarafından gözden geçirilmedi.</p>
+    <p class="ai-note">Bu yazı yapay zekâ (Claude) yardımıyla hazırlandı. Kaynaklar 15 Ekim 2026'da kontrol edildi. Hekim veya diyetisyen tarafından gözden geçirilmedi. 15 Ekim 2026'da kaynaklara göre güncellendi.</p>
 
     <div class="article-cta">
       <h2>Gluten Uyarısını Profiline Göre Al</h2>

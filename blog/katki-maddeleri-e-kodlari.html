@@ -22,6 +22,14 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Lora:ital@0;1&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="/style.css" />
+  <style>
+    .top-row { display: flex; flex-wrap: wrap; justify-content: space-between; align-items: baseline; gap: 0.5rem 1rem; margin-bottom: 1.75rem; }
+    .top-row .back-link { margin-bottom: 0; }
+    .content-wrapper .lang-switch { font-size: 0.9rem; color: #64748b; margin: 0; line-height: 1.5; }
+    .content-wrapper .lang-switch a { font-weight: 700; }
+    .nav-links a.nav-lang { display: inline-block; border: 1px solid rgba(255, 255, 255, 0.4); border-radius: 100px; padding: 0.3rem 0.8rem; font-size: 0.85rem; font-weight: 700; }
+    @media (max-width: 960px) { .nav-links li:has(> a:not(.nav-cta):not(.nav-lang)) { display: none; } }
+  </style>
 </head>
 <body>
   <nav class="navbar">
@@ -35,6 +43,7 @@
         <li><a href="/#science">Bilim</a></li>
         <li><a href="/blog/">Blog</a></li>
         <li><a href="/#family">Dozi Ailesi</a></li>
+        <li><a href="/blog/en/emulsifiers-gut-microbiome.html" class="nav-lang" hreflang="en" lang="en" title="Read this article in English">EN</a></li>
         <li><a href="https://apps.apple.com/tr/app/fit-dozi/id6762354057" class="nav-cta" target="_blank" rel="noopener">App Store</a></li>
       </ul>
     </div>
@@ -48,13 +57,16 @@
   </header>
 
   <main class="content-wrapper">
-    <a href="/blog/" class="back-link">← Tüm Yazılar</a>
+    <div class="top-row">
+      <a href="/blog/" class="back-link">← Tüm Yazılar</a>
+      <p class="lang-switch">Türkçe · <a href="/blog/en/emulsifiers-gut-microbiome.html" hreflang="en" lang="en">English</a></p>
+    </div>
 
     <p class="drop-cap">"E-kodu var" demek "tehlikeli" demek değildir. Sodyum bikarbonat (E500) ve askorbik asit (E300) de E-kodlu. Ancak <strong>emülgatörler</strong> son 10 yılda ayrı bir gündem haline geldi: 2015'teki fare deneyleri ve 2022'de yayımlanan küçük, çift-kör bir insan çalışması, bazı emülgatörlerin bağırsak mikrobiyotasını etkileyebileceğini gösteriyor.</p>
 
     <h2>Emülgatör Nedir, Neden Her Yerde?</h2>
     <p>
-      Emülgatörler, normalde karışmayan iki fazı (yağ ve su gibi) kararlı bir karışımda tutan moleküllerdir. Evde yumurta sarısı (lesitin) mayonezi stabilleştirir. Endüstri ise daha ucuz, daha uzun raf ömrü sunan sentetik veya izole emülgatörlere döndü: <strong>mono- ve digliseritler (E471), karboksimetilselüloz (E466), polisorbat 80 (E433), karragenan (E407), soya lesitini (E322)</strong>. İngiltere'deki dört büyük market zincirinde, ultra-işlenmiş gıda kategorilerindeki 12.844 ürünün %51,7'sinde en az bir emülgatör bulundu<sup>1</sup>.
+      Emülgatörler, normalde karışmayan iki fazı (yağ ve su gibi) kararlı bir karışımda tutan moleküllerdir. Evde yumurta sarısı (lesitin) mayonezi stabilleştirir. Hazır gıdaların etiketinde ise şu adları görebilirsiniz: <strong>mono- ve digliseritler (E471), karboksimetilselüloz (E466), polisorbat 80 (E433), karragenan (E407), soya lesitini (E322)</strong>. Birleşik Krallık'taki dört büyük market zincirinde, ultra-işlenmiş gıda kategorilerindeki 12.844 ürünün %51,7'sinde en az bir emülgatör bulundu<sup>1</sup>.
     </p>
 
     <h2>Dönüm Noktası: Chassaing ve Gewirtz, 2015</h2>
@@ -65,7 +77,7 @@
     <div class="stats-grid">
       <div class="stat-card">
         <div class="num">%51,7</div>
-        <div class="label">İngiltere'de ultra-işlenmiş gıda kategorilerindeki ürünlerde emülgatör</div>
+        <div class="label">Birleşik Krallık'ta ultra-işlenmiş gıda kategorilerindeki ürünlerde emülgatör</div>
       </div>
       <div class="stat-card">
         <div class="num">11 gün</div>
@@ -88,7 +100,7 @@
       <li>7 kişiden 2'sinde bakterilerin normalde steril olan iç mukus tabakasına sızması.</li>
     </ul>
     <p>
-      16 kişiyle 11 günde görülen bu değişikliklerin uzun vadeli klinik anlamı belirsiz. 2021 tarihli bir derlemeye göre emülgatörlerin sağlık etkileri üzerine araştırmalar büyük ölçüde laboratuvar ve fare çalışmalarıyla, insanlarda ise küçük ve kısa süreli çalışmalarla sınırlı<sup>4</sup>.
+      16 kişiyle 11 günde görülen bu değişikliklerin uzun vadeli klinik anlamı belirsiz. 2021 tarihli bir derlemeye göre emülgatörlerin sağlık etkileri üzerine araştırmalar laboratuvar (in vitro) ve fare çalışmalarıyla, insanlarda ise küçük ve kısa süreli (akut) çalışmalarla sınırlı<sup>4</sup>.
     </p>
 
     <h2>Gözlemsel Veri: NutriNet-Santé 2023-2024</h2>
@@ -98,7 +110,7 @@
     <ul>
       <li><strong>Kalp-damar hastalığı</strong> (95.442 kişi): selülozlar (E460-E468, E466 dahil) ile mono- ve digliseritler (E471, E472) için daha yüksek risk<sup>5</sup>.</li>
       <li><strong>Tip 2 diyabet</strong> (104.139 kişi): karragenanlar (günde her 100 mg artış için HR 1,03), guar zamkı E412 ve ksantan zamkı E415 (günde her 500 mg artış için HR 1,11 ve 1,08) gibi birkaç emülgatör için daha yüksek risk<sup>6</sup>.</li>
-      <li><strong>Kanser</strong> (92.000 kişi): E471 için genel kanser (HR 1,15), meme (1,24) ve prostat kanseri (1,46); toplam karragenanlar için meme kanseri (1,32) riskinde artış. Kalın bağırsak kanseriyle bir ilişki bulunmadı<sup>7</sup>.</li>
+      <li><strong>Kanser</strong> (92.000 kişi): yüksek ile düşük alım karşılaştırıldığında E471 için genel kanser (HR 1,15), meme (1,24) ve prostat kanseri (1,46); toplam karragenanlar için meme kanseri (1,32) riskinde artış. Kalın bağırsak kanseriyle bir ilişki bulunmadı<sup>7</sup>.</li>
     </ul>
     <p>
       Bunlar gözlemsel verilerdir ve nedensellik kanıtlamaz; yazarlar bulguların başka toplumlarda tekrarlanması gerektiğini vurguluyor<sup>7</sup>.
@@ -114,8 +126,8 @@
       Temmuz 2023'te Dünya Sağlık Örgütü'nün kanser araştırma ajansı IARC, aspartamı <strong>Grup 2B: insanda olası kanserojen</strong> olarak sınıflandırdı<sup>9</sup>. Aynı gün açıklanan FAO/WHO Gıda Katkı Maddeleri Uzman Komitesi (JECFA) değerlendirmesi, kabul edilebilir günlük alımı (ADI) vücut ağırlığının kilogramı başına günde 0-40 mg olarak korudu<sup>9</sup>. EFSA'nın 2013 tarihli değerlendirmesi de aynı 40 mg/kg sınırını genel nüfus için koruyucu bulmuştu<sup>10</sup>. Pratik anlamı:
     </p>
     <ul>
-      <li>DSÖ'ye göre yaygın kullanılan dozlarda güvenlik büyük bir endişe değil; 70 kg'lık bir yetişkinin sınırı aşması için, başka kaynak olmadan günde yaklaşık 9-14 kutu diyet gazlı içecek içmesi gerekir<sup>9</sup>.</li>
-      <li>"Grup 2B", kanıtın gücünü anlatır, belirli bir dozdaki riskin büyüklüğünü değil. Bu grup "muhtemel" (2A) değil, "olası" (2B) düzeydir; kafeik asit de bu gruptadır.</li>
+      <li>DSÖ'ye göre yaygın kullanılan dozlarda güvenlik büyük bir endişe değil; 70 kg'lık bir yetişkinin sınırı aşması için, başka kaynak olmadan günde 9-14 kutudan fazla diyet gazlı içecek içmesi gerekir (kutu başına 200-300 mg aspartam varsayımıyla)<sup>9</sup>.</li>
+      <li>"Grup 2B", kanıtın gücünü anlatır, belirli bir dozdaki riskin büyüklüğünü değil<sup>9</sup>. Bu grup "muhtemel" (2A) değil, "olası" (2B) düzeydir; kafeik asit de bu gruptadır<sup>13</sup>.</li>
       <li>İki kurum da daha fazla araştırma gerektiğini belirtiyor<sup>9</sup>.</li>
     </ul>
 
@@ -149,11 +161,12 @@
         <li>EFSA. <em>Aspartame</em> konu sayfası ve <em>Scientific Opinion on the re-evaluation of aspartame (E 951) as a food additive</em>, EFSA J 2013;11(12):3496.</li>
         <li>EFSA FAF Panel. <em>Safety assessment of titanium dioxide (E171) as a food additive.</em> EFSA J 2021;19(5):6585; Komisyon Tüzüğü (AB) 2022/63.</li>
         <li>Komisyon Tüzüğü (AB) No 257/2010; Komisyon Tüzüğü (AB) 2023/2108; Tüzük (AT) No 1333/2008, Madde 24 ve Ek V.</li>
+        <li>IARC Monographs on the Evaluation of Carcinogenic Risks to Humans, Vol. 56 (1993). <em>Caffeic acid</em>, genel değerlendirme (IPCS INCHEM kopyası). <a href="https://inchem.org/documents/iarc/vol56/03-caff.html" target="_blank" rel="noopener">inchem.org</a></li>
       </ol>
     </div>
 
     <p style="margin: 2rem 0 0; padding: 1rem 1.25rem; border-left: 4px solid #f59e0b; background: #fef3c7; color: #78350f; font-size: 0.9rem; line-height: 1.6; border-radius: 8px;"><strong>Uyarı:</strong> Bu içerik bilgilendirme amaçlıdır; hekim veya diyetisyen tavsiyesinin yerine geçmez. Gıda alerjisi, çölyak, diyabet, hamilelik gibi durumlarda beslenmenizi hekiminizle ya da diyetisyeninizle planlayın.</p>
-    <p style="font-size: 0.85rem; color: #64748b; margin: 1rem 0 0; line-height: 1.6;">Bu yazı 15 Ekim 2026'da yapay zekâ (Claude) yardımıyla güncellendi; kaynaklar o tarihte kontrol edildi.</p>
+    <p style="font-size: 0.85rem; color: #64748b; margin: 1rem 0 0; line-height: 1.6;">Bu yazı 15 Ekim 2026'da yapay zekâ (Claude) yardımıyla güncellendi; kaynaklar o tarihte kontrol edildi. 15 Ekim 2026'da kaynaklara göre güncellendi.</p>
 
     <div class="article-cta">
       <h2>Her E-Kodunu Bağlamıyla Gör</h2>

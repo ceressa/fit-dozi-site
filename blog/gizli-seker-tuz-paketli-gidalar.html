@@ -22,6 +22,14 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Lora:ital@0;1&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="/style.css" />
+  <style>
+    .top-row { display: flex; flex-wrap: wrap; justify-content: space-between; align-items: baseline; gap: 0.5rem 1rem; margin-bottom: 1.75rem; }
+    .top-row .back-link { margin-bottom: 0; }
+    .content-wrapper .lang-switch { font-size: 0.9rem; color: #64748b; margin: 0; line-height: 1.5; }
+    .content-wrapper .lang-switch a { font-weight: 700; }
+    .nav-links a.nav-lang { display: inline-block; border: 1px solid rgba(255, 255, 255, 0.4); border-radius: 100px; padding: 0.3rem 0.8rem; font-size: 0.85rem; font-weight: 700; }
+    @media (max-width: 960px) { .nav-links li:has(> a:not(.nav-cta):not(.nav-lang)) { display: none; } }
+  </style>
 </head>
 <body>
   <nav class="navbar">
@@ -35,6 +43,7 @@
         <li><a href="/#science">Bilim</a></li>
         <li><a href="/blog/">Blog</a></li>
         <li><a href="/#family">Dozi Ailesi</a></li>
+        <li><a href="/blog/en/hidden-sugar-and-salt.html" class="nav-lang" hreflang="en" lang="en" title="Read this article in English">EN</a></li>
         <li><a href="https://apps.apple.com/tr/app/fit-dozi/id6762354057" class="nav-cta" target="_blank" rel="noopener">App Store</a></li>
       </ul>
     </div>
@@ -48,9 +57,12 @@
   </header>
 
   <main class="content-wrapper">
-    <a href="/blog/" class="back-link">← Tüm Yazılar</a>
+    <div class="top-row">
+      <a href="/blog/" class="back-link">← Tüm Yazılar</a>
+      <p class="lang-switch">Türkçe · <a href="/blog/en/hidden-sugar-and-salt.html" hreflang="en" lang="en">English</a></p>
+    </div>
 
-    <p class="drop-cap">Türkiye'de günlük tuz tüketimi kişi başı ortalama <strong>9,9 g</strong>: Dünya Sağlık Örgütü'nün önerdiği 5 g'ın neredeyse iki katı<sup>1</sup>. İşin ilginç yanı, bu tuzun önemli bir kısmı sofradaki tuzluktan değil; ekmekten ve hazır gıdalardan geliyor<sup>7</sup>. Şeker için de durum benzer: etikette "şeker" yazmasa bile ürün şeker içerebilir.</p>
+    <p class="drop-cap">Türkiye'de 15 yaş ve üstünde günlük tuz tüketimi kişi başı ortalama <strong>9,9 g</strong>: Dünya Sağlık Örgütü'nün önerdiği 5 g'ın neredeyse iki katı<sup>1</sup>. İşin ilginç yanı, bu tuzun önemli bir kısmı sofradaki tuzluktan değil; ekmekten ve hazır gıdalardan geliyor<sup>7</sup>. Şeker için de durum benzer: etikette "şeker" yazmasa bile ürün şeker içerebilir.</p>
 
     <h2>WHO Sınırları: Net Sayılar</h2>
     <div class="stats-grid">
@@ -68,32 +80,35 @@
       </div>
     </div>
     <p>
-      "Serbest şeker" tanımı kritik: gıdaya eklenen şekerlerin yanı sıra bal, şurup, meyve suyu ve meyve suyu konsantresindeki şekerler de serbest şekerdir; taze meyve ve sebzedeki ve sütteki doğal şekerler ise değildir<sup>2</sup>. WHO 2023'te ayrı bir kılavuzla, şekersiz tatlandırıcıların kilo kontrolü için kullanılmamasını önerdi (koşullu öneri); bu tatlandırıcıların vücut yağını azaltmada uzun vadeli bir fayda sağlamadığını belirtiyor<sup>3</sup>.
+      "Serbest şeker" tanımı kritik: gıdaya eklenen şekerlerin yanı sıra bal, şurup, meyve suyu ve meyve suyu konsantresindeki şekerler de serbest şekerdir; taze meyve ve sebzedeki ve sütteki doğal şekerler ise değildir<sup>2</sup>. WHO 2023'te ayrı bir kılavuzla, şeker dışı tatlandırıcıların kilo kontrolü ya da bulaşıcı olmayan hastalık riskini azaltmak için kullanılmamasını önerdi (koşullu öneri; önceden diyabeti olanlar kapsam dışı). Dayandığı sistematik derleme, bu tatlandırıcıların vücut yağını azaltmada uzun vadeli bir fayda sağlamadığına işaret ediyor<sup>3</sup>.
     </p>
 
     <h2>Etikette Şekerin Farklı Adları</h2>
     <p>
-      "Şeker" sözcüğünü içindekilerde görmeseniz de ürün şekerle yüklü olabilir. Kaliforniya Üniversitesi San Francisco'nun (UCSF) SugarScience programı, gıda etiketlerinde <strong>en az 61 farklı şeker adı</strong> saydığını belirtiyor<sup>4</sup>. Etikette sık gördükleriniz:
+      "Şeker" sözcüğünü içindekilerde görmeseniz de ürün şekerle yüklü olabilir. Kaliforniya Üniversitesi San Francisco'nun (UCSF) SugarScience programı, gıda etiketlerinde <strong>en az 61 farklı şeker adı</strong> saydığını belirtiyor<sup>4</sup>. Listedeki adlardan bazıları:
     </p>
     <ul>
-      <li><strong>-oz biten moleküller:</strong> dekstroz, fruktoz, glukoz, laktoz, maltoz, sükroz, riboz.</li>
-      <li><strong>Şuruplar:</strong> mısır şurubu, yüksek fruktozlu mısır şurubu (YFMŞ), akçaağaç şurubu, glukoz şurubu, karamel şurubu, agave şurubu.</li>
-      <li><strong>Konsantreler:</strong> üzüm suyu konsantresi, elma suyu konsantresi, meyve suyu konsantresi.</li>
-      <li><strong>Doğal maskeler:</strong> hurma özü, bal, melas, pekmez, kamış şekeri, palm şekeri, hindistan cevizi şekeri.</li>
-      <li><strong>Diğer:</strong> maltodekstrin (karbonhidrat kaynağı, bazı tanımlarda serbest şeker sayılır), dekstrin.</li>
+      <li><strong>-oz biten adlar:</strong> dekstroz, fruktoz, glukoz, maltoz, sükroz.</li>
+      <li><strong>Şuruplar:</strong> mısır şurubu, yüksek fruktozlu mısır şurubu (YFMŞ), akçaağaç şurubu, malt şurubu, pirinç şurubu, agave nektarı.</li>
+      <li><strong>Meyve suları:</strong> meyve suyu, meyve suyu konsantresi.</li>
+      <li><strong>Doğal görünen adlar:</strong> bal, melas, hurma şekeri, kamış şekeri, palm şekeri, hindistan cevizi şekeri.</li>
+      <li><strong>Diğer:</strong> maltodekstrin, dekstrin.</li>
     </ul>
+    <p>
+      Türk marketlerinde bunlara pekmez de eklenir; WHO şuruplardaki şekeri serbest şeker sayar<sup>2</sup>.
+    </p>
     <p>
       İçindekiler listesi, mevzuat gereği <strong>ağırlıkça azalan sırayla</strong> dizilir<sup>5</sup>. Bu yüzden bir ürün iki ya da üç farklı şeker türü kullanıyorsa, her biri listede ayrı ayrı daha aşağıda görünebilir; hepsi tek bir "şeker" olarak yazılsaydı listenin başına çıkabilirdi. Şeker adlarını tek tek toplamak bu yüzden önemli.
     </p>
 
     <div class="warning-box">
       <h3>"Şekersiz" yazmasına güvenmeyin</h3>
-      <p>AB ve Türkiye mevzuatında "şekersiz" iddiası, ürünün 100 g ya da 100 ml'sinde 0,5 g'dan fazla şeker bulunmaması demektir<sup>6</sup>. "Şeker ilavesiz" iddiası ise ürüne şeker ya da tatlandırma amacıyla kullanılan başka bir gıda eklenmemesini şart koşar<sup>6</sup>. AB tüzüğüne göre ürün kendi doğal şekerini içeriyorsa etikette "doğal olarak şeker içerir" ifadesi de yer almalı. Yine de içindekiler listesine bakın.</p>
+      <p>AB ve Türkiye mevzuatında "şekersiz" iddiası, ürünün 100 g ya da 100 ml'sinde 0,5 g'dan fazla şeker bulunmaması demektir<sup>6</sup>. "Şeker ilavesiz" iddiası ise ürüne şeker ya da tatlandırma amacıyla kullanılan başka bir gıda eklenmemesini şart koşar<sup>6</sup>. AB ve Türk mevzuatına göre ürün kendi doğal şekerini içeriyorsa etikette "doğal olarak şeker içerir" ifadesi de yer almalı<sup>6</sup>. Yine de içindekiler listesine bakın.</p>
     </div>
 
     <h2>Gizli Tuz: Ekmek ve Kahvaltılıklar</h2>
     <p>
-      Ankara, İstanbul, İzmir ve Konya'da 24 saatlik idrar ölçümüyle yapılan SALTURK II çalışmasında tuzun en büyük kaynağı <strong>ekmek (%34)</strong> çıktı. Onu yemek hazırlarken eklenen tuz (%30), çeşitli işlenmiş gıdalar (%21) ve sofrada eklenen tuz (%11) izledi. İşlenmiş gıdalardan gelen tuzun %62'si peynir ve zeytin gibi kahvaltılıklardan, %16'sı turşudan, %10'u et ve et ürünlerinden geliyordu<sup>7</sup>. Yani tuzluğu kaldırmak tek başına yetmiyor.
+      Ankara, İstanbul, İzmir ve Konya'da 24 saatlik idrar ölçümü ve aynı günün besin kaydıyla yapılan SALTURK II çalışmasında, besin kayıtlarına göre tuzun en büyük kaynağı <strong>ekmek (%34)</strong> çıktı. Onu yemek hazırlarken eklenen tuz (%30), çeşitli işlenmiş gıdalar (%21) ve sofrada eklenen tuz (%11) izledi. İşlenmiş gıdalardan gelen tuzun %62'si peynir ve zeytin gibi kahvaltılıklardan, %16'sı turşudan, %10'u et, tavuk, balık ve et ürünlerinden geliyordu<sup>7</sup>. Yani tuzluğu kaldırmak tek başına yetmiyor.
     </p>
 
     <div class="stats-grid">
@@ -122,7 +137,7 @@
 
     <h2>Çocuklarda Tehlike Daha Erken Başlar</h2>
     <p>
-      WHO Avrupa Bölge Ofisi'nin 2019'da dört ülkede (Avusturya, Bulgaristan, Macaristan, İsrail) bebek ve küçük çocuk gıdalarını inceleyen raporuna göre Avusturya, Bulgaristan ve Macaristan'da ürünlerin yaklaşık yarısında ya da daha fazlasında enerjinin %30'undan fazlası şekerden geliyordu; İsrail'de bu oran %18'di. Şeker ya da konsantre meyve suyu gibi bir tatlandırıcı, ürünlerin yaklaşık üçte birinde ya da daha fazlasında bulunuyordu<sup>10</sup>. Raporun ölçtüğü şey toplam şeker (meyve ve süt kaynaklı doğal şekerler dahil); yani her ürün WHO'nun serbest şeker sınırını aşıyor demek değil.
+      WHO Avrupa Bölge Ofisi'nin dört ülkede bebek ve küçük çocuk gıdalarını inceleyen 2019 tarihli raporuna göre (veriler 2017-2018'de Viyana, Sofya, Budapeşte ve Hayfa'da toplandı) Avusturya, Bulgaristan ve Macaristan'da ürünlerin yaklaşık yarısında ya da daha fazlasında enerjinin %30'undan fazlası şekerden geliyordu; İsrail'de bu oran %18'di. Şeker ya da konsantre meyve suyu gibi bir tatlandırıcı, ürünlerin yaklaşık üçte birinde ya da daha fazlasında bulunuyordu<sup>10</sup>. Raporun ölçtüğü şey toplam şeker (meyve ve süt kaynaklı doğal şekerler dahil); yani her ürün WHO'nun serbest şeker sınırını aşıyor demek değil.
     </p>
 
     <h2>Etiketi WHO Sınırıyla Karşılaştırmak</h2>
@@ -130,7 +145,7 @@
       Etiketteki gramı günlük sınıra çevirmek basit bir hesap:
     </p>
     <ul>
-      <li>Tuz: 25 g'lık bir dilim ekmekte 0,45 g tuz varsa, bu WHO'nun günlük 5 g sınırının <strong>%9'u</strong> eder.</li>
+      <li>Tuz: 25 g'lık bir dilim ekmekte 0,375 g tuz varsa (100 g'da 1,5 g), bu WHO'nun günlük 5 g sınırının <strong>%7,5'i</strong> eder.</li>
       <li>Şeker: 2.000 kcal'lik bir günde serbest şekerin %10 sınırı yaklaşık 50 g'a denk gelir. Ancak etiketteki "şeker" satırı sütün kendi şekerini (laktoz) ve meyvenin doğal şekerini de kapsar; bunlar WHO'nun serbest şeker tanımına girmez. Aromalı bir yoğurtta yazan şekerin bir kısmı bu yüzden serbest şeker değildir.</li>
     </ul>
     <p>
@@ -140,7 +155,7 @@
     <div class="source-box">
       <h3>Kaynaklar</h3>
       <ol>
-        <li>Üner S, Balcılar M, Ergüder T (ed.). <em>Türkiye Hanehalkı Sağlık Araştırması: Bulaşıcı Olmayan Hastalıkların Risk Faktörleri Prevalansı 2017 (STEPS).</em> Dünya Sağlık Örgütü Türkiye Ofisi, Ankara, 2018. ISBN 978-605-68577-0-6.</li>
+        <li>Üner S, Balcılar M, Ergüder T (ed.). <em>Türkiye Hanehalkı Sağlık Araştırması: Bulaşıcı Olmayan Hastalıkların Risk Faktörleri Prevalansı 2017 (STEPS).</em> Dünya Sağlık Örgütü Türkiye Ofisi, Ankara, 2018. ISBN 978-605-68577-0-6. <a href="https://hsgm.saglik.gov.tr/depo/birimler/kronik-hastaliklar-ve-yasli-sagligi-db/Dokumanlar/Raporlar/turkey-risk-factors-tur_STEPS-2017.pdf" target="_blank" rel="noopener">saglik.gov.tr (PDF)</a></li>
         <li>WHO. <em>Guideline: sugars intake for adults and children.</em> Cenevre, 2015 (basın duyurusu, 4 Mart 2015, who.int).</li>
         <li>WHO. <em>Use of non-sugar sweeteners: WHO guideline.</em> Cenevre, 2023 (basın duyurusu, 15 Mayıs 2023, who.int).</li>
         <li>UCSF SugarScience. <em>Hidden in plain sight</em>, University of California San Francisco. sugarscience.ucsf.edu</li>
@@ -149,12 +164,12 @@
         <li>Erdem Y, Akpolat T, Derici Ü, ve ark. <em>Dietary sources of high sodium intake in Turkey: SALTURK II.</em> Nutrients 2017;9(9):933. doi:10.3390/nu9090933</li>
         <li>He FJ, Li J, MacGregor GA. <em>Effect of longer term modest salt reduction on blood pressure: Cochrane systematic review and meta-analysis of randomised trials.</em> BMJ 2013;346:f1325. doi:10.1136/bmj.f1325</li>
         <li>WHO. <em>Sodium reduction</em> (bilgi notu); Regulation (EU) No 1169/2011, Ek I, madde 11.</li>
-        <li>WHO Regional Office for Europe. <em>Commercial foods for infants and young children in the WHO European Region: a study of the availability, composition and marketing of baby foods in four European countries.</em> Kopenhag, 2019. WHO/EURO:2019-3588-43347-60811.</li>
+        <li>WHO Regional Office for Europe. <em>Commercial foods for infants and young children in the WHO European Region: a study of the availability, composition and marketing of baby foods in four European countries.</em> Kopenhag, 2019. WHO/EURO:2019-3588-43347-60811. <a href="https://iris.who.int/handle/10665/346581" target="_blank" rel="noopener">iris.who.int</a></li>
       </ol>
     </div>
 
     <p style="margin: 2rem 0 0; padding: 1rem 1.25rem; border-left: 4px solid #f59e0b; background: #fef3c7; color: #78350f; font-size: 0.9rem; line-height: 1.6; border-radius: 8px;"><strong>Uyarı:</strong> Bu içerik bilgilendirme amaçlıdır; hekim veya diyetisyen tavsiyesinin yerine geçmez. Gıda alerjisi, çölyak, diyabet, hamilelik gibi durumlarda beslenmenizi hekiminizle ya da diyetisyeninizle planlayın.</p>
-    <p style="font-size: 0.85rem; color: #64748b; margin: 1rem 0 0; line-height: 1.6;">Bu yazı 15 Ekim 2026'da yapay zekâ (Claude) yardımıyla güncellendi; kaynaklar o tarihte kontrol edildi.</p>
+    <p style="font-size: 0.85rem; color: #64748b; margin: 1rem 0 0; line-height: 1.6;">Bu yazı 15 Ekim 2026'da yapay zekâ (Claude) yardımıyla güncellendi; kaynaklar o tarihte kontrol edildi. 15 Ekim 2026'da kaynaklara göre güncellendi.</p>
 
     <div class="article-cta">
       <h2>Gün Sonunda Sınırın Neresinde Olduğunu Gör</h2>

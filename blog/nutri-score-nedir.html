@@ -24,6 +24,14 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Lora:ital@0;1&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="/style.css" />
+  <style>
+    .top-row { display: flex; flex-wrap: wrap; justify-content: space-between; align-items: baseline; gap: 0.5rem 1rem; margin-bottom: 1.75rem; }
+    .top-row .back-link { margin-bottom: 0; }
+    .content-wrapper .lang-switch { font-size: 0.9rem; color: #64748b; margin: 0; line-height: 1.5; }
+    .content-wrapper .lang-switch a { font-weight: 700; }
+    .nav-links a.nav-lang { display: inline-block; border: 1px solid rgba(255, 255, 255, 0.4); border-radius: 100px; padding: 0.3rem 0.8rem; font-size: 0.85rem; font-weight: 700; }
+    @media (max-width: 960px) { .nav-links li:has(> a:not(.nav-cta):not(.nav-lang)) { display: none; } }
+  </style>
 
   <script type="application/ld+json">
   {
@@ -34,6 +42,7 @@
     "author": {"@type": "Organization", "name": "Fit Dozi"},
     "publisher": {"@type": "Organization", "name": "Bardino Technology"},
     "datePublished": "2026-04-18",
+    "dateModified": "2026-10-15",
     "inLanguage": "tr",
     "mainEntityOfPage": {"@type": "WebPage", "@id": "https://fit.bardino.app/blog/nutri-score-nedir.html"}
   }
@@ -51,6 +60,7 @@
         <li><a href="/#science">Bilim</a></li>
         <li><a href="/blog/">Blog</a></li>
         <li><a href="/#family">Dozi Ailesi</a></li>
+        <li><a href="/blog/en/what-is-nutri-score.html" class="nav-lang" hreflang="en" lang="en" title="Read this article in English">EN</a></li>
         <li><a href="https://apps.apple.com/tr/app/fit-dozi/id6762354057" class="nav-cta" target="_blank" rel="noopener">App Store</a></li>
       </ul>
     </div>
@@ -64,7 +74,10 @@
   </header>
 
   <main class="content-wrapper">
-    <a href="/blog/" class="back-link">← Tüm Yazılar</a>
+    <div class="top-row">
+      <a href="/blog/" class="back-link">← Tüm Yazılar</a>
+      <p class="lang-switch">Türkçe · <a href="/blog/en/what-is-nutri-score.html" hreflang="en" lang="en">English</a></p>
+    </div>
 
     <p class="drop-cap">Nutri-Score, Fransa'da Ekim 2017'de bakanlıklar arası bir kararnameyle resmi olarak benimsenen ve bugün Fransa, Belçika, Almanya, Hollanda, Lüksemburg, İspanya ve İsviçre'de resmi olarak kabul edilen bir <strong>ön-paket etiketleme</strong> sistemidir<sup>1</sup>. Bir ürünün genel beslenme kalitesini tek harfle (A'dan E'ye, koyu yeşilden koyu turuncuya) özetler. Ancak "sağlıklı / sağlıksız" damgası değildir; aynı kategori içinde karşılaştırma aracıdır.</p>
 
@@ -89,27 +102,27 @@
     </p>
     <ul>
       <li><strong>Olumsuz puanlar (N, en fazla 55):</strong> enerji (kJ, 0-10), şeker (g, 0-15), doymuş yağ (g, 0-10), tuz (g, 0-20).</li>
-      <li><strong>Olumlu puanlar (en fazla 17):</strong> protein (g, 0-7; kırmızı ette en fazla 2), lif (g, 0-5), meyve-sebze-baklagil oranı (%, 0-5). Kuruyemiş ve yağlar artık bu son bileşene sayılmıyor.</li>
+      <li><strong>Olumlu puanlar (en fazla 17):</strong> protein (g, 0-7; kırmızı ette en fazla 2), lif (g, 0-5), meyve-sebze-baklagil oranı (%, 0-5). Genel algoritmada kuruyemiş ve yağlar artık bu son bileşene sayılmıyor; yağlar, kuruyemişler ve tohumlar ayrı bir tabloyla puanlanıyor.</li>
     </ul>
     <p>
-      Olumsuz puanlar 11 veya üstündeyse protein hesaba katılmaz (peynir hariç). Nihai skora göre: 0 ve altı → A, 1-2 → B, 3-10 → C, 11-18 → D, 19 ve üstü → E. İçeceklerin ayrı bir algoritması var; A alabilen tek içecek su<sup>3</sup>.
+      Olumsuz puanlar 11 veya üstündeyse protein hesaba katılmaz (peynir hariç). Nihai skora göre: 0 ve altı → A, 1-2 → B, 3-10 → C, 11-18 → D, 19 ve üstü → E<sup>2</sup>. İçeceklerin ayrı bir algoritması var; A alabilen tek içecek su<sup>3</sup>.
     </p>
 
     <h3>Güncellenen algoritmada ne değişti?</h3>
     <p>
-      Nutri-Score bilim komitesinin yiyecekler için raporu Haziran 2022'de, içecekler için raporu Şubat 2023'te onaylandı. Fransa güncellenen hesaplamayı 14 Mart 2025 tarihli kararnameyle resmileştirdi ve üreticilere ambalajlarını güncellemeleri için iki yıl tanıdı<sup>1,4</sup>. Başlıca değişiklikler:
+      Nutri-Score bilim komitesinin yiyecekler için raporu Haziran 2022'de, içecekler için raporu Şubat 2023'te onaylandı<sup>2, 3</sup>. Fransa güncellenen hesaplamayı 14 Mart 2025 tarihli kararnameyle resmileştirdi ve üreticilere ambalajlarını güncellemeleri için iki yıl tanıdı<sup>4</sup>. Başlıca değişiklikler:
     </p>
     <ul>
-      <li><strong>Kırmızı et:</strong> protein puanı en fazla 2 ile sınırlandı; böylece kırmızı et, kanatlı etten ayrıştı.</li>
-      <li><strong>Şeker ve tuz:</strong> puan ölçekleri tüm yiyeceklerde genişledi ve sıkılaştı (şekerde en fazla 15, tuzda en fazla 20 olumsuz puan). Süt ve içilebilir yoğurtlar 2023'te içecek algoritmasına alındı.</li>
-      <li><strong>Lif:</strong> ölçek, tam tahıllı ürünleri rafine olanlardan ayıracak biçimde yeniden düzenlendi; tam puan için artık 100 g'da 7,4 g'dan fazla lif gerekiyor.</li>
-      <li><strong>Tatlandırıcılı içecekler:</strong> şekersiz tatlandırıcı içeren içeceklere 4 olumsuz puan ekleniyor; su yine A alabilen tek içecek.</li>
-      <li><strong>Bitkisel yağlar:</strong> doymamış yağdan zengin bitkisel yağların C'den B'ye çıkması hedeflendi; zeytin, kolza ve ceviz yağlarının çoğu artık B alıyor, hindistan cevizi yağının çoğu ise E'de kalıyor.</li>
+      <li><strong>Kırmızı et:</strong> protein puanı en fazla 2 ile sınırlandı; böylece kırmızı et, kanatlı etten ayrıştı<sup>2</sup>.</li>
+      <li><strong>Şeker ve tuz:</strong> puan ölçekleri tüm yiyeceklerde genişledi ve sıkılaştı (şekerde en fazla 15, tuzda en fazla 20 olumsuz puan)<sup>2</sup>. Süt ve içilebilir yoğurtlar 2023'te içecek algoritmasına alındı<sup>3</sup>.</li>
+      <li><strong>Lif:</strong> ölçek, tam tahıllı ürünleri rafine olanlardan ayıracak biçimde yeniden düzenlendi; tam puan için artık 100 g'da 7,4 g'dan fazla lif gerekiyor<sup>2</sup>.</li>
+      <li><strong>Tatlandırıcılı içecekler:</strong> şekersiz tatlandırıcı içeren içeceklere 4 olumsuz puan ekleniyor; su yine A alabilen tek içecek<sup>3</sup>.</li>
+      <li><strong>Bitkisel yağlar:</strong> doymamış yağdan zengin bitkisel yağların C'den B'ye çıkması hedeflendi; zeytin, kolza ve ceviz yağlarının çoğu artık B alıyor, hindistan cevizi yağının çoğu ise E'de kalıyor<sup>2, 4</sup>.</li>
     </ul>
 
     <h2>Bilimsel Validasyon: BMJ, PLoS Medicine ve ötesi</h2>
     <p>
-      Nutri-Score'un dayandığı besin profili skoru, büyük kohortlarda sağlık sonuçlarıyla ilişkili bulundu. Bu ilişkiler gözlemsel; tek başına nedensellik kanıtlamaz.
+      Nutri-Score'un dayandığı besin profili skoru, eski (2022 öncesi) algoritmayla hesaplandığında büyük kohortlarda sağlık sonuçlarıyla ilişkili bulundu. Bu ilişkiler gözlemsel; tek başına nedensellik kanıtlamaz.
     </p>
 
     <div class="stats-grid">
@@ -128,7 +141,7 @@
     </div>
 
     <p>
-      2020'de <em>BMJ</em>'de yayımlanan EPIC çalışmasında (Deschasaux ve ark., 10 Avrupa ülkesi, 521.324 katılımcı) katılımcılar diyetlerinin FSAm-NPS skoruna göre sıralandı. En kötü beşte birlik dilim, en iyiye kıyasla <strong>%7 daha yüksek tüm nedenlere bağlı ölüm riski</strong> (HR 1,07, %95 GA 1,03-1,10) gösterdi<sup>5</sup>. Aynı grup 2018'de, yine EPIC kohortunda (471.495 kişi), <strong>kanser</strong> için benzer bir ilişki bulmuştu: en kötü ile en iyi beşte birlik arasında HR 1,07<sup>6</sup>. Fransa'daki SU.VI.MAX kohortunda ise skorun her 1 puan kötüleşmesi kalp-damar hastalığı riskinde %14 artışla ilişkiliydi (HR 1,14); en kötü ile en iyi çeyrek arasında HR 1,61<sup>7</sup>.
+      2020'de <em>BMJ</em>'de yayımlanan EPIC çalışmasında (Deschasaux ve ark., 10 Avrupa ülkesi, 521.324 katılımcı, analizde 501.594 kişi) katılımcılar diyetlerinin FSAm-NPS skoruna göre sıralandı. En kötü beşte birlik dilim, en iyiye kıyasla <strong>%7 daha yüksek tüm nedenlere bağlı ölüm riski</strong> (HR 1,07, %95 GA 1,03-1,10) gösterdi<sup>5</sup>. Aynı grup 2018'de, yine EPIC kohortunda (471.495 kişi), <strong>kanser</strong> için benzer bir ilişki bulmuştu: en kötü ile en iyi beşte birlik arasında HR 1,07<sup>6</sup>. Fransa'daki SU.VI.MAX kohortunda ise FSA skoruna dayalı bir indeksin her 1 puan kötüleşmesi kalp-damar hastalığı riskinde %14 artışla ilişkiliydi (HR 1,14); en kötü ile en iyi çeyrek arasında HR 1,61<sup>7</sup>.
     </p>
 
     <div class="tip-box">
@@ -138,12 +151,12 @@
 
     <h2>Nutri-Score'a Yöneltilen Eleştiriler</h2>
     <p>
-      Eleştirilerin bir kısmı geleneksel ürünlerin aldığı harfler üzerine yoğunlaştı; zeytinyağı bunun en bilinen örneği. Eski algoritmada C alan zeytin, kolza ve ceviz yağlarının çoğu, güncellenen algoritmada B'ye çıktı<sup>2</sup>. Bir başka sınır da tasarımdan geliyor: skor 100 g ya da 100 ml üzerinden hesaplandığı için yediğiniz porsiyonun büyüklüğünü hesaba katmaz.
+      Eleştirilerin bir kısmı geleneksel ürünlerin aldığı harfler üzerine yoğunlaştı; zeytinyağı bunun en bilinen örneği. Eski algoritmada C alan zeytin, kolza ve ceviz yağlarının çoğu, güncellenen algoritmada B'ye çıktı<sup>2, 4</sup>. Bir başka sınır da tasarımdan geliyor: skor 100 g ya da 100 ml üzerinden hesaplandığı için yediğiniz porsiyonun büyüklüğünü hesaba katmaz.
     </p>
 
     <h3>AB düzenlemesi ne aşamada?</h3>
     <p>
-      Avrupa Komisyonu "Farm to Fork" stratejisinde, AB genelinde uyumlaştırılmış ve zorunlu bir ön-paket besin etiketi önerisini 2022'nin son çeyreğine planlamıştı. Komisyon bu konuda 2021-2022'de bir kamuoyu danışması yaptı, ancak öneri sunulmadı<sup>8</sup>. Bugün Nutri-Score yedi ülkede gönüllü olarak kullanılıyor; Türkiye bu ülkeler arasında değil.
+      Avrupa Komisyonu "Farm to Fork" stratejisinde, AB genelinde uyumlaştırılmış ve zorunlu bir ön-paket besin etiketi önerisini 2022'nin son çeyreğine planlamıştı. Komisyon bu konuda 13 Aralık 2021 ile 7 Mart 2022 arasında bir kamuoyu danışması yaptı; Avrupa Parlamentosu'nun dosyadaki son güncellemesinde (Aralık 2024) öneri hâlâ sunulmamıştı<sup>8</sup>. Bugün Nutri-Score yedi ülkede gönüllü olarak kullanılıyor<sup>1</sup>; Türkiye bu ülkeler arasında değil.
     </p>
 
     <div class="warning-box">
@@ -165,19 +178,19 @@
     <div class="source-box">
       <h3>Kaynaklar</h3>
       <ol>
-        <li>Assemblée nationale (Fransa), 17. yasama dönemi, yazılı soru no. 6946 ve Sağlık Bakanlığı yanıtı (JO, 29 Temmuz 2025). assemblee-nationale.fr</li>
-        <li>Scientific Committee of the Nutri-Score. <em>Update of the Nutri-Score algorithm. Update report from the Scientific Committee of the Nutri-Score 2022</em> (29 Haziran 2022), algoritma özet tabloları.</li>
-        <li>Scientific Committee of the Nutri-Score. <em>Update of the Nutri-Score algorithm for beverages. Second update report</em> (V2-2023, 1 Şubat 2023).</li>
-        <li>Service-public.fr. Nutri-Score'un güncellenmesine ilişkin duyuru (14 Mart 2025 tarihli kararname).</li>
-        <li>Deschasaux M, Huybrechts I, Julia C, ve ark. <em>Association between nutritional profiles of foods underlying Nutri-Score front-of-pack labels and mortality: EPIC cohort study in 10 European countries.</em> BMJ 2020;370:m3173. doi:10.1136/bmj.m3173</li>
-        <li>Deschasaux M, Huybrechts I, Murphy N, ve ark. <em>Nutritional quality of food as represented by the FSAm-NPS nutrient profiling system underlying the Nutri-Score label and cancer risk in Europe: results from the EPIC prospective cohort study.</em> PLoS Med 2018;15(9):e1002651.</li>
-        <li>Adriouch S, Julia C, Kesse-Guyot E, ve ark. <em>Prospective association between a dietary quality index based on a nutrient profiling system and cardiovascular disease risk.</em> Eur J Prev Cardiol 2016;23(15):1669-1676. doi:10.1177/2047487316640659</li>
-        <li>European Commission. <em>Farm to Fork Strategy: action plan</em> (2020) ve <em>Proposal for a revision of the Regulation on food information to consumers</em> (kamuoyu danışması, 13 Aralık 2021 - 7 Mart 2022). food.ec.europa.eu</li>
+        <li>Assemblée nationale (Fransa), 17. yasama dönemi, yazılı soru no. 6946 ve Sağlık Bakanlığı yanıtı (JO, 29 Temmuz 2025). <a href="https://questions.assemblee-nationale.fr/q17/17-6946QE.htm" target="_blank" rel="noopener">assemblee-nationale.fr</a></li>
+        <li>Scientific Committee of the Nutri-Score. <em>Update of the Nutri-Score algorithm. Update report from the Scientific Committee of the Nutri-Score 2022</em> (29 Haziran 2022), algoritma özet tabloları. <a href="https://mpc.gouvernement.lu/dam-assets/le-minist%C3%A8re/consodur/2022-main-algorithm-report-update-final.pdf" target="_blank" rel="noopener">gouvernement.lu kopyası (PDF)</a></li>
+        <li>Scientific Committee of the Nutri-Score. <em>Update of the Nutri-Score algorithm for beverages. Second update report</em> (V2-2023, 1 Şubat 2023). <a href="https://edepot.wur.nl/629571" target="_blank" rel="noopener">Wageningen Üniversitesi arşiv kopyası (PDF)</a></li>
+        <li>Service-public.fr. <em>Ce qu'il faut savoir sur le nouveau Nutri-Score</em> (14 Mart 2025 tarihli kararname üzerine), 20 Mart 2025. <a href="https://www.service-public.gouv.fr/particuliers/actualites/A18128" target="_blank" rel="noopener">service-public.gouv.fr</a></li>
+        <li>Deschasaux M, Huybrechts I, Julia C, ve ark. <em>Association between nutritional profiles of foods underlying Nutri-Score front-of-pack labels and mortality: EPIC cohort study in 10 European countries.</em> BMJ 2020;370:m3173. <a href="https://doi.org/10.1136/bmj.m3173" target="_blank" rel="noopener">doi:10.1136/bmj.m3173</a></li>
+        <li>Deschasaux M, Huybrechts I, Murphy N, ve ark. <em>Nutritional quality of food as represented by the FSAm-NPS nutrient profiling system underlying the Nutri-Score label and cancer risk in Europe: results from the EPIC prospective cohort study.</em> PLoS Med 2018;15(9):e1002651. <a href="https://doi.org/10.1371/journal.pmed.1002651" target="_blank" rel="noopener">doi:10.1371/journal.pmed.1002651</a></li>
+        <li>Adriouch S, Julia C, Kesse-Guyot E, ve ark. <em>Prospective association between a dietary quality index based on a nutrient profiling system and cardiovascular disease risk.</em> Eur J Prev Cardiol 2016;23(15):1669-1676. <a href="https://doi.org/10.1177/2047487316640659" target="_blank" rel="noopener">doi:10.1177/2047487316640659</a></li>
+        <li>European Commission. <em>Proposal for a revision of the Regulation on food information to consumers</em> (Farm to Fork eylem planı; kamuoyu danışması, 13 Aralık 2021 - 7 Mart 2022). <a href="https://food.ec.europa.eu/food-safety/labelling-and-nutrition/food-information-consumers-legislation/proposal-revision-regulation-fic_en" target="_blank" rel="noopener">food.ec.europa.eu</a>; Avrupa Parlamentosu, Legislative Train Schedule, <em>Mandatory front-of-pack nutrition labelling</em>. <a href="https://www.europarl.europa.eu/legislative-train/theme-a-european-green-deal/file-mandatory-front-of-pack-nutrition-labelling" target="_blank" rel="noopener">europarl.europa.eu</a></li>
       </ol>
     </div>
 
     <p style="margin: 2rem 0 0; padding: 1rem 1.25rem; border-left: 4px solid #f59e0b; background: #fef3c7; color: #78350f; font-size: 0.9rem; line-height: 1.6; border-radius: 8px;"><strong>Uyarı:</strong> Bu içerik bilgilendirme amaçlıdır; hekim veya diyetisyen tavsiyesinin yerine geçmez. Gıda alerjisi, çölyak, diyabet, hamilelik gibi durumlarda beslenmenizi hekiminizle ya da diyetisyeninizle planlayın.</p>
-    <p style="font-size: 0.85rem; color: #64748b; margin: 1rem 0 0; line-height: 1.6;">Bu yazı 15 Ekim 2026'da yapay zekâ (Claude) yardımıyla güncellendi; kaynaklar o tarihte kontrol edildi.</p>
+    <p style="font-size: 0.85rem; color: #64748b; margin: 1rem 0 0; line-height: 1.6;">Bu yazı 15 Ekim 2026'da yapay zekâ (Claude) yardımıyla güncellendi; kaynaklar o tarihte kontrol edildi. 15 Ekim 2026'da kaynaklara göre güncellendi.</p>
 
     <div class="article-cta">
       <h2>Fit Dozi ile Etiketi Saniyede Oku</h2>

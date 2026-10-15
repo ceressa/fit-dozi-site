@@ -31,6 +31,12 @@
     .data-table th, .data-table td { text-align: left; vertical-align: top; padding: 0.6rem 0.75rem; border-bottom: 1px solid #e2e8f0; color: #334155; line-height: 1.55; }
     .data-table th { background: #f8faf8; color: #1e293b; font-weight: 700; }
     .ai-note { font-size: 0.85rem; color: #64748b; margin: 1rem 0 0; line-height: 1.6; }
+    .top-row { display: flex; flex-wrap: wrap; justify-content: space-between; align-items: baseline; gap: 0.5rem 1rem; margin-bottom: 1.75rem; }
+    .top-row .back-link { margin-bottom: 0; }
+    .content-wrapper .lang-switch { font-size: 0.9rem; color: #64748b; margin: 0; line-height: 1.5; }
+    .content-wrapper .lang-switch a { font-weight: 700; }
+    .nav-links a.nav-lang { display: inline-block; border: 1px solid rgba(255, 255, 255, 0.4); border-radius: 100px; padding: 0.3rem 0.8rem; font-size: 0.85rem; font-weight: 700; }
+    @media (max-width: 960px) { .nav-links li:has(> a:not(.nav-cta):not(.nav-lang)) { display: none; } }
   </style>
 
   <script type="application/ld+json">
@@ -59,6 +65,7 @@
         <li><a href="/#science">Bilim</a></li>
         <li><a href="/blog/">Blog</a></li>
         <li><a href="/#family">Dozi Ailesi</a></li>
+        <li><a href="/blog/en/baby-and-child-snack-labels.html" class="nav-lang" hreflang="en" lang="en" title="Read this article in English">EN</a></li>
         <li><a href="https://apps.apple.com/tr/app/fit-dozi/id6762354057" class="nav-cta" target="_blank" rel="noopener">App Store</a></li>
       </ul>
     </div>
@@ -72,14 +79,17 @@
   </header>
 
   <main class="content-wrapper">
-    <a href="/blog/" class="back-link">← Tüm Yazılar</a>
+    <div class="top-row">
+      <a href="/blog/" class="back-link">← Tüm Yazılar</a>
+      <p class="lang-switch">Türkçe · <a href="/blog/en/baby-and-child-snack-labels.html" hreflang="en" lang="en">English</a></p>
+    </div>
     <p class="byline">Bardino · 15 Ekim 2026</p>
 
-    <p class="drop-cap">Çocuk atıştırmalığında etikette dört şeye bakın: serbest şeker (meyve suyu konsantresi dahil), tuz, tatlandırıcı ve yaşa özel uyarılar. Dünya Sağlık Örgütü 6-23 aylık çocuklar için şeker, tuz ya da trans yağ oranı yüksek gıdaların, şekerli içeceklerin ve şeker dışı tatlandırıcıların hiç tüketilmemesini öneriyor<sup>1</sup>. Daha büyük çocuklarda sınırlar gevşiyor ama ortadan kalkmıyor. Ön yüzdeki "bebeğiniz için", "meyveli" ya da "şeker ilavesiz" ifadeleri bu dört soruyu yanıtlamaz; yanıt arka yüzde.</p>
+    <p class="drop-cap">Çocuk atıştırmalığında etikette dört şeye bakın: serbest şeker (meyve suyu konsantresi dahil), tuz, tatlandırıcı ve yaşa özel uyarılar. Dünya Sağlık Örgütü 6-23 aylık çocuklar için şeker, tuz ya da trans yağ oranı yüksek gıdaların, şekerli içeceklerin ve şeker dışı tatlandırıcıların tüketilmemesini öneriyor<sup>1</sup>. Daha büyük çocuklarda sınırlar gevşiyor ama ortadan kalkmıyor. Ön yüzdeki "bebeğiniz için", "meyveli" ya da "şeker ilavesiz" ifadeleri bu dört soruyu yanıtlamaz; yanıt arka yüzde.</p>
 
     <h2>Yaşa Göre Sınırlar</h2>
     <p>
-      DSÖ'nün 2023 tarihli tamamlayıcı beslenme kılavuzu 6-23 ay için dört öneri veriyor: şeker, tuz ve trans yağ oranı yüksek gıdalar tüketilmemeli (güçlü öneri, düşük kesinlikte kanıt); şekerli içecekler tüketilmemeli (güçlü öneri, düşük kesinlikte kanıt); şeker dışı tatlandırıcılar tüketilmemeli (güçlü öneri, çok düşük kesinlikte kanıt); yüzde 100 meyve suyu sınırlanmalı (koşullu öneri, düşük kesinlikte kanıt)<sup>1</sup>. DSÖ ayrıca tamamlayıcı gıdalara tuz ve şeker eklenmemesini öneriyor<sup>2</sup>.
+      DSÖ'nün 2023 tarihli tamamlayıcı beslenme kılavuzu, sağlıksız gıda ve içeceklere ilişkin 5. önerisinde 6-23 ay için dört alt madde sıralıyor: şeker, tuz ve trans yağ oranı yüksek gıdalar tüketilmemeli (güçlü öneri, düşük kesinlikte kanıt); şekerli içecekler tüketilmemeli (güçlü öneri, düşük kesinlikte kanıt); şeker dışı tatlandırıcılar tüketilmemeli (güçlü öneri, çok düşük kesinlikte kanıt); yüzde 100 meyve suyu sınırlanmalı (koşullu öneri, düşük kesinlikte kanıt)<sup>1</sup>. DSÖ ayrıca tamamlayıcı gıdalara tuz ve şeker eklenmemesini öneriyor<sup>2</sup>.
     </p>
     <p>
       İngiltere'nin ulusal sağlık hizmeti NHS'in yaşa göre verdiği üst sınırlar etiketi okurken pratik bir ölçü sağlıyor:
@@ -101,7 +111,7 @@
     </div>
 
     <p>
-      NHS'in ek gıdaya geçiş sayfası daha sıkı bir öneri de veriyor: 4 yaş ve altındaki çocuklara şeker ya da tatlandırıcı içeren yiyecek ve içecek vermeyin; buna bal, şurup, meyve suyu ve smoothie'deki doğal şeker de dahil, meyvenin kendisi sorun değil<sup>5</sup>.
+      NHS'in bebeklere ve küçük çocuklara verilmemesi gereken gıdalar sayfası daha sıkı bir öneri de veriyor: 4 yaş ve altındaki çocuklara şeker ya da tatlandırıcı içeren yiyecek ve içecek vermeyin; buna bal, şurup, meyve suyu ve smoothie'deki doğal şeker de dahil, meyvenin kendisi sorun değil<sup>5</sup>.
     </p>
 
     <h2>Şeker: "Şeker İlavesiz" Ne Anlama Geliyor?</h2>
@@ -122,7 +132,7 @@
 
     <h2>Tatlandırıcılar: Etikette Artık Daha Görünür</h2>
     <p>
-      6 Nisan 2024 değişikliğiyle tatlandırıcı içeren gıdalarda "Tatlandırıcılı" ya da "Tatlandırıcı(lar) içerir" ifadesinin gıdanın adıyla birlikte ve vurgulanarak yazılması gerekiyor; şekerle birlikte kullanılmışsa "Şekerli ve tatlandırıcılı" yazılıyor. İşletmeler için uyum tarihi 31 Aralık 2026<sup>8</sup>. Bu tarihe kadar rafta eski etiketler de bulunabileceğinden içindekiler listesinde "tatlandırıcı" sınıf adını da arayın. Aspartam içeren üründe ayrıca "fenilalanin kaynağı" uyarısı, ilave poliolü yüzde 10'u aşan üründe "Aşırı tüketimi laksatif etki yaratabilir." uyarısı bulunur<sup>7</sup>.
+      Tatlandırıcı içeren gıdalarda "Tatlandırıcılı" ya da "Tatlandırıcı(lar) içerir" ifadesi 2017'den beri gıdanın adının yanında zorunlu; ilave şekerle birlikte kullanılmışsa "Şekerli ve tatlandırıcılı" ya da "Şeker/şekerler ve tatlandırıcı içerir" yazılıyor<sup>7</sup>. 6 Nisan 2024 değişikliği, bu ifadenin gıdanın adının geçtiği her yerde vurgulanarak yazılmasını getirdi; işletmeler için uyum tarihi 31 Aralık 2026<sup>8</sup>. İçindekiler listesinde "tatlandırıcı" sınıf adını da arayın. Aspartam içeren üründe ayrıca "fenilalanin kaynağı" uyarısı, ilave poliolü yüzde 10'u aşan üründe "Aşırı tüketimi laksatif etki yaratabilir." uyarısı bulunur<sup>7</sup>.
     </p>
     <p>
       Bebek formülleri, devam formülleri ve bebek ve küçük çocuk ek gıdalarında ise yalnızca yönetmelik ekinde bu gıdalar için ayrıca izin verilen katkı maddeleri kullanılabilir<sup>9</sup>. Bu kural yalnızca mevzuattaki bebek ve küçük çocuk gıdası tanımına giren ürünler için geçerlidir; genel bir atıştırmalık çocuğa verildiğinde aynı kısıtlama yoktur. Tek tek katkıların EFSA değerlendirmeleri <a href="/blog/e-kodlari-listesi.html">E kodları listemizde</a>.
@@ -152,7 +162,7 @@
 
     <h2>Fit Dozi'de Çocuk Profili</h2>
     <p>
-      Fit Dozi'de her aile üyesi için ayrı profil açılır; çocuk, hamile, diyabetli ve yaşlı profillerinin eşikleri farklıdır, aynı tarama her profil için ayrı sonuç verir. "100 g için" yazan değerler gerçek porsiyona çevrilir ve DSÖ günlük eşikleriyle karşılaştırılır; ilgili tatlandırıcılar çocuk profilinde ayrıca işaretlenir. Uygulama bir değerlendirme aracıdır, çocuğunuzun beslenme planını yapmaz; büyüme, alerji ya da kilo konusunda bir sorunuz varsa çocuk doktorunuza ya da diyetisyeninize danışın.
+      Fit Dozi'de her aile üyesi için kendi alerjen listesiyle ayrı bir profil açılır; böylece aynı tarama farklı kişiler için farklı uyarılar verebilir. Uygulama bir değerlendirme aracıdır, çocuğunuzun beslenme planını yapmaz; büyüme, alerji ya da kilo konusunda bir sorunuz varsa çocuk doktorunuza ya da diyetisyeninize danışın.
     </p>
 
     <div class="source-box">
@@ -166,13 +176,13 @@
         <li>T.C. Resmî Gazete, 20.04.2023, Sayı 32169. <em>Türk Gıda Kodeksi Beslenme Beyanları Yönetmeliği</em>, Ek-1. <a href="https://www.resmigazete.gov.tr/eskiler/2023/04/20230420-2.htm" target="_blank" rel="noopener">Metin</a> · <a href="https://www.resmigazete.gov.tr/eskiler/2023/04/20230420-2-1.pdf" target="_blank" rel="noopener">Ek (PDF)</a></li>
         <li>T.C. Resmî Gazete, 26.01.2017, Sayı 29960 (Mükerrer). <em>Türk Gıda Kodeksi Gıda Etiketleme ve Tüketicileri Bilgilendirme Yönetmeliği</em>, madde 4; Ek-2. <a href="https://www.resmigazete.gov.tr/eskiler/2017/01/20170126M1-6.htm" target="_blank" rel="noopener">Metin</a> · <a href="https://www.resmigazete.gov.tr/eskiler/2017/01/20170126M1-6-1.pdf" target="_blank" rel="noopener">Ekler (PDF)</a></li>
         <li>T.C. Resmî Gazete, 06.04.2024, Sayı 32512. <em>Türk Gıda Kodeksi Gıda Etiketleme ve Tüketicileri Bilgilendirme Yönetmeliğinde Değişiklik Yapılmasına Dair Yönetmelik.</em> <a href="https://www.resmigazete.gov.tr/eskiler/2024/04/20240406-17.htm" target="_blank" rel="noopener">Metin</a></li>
-        <li>T.C. Resmî Gazete, 30.06.2013, Sayı 28693. <em>Türk Gıda Kodeksi Gıda Katkı Maddeleri Yönetmeliği</em>, madde 17; Ek-V. <a href="https://www.resmigazete.gov.tr/eskiler/2013/06/20130630-4.htm" target="_blank" rel="noopener">Metin</a> · <a href="https://www.resmigazete.gov.tr/eskiler/2013/06/20130630-4-1.doc" target="_blank" rel="noopener">Ekler (DOC)</a></li>
+        <li>T.C. Resmî Gazete, 30.06.2013, Sayı 28693. <em>Türk Gıda Kodeksi Gıda Katkı Maddeleri Yönetmeliği</em>, madde 17, 24; Ek-II, Ek-V. <a href="https://www.resmigazete.gov.tr/eskiler/2013/06/20130630-4.htm" target="_blank" rel="noopener">Metin</a> · <a href="https://www.resmigazete.gov.tr/eskiler/2013/06/20130630-4-1.doc" target="_blank" rel="noopener">Ekler (DOC)</a></li>
         <li>WHO Avrupa Bölge Ofisi. <em>Foods for infants and young children: a matter of concern?</em>, 3 Ağustos 2022. <a href="https://www.who.int/europe/news/item/03-08-2022-foods-for-infants-and-young-children--a-matter-of-concern" target="_blank" rel="noopener">who.int</a></li>
       </ol>
     </div>
 
     <p style="margin: 2rem 0 0; padding: 1rem 1.25rem; border-left: 4px solid #f59e0b; background: #fef3c7; color: #78350f; font-size: 0.9rem; line-height: 1.6; border-radius: 8px;"><strong>Uyarı:</strong> Bu içerik bilgilendirme amaçlıdır; hekim veya diyetisyen tavsiyesinin yerine geçmez. Gıda alerjisi, çölyak, diyabet, hamilelik gibi durumlarda beslenmenizi hekiminizle ya da diyetisyeninizle planlayın.</p>
-    <p class="ai-note">Bu yazı yapay zekâ (Claude) yardımıyla hazırlandı. Kaynaklar 15 Ekim 2026'da kontrol edildi. Hekim veya diyetisyen tarafından gözden geçirilmedi.</p>
+    <p class="ai-note">Bu yazı yapay zekâ (Claude) yardımıyla hazırlandı. Kaynaklar 15 Ekim 2026'da kontrol edildi. Hekim veya diyetisyen tarafından gözden geçirilmedi. 15 Ekim 2026'da kaynaklara göre güncellendi.</p>
 
     <div class="article-cta">
       <h2>Aynı Paketi Çocuğunun Profiliyle Oku</h2>

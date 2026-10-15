@@ -31,6 +31,12 @@
     .data-table th, .data-table td { text-align: left; vertical-align: top; padding: 0.6rem 0.75rem; border-bottom: 1px solid #e2e8f0; color: #334155; line-height: 1.55; }
     .data-table th { background: #f8faf8; color: #1e293b; font-weight: 700; }
     .ai-note { font-size: 0.85rem; color: #64748b; margin: 1rem 0 0; line-height: 1.6; }
+    .top-row { display: flex; flex-wrap: wrap; justify-content: space-between; align-items: baseline; gap: 0.5rem 1rem; margin-bottom: 1.75rem; }
+    .top-row .back-link { margin-bottom: 0; }
+    .content-wrapper .lang-switch { font-size: 0.9rem; color: #64748b; margin: 0; line-height: 1.5; }
+    .content-wrapper .lang-switch a { font-weight: 700; }
+    .nav-links a.nav-lang { display: inline-block; border: 1px solid rgba(255, 255, 255, 0.4); border-radius: 100px; padding: 0.3rem 0.8rem; font-size: 0.85rem; font-weight: 700; }
+    @media (max-width: 960px) { .nav-links li:has(> a:not(.nav-cta):not(.nav-lang)) { display: none; } }
   </style>
 
   <script type="application/ld+json">
@@ -59,6 +65,7 @@
         <li><a href="/#science">Bilim</a></li>
         <li><a href="/blog/">Blog</a></li>
         <li><a href="/#family">Dozi Ailesi</a></li>
+        <li><a href="/blog/en/how-to-read-a-food-label.html" class="nav-lang" hreflang="en" lang="en" title="Read this article in English">EN</a></li>
         <li><a href="https://apps.apple.com/tr/app/fit-dozi/id6762354057" class="nav-cta" target="_blank" rel="noopener">App Store</a></li>
       </ul>
     </div>
@@ -67,15 +74,18 @@
   <header class="article-hero">
     <span class="eyebrow">Rehber · 8 dk okuma</span>
     <h1>Gıda Etiketi Nasıl Okunur? 5 Adımda Rehber</h1>
-    <p class="subtitle">Türk Gıda Kodeksi'nin zorunlu tuttuğu bilgiler, hangi sırayla okunacakları ve 31 Aralık 2026'ya kadar yürürlüğe girecek değişiklikler.</p>
+    <p class="subtitle">Türk Gıda Kodeksi'nin zorunlu tuttuğu bilgiler, hangi sırayla okunacakları ve 2024'te yürürlüğe giren, uyum için son tarihi 31 Aralık 2026 olan değişiklikler.</p>
     <div class="mascot"><img src="/assets/fit_dozi_front.webp" alt="Fit Dozi" /></div>
   </header>
 
   <main class="content-wrapper">
-    <a href="/blog/" class="back-link">← Tüm Yazılar</a>
+    <div class="top-row">
+      <a href="/blog/" class="back-link">← Tüm Yazılar</a>
+      <p class="lang-switch">Türkçe · <a href="/blog/en/how-to-read-a-food-label.html" hreflang="en" lang="en">English</a></p>
+    </div>
     <p class="byline">Bardino · 15 Ekim 2026</p>
 
-    <p class="drop-cap">Bir gıda etiketini beş adımda okuyabilirsiniz: ürünün gerçek adı, içindekiler listesi, vurgulu yazılmış alerjenler, 100 g ya da 100 ml başına beslenme tablosu ve son olarak tarih ile saklama koşulu. Bu sıra keyfi değil. Türk Gıda Kodeksi Gıda Etiketleme ve Tüketicileri Bilgilendirme Yönetmeliği'nin zorunlu tuttuğu bilgilerin neredeyse tamamı bu beş başlığa sığıyor<sup>1</sup>. Ön yüzdeki görseller ve sloganlar ise zorunlu bilgi değil; yönetmelik onlardan yalnızca tüketiciyi yanıltmamalarını istiyor.</p>
+    <p class="drop-cap">Bir gıda etiketini beş adımda okuyabilirsiniz: ürünün gerçek adı, içindekiler listesi, vurgulu yazılmış alerjenler, 100 g ya da 100 ml başına beslenme tablosu ve son olarak tarih ile saklama koşulu. Bu sıra keyfi değil. Türk Gıda Kodeksi Gıda Etiketleme ve Tüketicileri Bilgilendirme Yönetmeliği'nin zorunlu tuttuğu bilgilerin büyük kısmı bu beş başlığa sığıyor<sup>1</sup>. Ön yüzdeki görseller ve sloganlar ise zorunlu bilgi değil; yönetmelik onlardan başka şartların yanında tüketiciyi yanıltmamalarını istiyor.</p>
 
     <h2>Etikette Zorunlu Olanlar</h2>
     <p>
@@ -96,10 +106,10 @@
       <li>Gıdanın adı ve net miktarı <strong>temel görüş alanında</strong> (markanın en büyük yazıldığı yüzde) yer almalı. Adın bütün kelimeleri aynı büyüklükte, aynı yazı tipinde ve aynı stilde yazılmalı.</li>
       <li>Meyve gibi bir gıda bileşeni yerine tamamen aroma verici kullanılan bir üründe o bileşenin gerçek fotoğrafı kullanılamaz; çizim kullanılırsa çizimin bulunduğu her yerde ürünün "aromalı" olduğu yazılmalıdır<sup>2, 3</sup>.</li>
       <li>Birbirine karıştırılabilecek ürünlerde "… tadında", "… lezzeti", "… keyfi" gibi ifadelerle, ürünün özelliklerini taşımadığı başka bir gıdanın adı kullanılamaz. Bakanlık kılavuzundaki örnek: kokolinde "çikolata tadında", margarinde "tereyağı tadında" yazılamaz<sup>3</sup>.</li>
-      <li>Tatlandırıcı içeren ürünlerde "Tatlandırıcılı" ya da "Tatlandırıcı(lar) içerir" (şekerle birlikteyse "Şekerli ve tatlandırıcılı") ifadesi, gıdanın adıyla birlikte ve vurgulanarak yazılmalı.</li>
+      <li>Tatlandırıcı içeren ürünlerde 2017'den beri gıdanın adının yanında zorunlu olan "Tatlandırıcılı" ya da "Tatlandırıcı(lar) içerir" ifadesi (ilave şekerle birlikteyse "Şekerli ve tatlandırıcılı" ya da "Şeker/şekerler ve tatlandırıcı içerir"), artık gıdanın adının geçtiği her yerde adla birlikte ve vurgulanarak yazılmalı<sup>1, 2</sup>.</li>
     </ul>
     <p>
-      İşletmelerin bu değişikliklere uyması için son tarih <strong>31 Aralık 2026</strong>; bu tarihten sonra uymayan gıdalar piyasada bulunamayacak<sup>2</sup>. Yani bugün rafta hem eski hem yeni kurala göre basılmış etiketler görebilirsiniz.
+      Değişiklik 2024'te yürürlüğe girdi; işletmelerin uyması için son tarih <strong>31 Aralık 2026</strong>, bu tarihten sonra uymayan gıdalar piyasada bulunamayacak<sup>2</sup>. Yani bugün rafta hem eski hem yeni kurala göre basılmış etiketler görebilirsiniz.
     </p>
 
     <h2>Adım 2: İçindekiler Listesini Baştan Okuyun</h2>
@@ -171,26 +181,26 @@
 
     <h2>Fit Dozi Bu Beş Adımın Neresinde?</h2>
     <p>
-      Fit Dozi barkodu okutarak ya da etiketi fotoğraflayarak çalışır. Etiketten bilgiyi yapay zekâ çıkarır; Nutri-Score'un dayandığı FSAm-NPS hesabı ise kural tabanlı olarak cihazda yapılır. Sonuçta Nutri-Score, NOVA işlenmişlik sınıfı ve EFSA verisine dayalı katkı maddesi değerlendirmesi birlikte gösterilir; "100 g için" yazan değerler porsiyona çevrilip DSÖ günlük eşikleriyle karşılaştırılır. Uygulama etiketi okur, ürünü laboratuvarda ölçmez: etiket hatalıysa sonuç da hatalı olur. Skorların nasıl hesaplandığını <a href="/blog/nutri-score-nedir.html">Nutri-Score</a> ve <a href="/blog/ultra-islenmis-gidalar-nova.html">NOVA</a> yazılarında, kaynakları <a href="/science.html">Bilimsel Temel</a> sayfasında bulabilirsiniz.
+      Fit Dozi barkodu okutarak ya da etiketi fotoğraflayarak çalışır. Fotoğrafla taramada ve uygulamanın kendi barkod listesindeki ürünlerde etiketi yapay zekâ (Google Gemini) okur ve değerlendirmeyi yapar; diğer barkodlarda bilgiler Open Food Facts veritabanından gelir. Sonuçta Nutri-Score harfi, içindekiler ve alerjenler ile yaygın katkı maddeleri için kısa bir açıklama ve risk düzeyi gösterilir. Uygulama etiketi ya da veritabanı kaydını okur, ürünü laboratuvarda ölçmez: etiket ya da kayıt hatalıysa sonuç da hatalı olur; yapay zekâ da etiketi yanlış okuyabilir. Nutri-Score'un nasıl hesaplandığını <a href="/blog/nutri-score-nedir.html">Nutri-Score yazısında</a>, "ultra-işlenmiş" kavramını <a href="/blog/ultra-islenmis-gidalar-nova.html">NOVA yazısında</a>, kaynakları <a href="/science.html">Bilimsel Temel</a> sayfasında bulabilirsiniz.
     </p>
 
     <div class="source-box">
       <h3>Kaynaklar</h3>
       <ol>
-        <li>T.C. Resmî Gazete, 26.01.2017, Sayı 29960 (Mükerrer). <em>Türk Gıda Kodeksi Gıda Etiketleme ve Tüketicileri Bilgilendirme Yönetmeliği</em>, madde 4, 7, 9, 16, 20, 21, 24, 25, 27, 28, 35, 37, 38, 39, 43; Ek-1, Ek-4, Ek-7, Ek-9. <a href="https://www.resmigazete.gov.tr/eskiler/2017/01/20170126M1-6.htm" target="_blank" rel="noopener">Metin</a> · <a href="https://www.resmigazete.gov.tr/eskiler/2017/01/20170126M1-6-1.pdf" target="_blank" rel="noopener">Ekler (PDF)</a></li>
+        <li>T.C. Resmî Gazete, 26.01.2017, Sayı 29960 (Mükerrer). <em>Türk Gıda Kodeksi Gıda Etiketleme ve Tüketicileri Bilgilendirme Yönetmeliği</em>, madde 4, 7, 9, 16, 20, 21, 24, 25, 27, 28, 35, 37, 38, 39, 43; Ek-1, Ek-2, Ek-4, Ek-5, Ek-7, Ek-9. <a href="https://www.resmigazete.gov.tr/eskiler/2017/01/20170126M1-6.htm" target="_blank" rel="noopener">Metin</a> · <a href="https://www.resmigazete.gov.tr/eskiler/2017/01/20170126M1-6-1.pdf" target="_blank" rel="noopener">Ekler (PDF)</a></li>
         <li>T.C. Resmî Gazete, 06.04.2024, Sayı 32512. <em>Türk Gıda Kodeksi Gıda Etiketleme ve Tüketicileri Bilgilendirme Yönetmeliğinde Değişiklik Yapılmasına Dair Yönetmelik.</em> <a href="https://www.resmigazete.gov.tr/eskiler/2024/04/20240406-17.htm" target="_blank" rel="noopener">Metin</a></li>
-        <li>T.C. Tarım ve Orman Bakanlığı, Gıda ve Kontrol Genel Müdürlüğü. <em>Türk Gıda Kodeksi Gıda Etiketleme ve Tüketicileri Bilgilendirme Yönetmeliği Kılavuzu</em>, Revizyon 002, 10.03.2026, madde 19.7, 21.1, 22.9. <a href="https://kms.kaysis.gov.tr/Home/Goster/204259" target="_blank" rel="noopener">KAYSİS</a></li>
+        <li>T.C. Tarım ve Orman Bakanlığı, Gıda ve Kontrol Genel Müdürlüğü. <em>Türk Gıda Kodeksi Gıda Etiketleme ve Tüketicileri Bilgilendirme Yönetmeliği Kılavuzu</em>, Revizyon 002, 10.03.2026, madde 2.10, 19.7, 21.1, 22.9. <a href="https://kms.kaysis.gov.tr/Home/Goster/204259" target="_blank" rel="noopener">KAYSİS</a></li>
         <li>T.C. Resmî Gazete, 20.04.2023, Sayı 32169. <em>Türk Gıda Kodeksi Beslenme Beyanları Yönetmeliği</em>, Ek-1. <a href="https://www.resmigazete.gov.tr/eskiler/2023/04/20230420-2.htm" target="_blank" rel="noopener">Metin</a> · <a href="https://www.resmigazete.gov.tr/eskiler/2023/04/20230420-2-1.pdf" target="_blank" rel="noopener">Ek (PDF)</a></li>
         <li>World Health Organization. <em>Healthy diet</em> (bilgi notu), 26 Ocak 2026. <a href="https://www.who.int/news-room/fact-sheets/detail/healthy-diet" target="_blank" rel="noopener">who.int</a></li>
       </ol>
     </div>
 
     <p style="margin: 2rem 0 0; padding: 1rem 1.25rem; border-left: 4px solid #f59e0b; background: #fef3c7; color: #78350f; font-size: 0.9rem; line-height: 1.6; border-radius: 8px;"><strong>Uyarı:</strong> Bu içerik bilgilendirme amaçlıdır; hekim veya diyetisyen tavsiyesinin yerine geçmez. Gıda alerjisi, çölyak, diyabet, hamilelik gibi durumlarda beslenmenizi hekiminizle ya da diyetisyeninizle planlayın.</p>
-    <p class="ai-note">Bu yazı yapay zekâ (Claude) yardımıyla hazırlandı. Kaynaklar 15 Ekim 2026'da kontrol edildi. Hekim veya diyetisyen tarafından gözden geçirilmedi.</p>
+    <p class="ai-note">Bu yazı yapay zekâ (Claude) yardımıyla hazırlandı. Kaynaklar 15 Ekim 2026'da kontrol edildi. Hekim veya diyetisyen tarafından gözden geçirilmedi. 15 Ekim 2026'da kaynaklara göre güncellendi.</p>
 
     <div class="article-cta">
-      <h2>Etiketi Okut, Beş Adımı Tek Ekranda Gör</h2>
-      <p>Fit Dozi barkodu ya da etiket fotoğrafını Nutri-Score, NOVA ve alerjen bilgisine çevirir.</p>
+      <h2>Etiketi Okut, Önemli Satırları Tek Ekranda Gör</h2>
+      <p>Fit Dozi barkodu ya da etiket fotoğrafını Nutri-Score harfine, içindekilere ve alerjen bilgisine çevirir.</p>
       <a href="https://apps.apple.com/tr/app/fit-dozi/id6762354057" class="btn btn-primary" target="_blank" rel="noopener"><span>📱</span><span>App Store'dan İndir</span></a>
     </div>
   </main>

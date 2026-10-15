@@ -33,6 +33,7 @@
     .content-wrapper .lang-switch { font-size: 0.9rem; color: #64748b; margin: 0; line-height: 1.5; }
     .content-wrapper .lang-switch a { font-weight: 700; }
     .nav-links a.nav-lang { display: inline-block; border: 1px solid rgba(255, 255, 255, 0.4); border-radius: 100px; padding: 0.3rem 0.8rem; font-size: 0.85rem; font-weight: 700; }
+    @media (max-width: 960px) { .nav-links li:has(> a:not(.nav-cta):not(.nav-lang)) { display: none; } }
     .source-box li { overflow-wrap: anywhere; }
     .ai-note { font-size: 0.85rem; color: #64748b; margin: 1rem 0 0; line-height: 1.6; }
   </style>

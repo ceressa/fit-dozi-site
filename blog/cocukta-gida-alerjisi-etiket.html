@@ -22,6 +22,14 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Lora:ital@0;1&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="/style.css" />
+  <style>
+    .top-row { display: flex; flex-wrap: wrap; justify-content: space-between; align-items: baseline; gap: 0.5rem 1rem; margin-bottom: 1.75rem; }
+    .top-row .back-link { margin-bottom: 0; }
+    .content-wrapper .lang-switch { font-size: 0.9rem; color: #64748b; margin: 0; line-height: 1.5; }
+    .content-wrapper .lang-switch a { font-weight: 700; }
+    .nav-links a.nav-lang { display: inline-block; border: 1px solid rgba(255, 255, 255, 0.4); border-radius: 100px; padding: 0.3rem 0.8rem; font-size: 0.85rem; font-weight: 700; }
+    @media (max-width: 960px) { .nav-links li:has(> a:not(.nav-cta):not(.nav-lang)) { display: none; } }
+  </style>
 </head>
 <body>
   <nav class="navbar">
@@ -35,6 +43,7 @@
         <li><a href="/#science">Bilim</a></li>
         <li><a href="/blog/">Blog</a></li>
         <li><a href="/#family">Dozi Ailesi</a></li>
+        <li><a href="/blog/en/food-allergy-labels-children.html" class="nav-lang" hreflang="en" lang="en" title="Read this article in English">EN</a></li>
         <li><a href="https://apps.apple.com/tr/app/fit-dozi/id6762354057" class="nav-cta" target="_blank" rel="noopener">App Store</a></li>
       </ul>
     </div>
@@ -48,7 +57,10 @@
   </header>
 
   <main class="content-wrapper">
-    <a href="/blog/" class="back-link">← Tüm Yazılar</a>
+    <div class="top-row">
+      <a href="/blog/" class="back-link">← Tüm Yazılar</a>
+      <p class="lang-switch">Türkçe · <a href="/blog/en/food-allergy-labels-children.html" hreflang="en" lang="en">English</a></p>
+    </div>
 
     <p class="drop-cap">GA²LEN'in 2022 kılavuzuna göre gıda alerjisi çocuk ve yetişkinlerin yaklaşık %2-4'ünü etkiliyor<sup>3</sup>. Avrupa'daki çalışmaları birleştiren 2023 tarihli bir meta-analizde kişilerin kendi bildirdiği gıda alerjisi çok daha yaygın görünüyor (şu anki sıklık %13,1), ama besin yükleme testiyle doğrulanan oran %0,8'de kalıyor<sup>1</sup>. Türkiye'de iki üniversite hastanesinin sağlam çocuk polikliniklerinde izlenen 949 çocuğun (ortalama yaş 28 ay) kayıtlarında gıda alerjisi oranı %4,3 çıktı<sup>2</sup>. Alerjisi olan bir çocuk için rafta etiketi okumak en temel önlem.</p>
 
@@ -63,13 +75,13 @@
       </div>
       <div class="stat-card">
         <div class="num">0,2 mg</div>
-        <div class="label">Alerjililerin en hassas %1'inde reaksiyon başlatan yer fıstığı proteini (VITAL 3.0)</div>
+        <div class="label">Alerjililerin en hassas %1'inde nesnel belirti başlatması beklenen yer fıstığı proteini (VITAL 3.0)</div>
       </div>
     </div>
 
     <h2>Türkiye'de Zorunlu 14 Alerjen Sınıfı</h2>
     <p>
-      <em>Türk Gıda Kodeksi Gıda Etiketleme ve Tüketicileri Bilgilendirme Yönetmeliği</em> (26.01.2017), AB 1169/2011 Tüzüğü ile uyumlu olarak, Ek-1'deki 14 alerjen sınıfının ambalajlı gıdaların içindekiler listesinde listenin geri kalanından ayrılacak biçimde <strong>vurgulanmasını</strong> (punto, stil ya da arka plan rengiyle) zorunlu kılar<sup>4</sup>:
+      <em>Türk Gıda Kodeksi Gıda Etiketleme ve Tüketicileri Bilgilendirme Yönetmeliği</em> (26.01.2017), AB'nin 1169/2011 sayılı Tüzüğü dikkate alınarak hazırlanmıştır<sup>4</sup>. Yönetmelik, Ek-1'deki 14 alerjen sınıfının ambalajlı gıdaların içindekiler listesinde listenin geri kalanından ayrılacak biçimde <strong>vurgulanmasını</strong> (punto, stil ya da arka plan rengiyle) zorunlu kılar<sup>4</sup>:
     </p>
     <ol>
       <li>Gluten içeren tahıllar (buğday, çavdar, arpa, yulaf, kamut, spelt ve melezleri)</li>
@@ -90,23 +102,23 @@
 
     <h2>"İçerebilir" İfadesini Nasıl Okumalı?</h2>
     <p>
-      <em>"Fındık içerebilir"</em>, <em>"aynı tesiste süt işlenmektedir"</em> gibi ifadeler <strong>gönüllü</strong> beyandır: üretim hattındaki <strong>çapraz bulaşma riskini</strong> bildirir. AB 1169/2011 Tüzüğü, gıdada istem dışı alerjen bulunmasına ilişkin kuralların Komisyon tarafından ayrıca belirlenmesini öngörüyor; bu kurallar henüz çıkmadı<sup>8</sup>. Türk mevzuatında da bu ifadeler için bir eşik yok. Yani üreticiden üreticiye farklı miktarlarda bulaşma olabilir.
+      <em>"Fındık içerebilir"</em>, <em>"aynı tesiste süt işlenmektedir"</em> gibi ifadeler <strong>gönüllü</strong> beyandır: üretim hattındaki <strong>çapraz bulaşma riskini</strong> bildirir. AB'nin 1169/2011 sayılı Tüzüğü, gıdada istem dışı alerjen bulunabileceğine ilişkin gönüllü bilgilerin kurallarını Komisyon'un ayrıca çıkaracağı uygulama düzenlemelerine bırakıyor (madde 36/3-a); tüzüğün kendisi bir eşik koymuyor<sup>8</sup>. Türk yönetmeliği de bu ifadeler için bir eşik tanımlamıyor; Bakanlık kılavuzu bu ifadeye ancak bir risk değerlendirmesinden sonra izin veriyor ve bir sayı vermiyor<sup>4, 10</sup>. Yani üreticiden üreticiye farklı miktarlarda bulaşma olabilir.
     </p>
     <p>
       GA²LEN'in 2022 gıda alerjisi yönetim kılavuzu da önleyici alerjen etiketlemesi için düzenlenmiş bir çerçeve bulunmadığını, bu yüzden bu ifadelerin yorumlanmasının zor olduğunu belirtiyor<sup>3</sup>. "İçerebilir" ifadesi taşıyan ürünlerin çocuğunuz için uygun olup olmadığını alerji uzmanınızla konuşun.
     </p>
     <p>
-      Eşikler konusunda bilinen bir referans, Avustralya ve Yeni Zelanda'daki Allergen Bureau'nun VITAL programı. 2019'da yayımlanan VITAL 3.0, alerjililerin en hassas %1'inde nesnel belirti başlatması beklenen dozları referans aldı; yer fıstığı ve süt için bu doz 0,2 mg protein. 2024'te VITAL 4.0 yayımlandı<sup>5</sup>.
+      Eşikler konusunda bilinen bir referans, Avustralya ve Yeni Zelanda'daki Allergen Bureau'nun VITAL programı. 2019'da yayımlanan VITAL 3.0, alerjililerin en hassas %1'inde nesnel belirti başlatması beklenen dozları referans aldı; yer fıstığı ve süt için bu doz 0,2 mg protein. 2024'te VITAL 4.0 yayımlandı; 0,2 mg VITAL 3.0 değeridir<sup>5</sup>.
     </p>
 
     <div class="warning-box">
-      <h3>Anafilaksiyi geciktiren yaygın hata</h3>
+      <h3>Her alışverişte etiketi yeniden okuyun</h3>
       <p>Bir ürünü daha önce sorunsuz yediyseniz, sonraki partinin de güvenli olduğunu varsaymayın. Üreticiler formülasyonu değiştirebilir, bileşen tedarikçisi değişebilir. Her alışverişte etiketi yeniden okuyun.</p>
     </div>
 
     <h2>Çocuğunuzda Yeni Bir Gıda Denerken</h2>
     <p>
-      Amerikan Pediatri Akademisi'nin (AAP) 2019 raporu, yer fıstığı, yumurta ve balık gibi alerjen gıdaları 4-6. aylardan sonraya ertelemenin alerjik hastalıkları önlediğine dair kanıt olmadığını, yer fıstığının erken verilmesinin ise yer fıstığı alerjisini önleyebileceğini belirtiyor<sup>7</sup>. Avrupa Alerji ve Klinik İmmünoloji Akademisi'nin (EAACI) 2020 kılavuzu da iyi pişmiş yumurtanın ve yer fıstığı alerjisinin yaygın olduğu toplumlarda yer fıstığının ek gıdaya geçişte diyete eklenmesini öneriyor; çalışmalara göre en etkili dönem 4-6. aylar<sup>6</sup>.
+      Amerikan Pediatri Akademisi'nin (AAP) 2019 raporu, yer fıstığı, yumurta ve balık gibi alerjen gıdaları 4-6. aylardan sonraya ertelemenin alerjik hastalıkları önlediğine dair kanıt olmadığını, yer fıstığının erken verilmesinin ise yer fıstığı alerjisini önleyebileceğini belirtiyor<sup>7</sup>. Avrupa Alerji ve Klinik İmmünoloji Akademisi'nin (EAACI) 2020 kılavuzu da iyi pişmiş yumurtanın ve yer fıstığı alerjisinin yaygın olduğu toplumlarda yer fıstığının yaşa uygun bir formda ek gıdaya geçişte diyete eklenmesini öneriyor; çalışmalara göre en etkili dönem 4-6. aylar<sup>6</sup>.
     </p>
     <p>
       Bu yaklaşımın temelinde 2015'teki LEAP çalışması var: ağır egzaması ya da yumurta alerjisi olan 640 bebekte, deri testi başta negatif olan grupta 5 yaşında yer fıstığı alerjisi, yer fıstığından kaçınanlarda %13,7, düzenli yiyenlerde %1,9 oldu<sup>9</sup>. Pratikte:
@@ -119,7 +131,7 @@
 
     <div class="tip-box">
       <h3>Restoranda ve dışarıda</h3>
-      <p>Yazılı alerjen bilgisi isteyin. TGK Gıda Etiketleme Yönetmeliği'ne göre ambalajsız sunulan gıdalarda da alerjen bilgisi tüketiciye verilmeli; bu bilgi menü, yazı tahtası ya da broşür gibi araçlarla sunulabilir. İşletmelere tanınan uyum süresi 31 Aralık 2019'da doldu<sup>4</sup>.</p>
+      <p>Yazılı alerjen bilgisi isteyin. TGK Gıda Etiketleme Yönetmeliği'ne göre ambalajsız sunulan gıdalarda da alerjen bilgisi tüketiciye verilmeli; bu bilgi menü, yazı tahtası ya da broşür gibi araçlarla sunulabilir. Yönetmelik yayımlandığında faaliyette olan işletmelere tanınan genel uyum süresi 31 Aralık 2019'da doldu<sup>4</sup>.</p>
     </div>
 
     <h2>Fit Dozi'de Alerjenler</h2>
@@ -136,17 +148,18 @@
         <li>Spolidoro GCI, Amera YT, Ali MM, ve ark. <em>Frequency of food allergy in Europe: an updated systematic review and meta-analysis.</em> Allergy 2023;78(2):351-368. doi:10.1111/all.15560</li>
         <li>Aksoy AG, Boran P, Karakoc-Aydiner E, ve ark. <em>Prevalence of allergic disorders and risk factors associated with food allergy in Turkish preschoolers.</em> Allergol Immunopathol (Madr) 2021;49(1):11-16. doi:10.15586/aei.v49i1.23</li>
         <li>Muraro A, de Silva D, Halken S, ve ark. <em>Managing food allergy: GA²LEN guideline 2022.</em> World Allergy Organ J 2022;15(9):100687. doi:10.1016/j.waojou.2022.100687</li>
-        <li>T.C. Resmî Gazete. <em>Türk Gıda Kodeksi Gıda Etiketleme ve Tüketicileri Bilgilendirme Yönetmeliği</em>, 26.01.2017, Sayı 29960 (Mükerrer): Madde 15, Madde 24, Ek-1, Geçici Madde 1.</li>
+        <li>T.C. Resmî Gazete. <em>Türk Gıda Kodeksi Gıda Etiketleme ve Tüketicileri Bilgilendirme Yönetmeliği</em>, 26.01.2017, Sayı 29960 (Mükerrer): Madde 15, Madde 24, Madde 43, Madde 50, Ek-1, Geçici Madde 1. <a href="https://www.resmigazete.gov.tr/eskiler/2017/01/20170126M1-6.htm" target="_blank" rel="noopener">Metin</a> · <a href="https://www.resmigazete.gov.tr/eskiler/2017/01/20170126M1-6-1.pdf" target="_blank" rel="noopener">Ekler (PDF)</a></li>
         <li>Allergen Bureau. <em>Summary of the 2019 VITAL Scientific Expert Panel Recommendations</em> (VITAL 3.0), 2019; <em>History of VITAL</em> (VITAL 4.0, 2024). vital.allergenbureau.net</li>
         <li>Halken S, Muraro A, de Silva D, ve ark. <em>EAACI guideline: Preventing the development of food allergy in infants and young children (2020 update).</em> Pediatr Allergy Immunol 2021;32(5):843-858. doi:10.1111/pai.13496</li>
         <li>Greer FR, Sicherer SH, Burks AW, ve ark. <em>The effects of early nutritional interventions on the development of atopic disease in infants and children.</em> Pediatrics 2019;143(4):e20190281. doi:10.1542/peds.2019-0281</li>
         <li>European Commission. <em>Regulation (EU) No 1169/2011 on the provision of food information to consumers</em>, Annex II, Madde 21 ve 36.</li>
         <li>Du Toit G, Roberts G, Sayre PH, ve ark. <em>Randomized trial of peanut consumption in infants at risk for peanut allergy (LEAP).</em> N Engl J Med 2015;372(9):803-813. doi:10.1056/NEJMoa1414850</li>
+        <li>T.C. Tarım ve Orman Bakanlığı, Gıda ve Kontrol Genel Müdürlüğü. <em>Türk Gıda Kodeksi Gıda Etiketleme ve Tüketicileri Bilgilendirme Yönetmeliği Kılavuzu</em>, Revizyon 002, 10.03.2026, madde 21. <a href="https://kms.kaysis.gov.tr/Home/Goster/204259" target="_blank" rel="noopener">KAYSİS</a></li>
       </ol>
     </div>
 
     <p style="margin: 2rem 0 0; padding: 1rem 1.25rem; border-left: 4px solid #f59e0b; background: #fef3c7; color: #78350f; font-size: 0.9rem; line-height: 1.6; border-radius: 8px;"><strong>Uyarı:</strong> Bu içerik bilgilendirme amaçlıdır; hekim veya diyetisyen tavsiyesinin yerine geçmez. Gıda alerjisi, çölyak, diyabet, hamilelik gibi durumlarda beslenmenizi hekiminizle ya da diyetisyeninizle planlayın.</p>
-    <p style="font-size: 0.85rem; color: #64748b; margin: 1rem 0 0; line-height: 1.6;">Bu yazı 15 Ekim 2026'da yapay zekâ (Claude) yardımıyla güncellendi; kaynaklar o tarihte kontrol edildi.</p>
+    <p style="font-size: 0.85rem; color: #64748b; margin: 1rem 0 0; line-height: 1.6;">Bu yazı 15 Ekim 2026'da yapay zekâ (Claude) yardımıyla güncellendi; kaynaklar o tarihte kontrol edildi. 15 Ekim 2026'da kaynaklara göre güncellendi.</p>
 
     <div class="article-cta">
       <h2>Alerjen Uyarısını Ailene Özel Al</h2>

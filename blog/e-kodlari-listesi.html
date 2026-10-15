@@ -32,6 +32,12 @@
     .data-table th { background: #f8faf8; color: #1e293b; font-weight: 700; }
     .data-table sup { font-size: 0.7em; }
     .ai-note { font-size: 0.85rem; color: #64748b; margin: 1rem 0 0; line-height: 1.6; }
+    .top-row { display: flex; flex-wrap: wrap; justify-content: space-between; align-items: baseline; gap: 0.5rem 1rem; margin-bottom: 1.75rem; }
+    .top-row .back-link { margin-bottom: 0; }
+    .content-wrapper .lang-switch { font-size: 0.9rem; color: #64748b; margin: 0; line-height: 1.5; }
+    .content-wrapper .lang-switch a { font-weight: 700; }
+    .nav-links a.nav-lang { display: inline-block; border: 1px solid rgba(255, 255, 255, 0.4); border-radius: 100px; padding: 0.3rem 0.8rem; font-size: 0.85rem; font-weight: 700; }
+    @media (max-width: 960px) { .nav-links li:has(> a:not(.nav-cta):not(.nav-lang)) { display: none; } }
   </style>
 
   <script type="application/ld+json">
@@ -60,6 +66,7 @@
         <li><a href="/#science">Bilim</a></li>
         <li><a href="/blog/">Blog</a></li>
         <li><a href="/#family">Dozi Ailesi</a></li>
+        <li><a href="/blog/en/e-numbers-list.html" class="nav-lang" hreflang="en" lang="en" title="Read this article in English">EN</a></li>
         <li><a href="https://apps.apple.com/tr/app/fit-dozi/id6762354057" class="nav-cta" target="_blank" rel="noopener">App Store</a></li>
       </ul>
     </div>
@@ -73,14 +80,17 @@
   </header>
 
   <main class="content-wrapper">
-    <a href="/blog/" class="back-link">← Tüm Yazılar</a>
+    <div class="top-row">
+      <a href="/blog/" class="back-link">← Tüm Yazılar</a>
+      <p class="lang-switch">Türkçe · <a href="/blog/en/e-numbers-list.html" hreflang="en" lang="en">English</a></p>
+    </div>
     <p class="byline">Bardino · 15 Ekim 2026</p>
 
-    <p class="drop-cap">E kodu, bir katkı maddesinin Avrupa Birliği'nde onaylanmış kod numarasıdır; tek başına ne "zararlı" ne de "doğal" anlamına gelir<sup>1</sup>. Bir katkının ne işe yaradığını etiketin kendisi söyler: Türk Gıda Kodeksi'ne göre katkı maddeleri içindekiler listesinde önce görevleriyle (koruyucu, emülgatör, renklendirici gibi), ardından adları ya da E kodlarıyla yazılır<sup>2</sup>. Aşağıdaki tablo, market etiketlerinde sık görülen görev sınıflarını, örnek E kodlarını ve Avrupa Gıda Güvenliği Otoritesi'nin (EFSA) bu örnekler için vardığı son sonucu bir arada veriyor.</p>
+    <p class="drop-cap">E kodu, bir katkı maddesinin Avrupa Birliği'nde onaylanmış kod numarasıdır<sup>1</sup>; tek başına ne "zararlı" ne de "doğal" anlamına gelir. Bir katkının ne işe yaradığını etiketin kendisi söyler: Türk Gıda Kodeksi'ne göre katkı maddeleri içindekiler listesinde önce görevleriyle (koruyucu, emülgatör, renklendirici gibi), ardından adları ya da E kodlarıyla yazılır<sup>2</sup>. Aşağıdaki tablo, market etiketlerinde sık görülen görev sınıflarını, örnek E kodlarını ve Avrupa Gıda Güvenliği Otoritesi'nin (EFSA) bu örnekler için vardığı son sonucu bir arada veriyor.</p>
 
     <h2>E Kodu Ne Söyler, Ne Söylemez?</h2>
     <p>
-      Türk Gıda Kodeksi Gıda Katkı Maddeleri Yönetmeliği, bir maddenin izinli katkılar listesine girmesi için üç koşul arar: önerilen kullanım miktarında mevcut bilimsel kanıtlara göre güvenlik riski doğurmaması, makul bir teknolojik ihtiyacın bulunması ve kullanımının tüketiciyi yanıltmaması<sup>1</sup>. Kullanım miktarı istenen etkiyi sağlayan en düşük miktar olarak belirlenir; bunu yaparken katkının kabul edilebilir günlük alım miktarı (ADI) ve tüm kaynaklardan muhtemel günlük alım dikkate alınır. Bazı katkılar için sayısal üst sınır konmaz; bu durumda "quantum satis", yani iyi üretim uygulamasına uygun ve amaca yetecek kadar kullanım kuralı geçerlidir<sup>1</sup>.
+      Türk Gıda Kodeksi Gıda Katkı Maddeleri Yönetmeliği, bir maddenin izinli katkılar listesine girmesi için üç koşul arar: önerilen kullanım miktarında mevcut bilimsel kanıtlara göre güvenlik riski doğurmaması, makul bir teknolojik ihtiyacın bulunması ve kullanımının tüketiciyi yanıltmaması<sup>1</sup>. Kullanım miktarı istenen etkiyi sağlayan en düşük miktar olarak belirlenir; bunu yaparken katkının kabul edilebilir günlük alım miktarı (ADI) ve tüm kaynaklardan muhtemel günlük alım dikkate alınır. Bazı katkılar için sayısal üst sınır konmaz; bu durumda "quantum satis" kuralı geçerlidir: iyi üretim uygulamalarına uygun, amaca ulaşmak için gerekenden fazla olmayan ve tüketiciyi yanıltmayan miktarda kullanım<sup>1</sup>.
     </p>
     <p>
       ADI, EFSA'nın tanımıyla, bir maddenin ömür boyu her gün tüketildiğinde sağlık açısından kayda değer bir risk oluşturmadığı tahmin edilen miktardır ve genellikle vücut ağırlığının kilogramı başına günlük miligram olarak verilir<sup>3</sup>. EFSA, 2009'dan önce AB'de izin verilmiş 315 katkı maddesini yeniden değerlendiriyor; kurumun açıklamasına göre bunların yüzde 70'ten fazlası tamamlandı<sup>4</sup>. Tablodaki yıllar ilgili EFSA görüşünün yayın yılıdır.
@@ -88,7 +98,7 @@
 
     <div class="tip-box">
       <h3>Her "katkı" gibi görünen şey katkı değildir</h3>
-      <p>Yönetmeliğe göre şekerler, inülin, yenilebilir jelatin, süt proteini, kazein, gluten, sakız mayası ile dekstrinler ve fiziksel ya da enzimle işlenmiş nişastalar gibi bazı nişastalar katkı maddesi sayılmaz<sup>1</sup>. Bunlar içindekiler listesinde E kodu olmadan, kendi adlarıyla yer alır.</p>
+      <p>Yönetmeliğe göre şekerler, inülin, yenilebilir jelatin, süt proteini, kazein, gluten, sakız mayası ile dekstrinler ve fiziksel ya da enzimle işlenmiş nişastalar gibi bazı nişastalar katkı maddesi sayılmaz<sup>1</sup>.</p>
     </div>
 
     <h2>Etikette Nasıl Yazılır?</h2>
@@ -112,7 +122,7 @@
             <td>Koruyucu (et ürünleri)</td>
             <td>Aynı sınıf; işlenmiş et ürünlerinde kullanılır</td>
             <td>E250 sodyum nitrit</td>
-            <td>2017: ADI 0,07 mg nitrit iyonu/kg/gün. Katkı kaynaklı alım genel nüfusta ADI'yi aşmıyor, en yüksek tüketen çocuklarda hafifçe aşıyor. Panel ayrıca diyetle alınan nitritle mide kanseri, işlenmiş etten gelen nitrit ve nitratla kolorektal kanser arasında bağlantıya işaret eden "bazı kanıtlar" bulunduğunu not etti<sup>6</sup></td>
+            <td>2017: ADI 0,07 mg nitrit iyonu/kg/gün. Katkı kaynaklı alım genel nüfusta ADI'yi aşmıyor, en yüksek tüketen çocuklarda hafifçe aşıyor. Panel ayrıca epidemiyolojik çalışmalarda diyetle alınan nitritle mide kanseri, işlenmiş etten gelen nitrit ve nitratla kolorektal kanser arasında bağlantıya işaret eden "bazı kanıtlar" bulunduğunu not etti<sup>6</sup></td>
           </tr>
           <tr>
             <td>Antioksidan</td>
@@ -142,7 +152,7 @@
             <td>Asit / kabartıcı</td>
             <td>Asitler asitliği arttırır ya da ekşi tat verir; kabartıcılar gaz oluşturarak hamuru kabartır</td>
             <td>E338 fosforik asit, E450 difosfatlar</td>
-            <td>2019: fosfor cinsinden grup ADI 40 mg/kg/gün. Doğal fosfor dahil tüm diyetten alımın bazı çocuk gruplarında bu değeri aştığı tahmin edildi<sup>13</sup></td>
+            <td>2019: fosfor cinsinden grup ADI 40 mg/kg/gün. Doğal fosfor dahil tüm diyetten alımın bebek, küçük çocuk ve çocuklarda ortalama düzeyde, ergenlerde de 95. yüzdelikte bu değeri aştığı tahmin edildi; takviyelerden alım da ADI'yi aşabiliyor<sup>13</sup></td>
           </tr>
           <tr>
             <td>Aroma arttırıcı</td>
@@ -160,7 +170,7 @@
             <td>Tatlandırıcı (poliol)</td>
             <td>Şeker alkolleri; izinli katkılar listesinde tatlandırıcılar arasında yer alır</td>
             <td>E968 eritritol</td>
-            <td>2023: ishal etkisine dayanarak ADI 0,5 g/kg/gün. Yüksek tüketenlerde alımın bunun üzerinde olabileceği belirtildi; panel maruziyet tahminlerini abartılı bulduğunu da yazdı<sup>19</sup></td>
+            <td>2023: ishal etkisine dayanarak ADI 0,5 g/kg/gün. Panelin akut ve kronik maruziyet tahminleri ADI'nin üzerinde çıktı; panel her iki tahmini de gerçeğin üzerinde (aşırı tahmin) bulduğunu yazdı<sup>19</sup></td>
           </tr>
         </tbody>
       </table>
@@ -177,10 +187,10 @@
     <h2>Etiketteki Özel Uyarılar</h2>
     <p>Bazı katkılar içindekiler listesinin dışında ek bir uyarı gerektirir:</p>
     <ul>
-      <li><strong>Altı renklendirici</strong> (E102 tartrazin, E104 kinolin sarısı, E110 sunset yellow, E122 karmosin, E124 ponzo 4R, E129 allura red) içeren gıdalarda "çocukların aktivite ve dikkatleri üzerine olumsuz etkileri bulunabilir" uyarısı yazılır<sup>1</sup>.</li>
+      <li><strong>Altı renklendirici</strong> (E102 tartrazin, E104 kinolin sarısı, E110 sunset yellow, E122 karmosin, E124 ponzo 4R, E129 allura red) içeren gıdalarda renklendiricinin adı ya da E kodundan sonra "çocukların aktivite ve dikkatleri üzerine olumsuz etkileri bulunabilir" uyarısı yazılır<sup>1</sup>.</li>
       <li><strong>Aspartam</strong> içeren gıdalarda "Aspartam (fenilalanin kaynağı) içerir" ya da "Fenilalanin kaynağı içerir" ifadesi bulunur<sup>2</sup>. Bu uyarı fenilketonüri hastaları içindir; EFSA da ADI'nin bu hastalar için geçerli olmadığını belirtir<sup>15</sup>.</li>
       <li><strong>Poliolleri</strong> yüzde 10'dan fazla ilave olarak içeren gıdalarda "Aşırı tüketimi laksatif etki yaratabilir." uyarısı bulunur<sup>2</sup>.</li>
-      <li><strong>Tatlandırıcı</strong> içeren gıdalarda 6 Nisan 2024 değişikliğiyle "Tatlandırıcılı" ya da "Tatlandırıcı(lar) içerir" ifadesi gıdanın adıyla birlikte vurgulanarak yazılır; uyum için son tarih 31 Aralık 2026<sup>20</sup>.</li>
+      <li><strong>Tatlandırıcı</strong> içeren gıdalarda 2017'den beri gıdanın adının yanında zorunlu olan "Tatlandırıcılı" ya da "Tatlandırıcı(lar) içerir" ifadesi, 6 Nisan 2024 değişikliğiyle gıdanın adının geçtiği her yerde adla birlikte, punto, stil veya arka plan rengiyle ayırt edilerek yazılmak zorunda; uyum için son tarih 31 Aralık 2026<sup>2, 20</sup>.</li>
     </ul>
 
     <div class="warning-box">
@@ -190,13 +200,13 @@
 
     <h2>Fit Dozi Katkı Maddelerini Nasıl Gösteriyor?</h2>
     <p>
-      Fit Dozi, Nutri-Score ve NOVA sınıfının yanında EFSA verisine dayalı bir katkı maddesi değerlendirmesi gösterir ve hangi katkının neden uyarı aldığını açıkça yazar. Çocuk ve hamile profillerinde ilgili tatlandırıcılar ayrıca işaretlenir. Uygulamanın dayandığı kaynakların listesi <a href="/science.html">Bilimsel Temel</a> sayfasında. Etiketin geri kalanını nasıl okuyacağınızı <a href="/blog/gida-etiketi-nasil-okunur.html">gıda etiketi rehberimizde</a> anlattık.
+      Fit Dozi, yaygın katkı maddeleri için kısa bir açıklama ve bir risk düzeyi gösterir; sonuç ekranında katkı satırına dokunarak ilgili EFSA değerlendirmesine ulaşabilirsiniz. Fotoğrafla taramada ve uygulamanın kendi barkod listesindeki ürünlerde bilgiler yapay zekâdan (Google Gemini), diğer barkodlarda Open Food Facts veritabanından gelir. Yapay zekâ etiketi yanlış okuyabilir, veritabanı kaydı eski olabilir; önemli bir konuda ambalajdaki etiketle karşılaştırın. Uygulamanın dayandığı kaynakların listesi <a href="/science.html">Bilimsel Temel</a> sayfasında. Etiketin geri kalanını nasıl okuyacağınızı <a href="/blog/gida-etiketi-nasil-okunur.html">gıda etiketi rehberimizde</a> anlattık.
     </p>
 
     <div class="source-box">
       <h3>Kaynaklar</h3>
       <ol>
-        <li>T.C. Resmî Gazete, 30.06.2013, Sayı 28693. <em>Türk Gıda Kodeksi Gıda Katkı Maddeleri Yönetmeliği</em>, madde 4, 7, 12, 17; Ek-I, Ek-V. <a href="https://www.resmigazete.gov.tr/eskiler/2013/06/20130630-4.htm" target="_blank" rel="noopener">Metin</a> · <a href="https://www.resmigazete.gov.tr/eskiler/2013/06/20130630-4-1.doc" target="_blank" rel="noopener">Ekler (DOC)</a></li>
+        <li>T.C. Resmî Gazete, 30.06.2013, Sayı 28693. <em>Türk Gıda Kodeksi Gıda Katkı Maddeleri Yönetmeliği</em>, madde 4, 7, 12, 17, 24; Ek-I, Ek-II, Ek-V. <a href="https://www.resmigazete.gov.tr/eskiler/2013/06/20130630-4.htm" target="_blank" rel="noopener">Metin</a> · <a href="https://www.resmigazete.gov.tr/eskiler/2013/06/20130630-4-1.doc" target="_blank" rel="noopener">Ekler (DOC)</a></li>
         <li>T.C. Resmî Gazete, 26.01.2017, Sayı 29960 (Mükerrer). <em>Türk Gıda Kodeksi Gıda Etiketleme ve Tüketicileri Bilgilendirme Yönetmeliği</em>, Ek-2, Ek-4 Bölüm 3. <a href="https://www.resmigazete.gov.tr/eskiler/2017/01/20170126M1-6.htm" target="_blank" rel="noopener">Metin</a> · <a href="https://www.resmigazete.gov.tr/eskiler/2017/01/20170126M1-6-1.pdf" target="_blank" rel="noopener">Ekler (PDF)</a></li>
         <li>EFSA. <em>Glossary: Acceptable daily intake.</em> <a href="https://www.efsa.europa.eu/en/glossary/acceptable-daily-intake" target="_blank" rel="noopener">efsa.europa.eu</a></li>
         <li>EFSA. <em>Topic: Food additives.</em> <a href="https://www.efsa.europa.eu/en/topics/topic/food-additives" target="_blank" rel="noopener">efsa.europa.eu</a></li>
@@ -208,10 +218,10 @@
         <li>EFSA ANS Panel. <em>Re-evaluation of mono- and di-glycerides of fatty acids (E 471) as food additives.</em> EFSA J 2017. <a href="https://doi.org/10.2903/j.efsa.2017.5045" target="_blank" rel="noopener">doi:10.2903/j.efsa.2017.5045</a></li>
         <li>EFSA ANS Panel. <em>Re-evaluation of xanthan gum (E 415) as a food additive.</em> EFSA J 2017. <a href="https://doi.org/10.2903/j.efsa.2017.4909" target="_blank" rel="noopener">doi:10.2903/j.efsa.2017.4909</a></li>
         <li>EFSA ANS Panel. <em>Re-evaluation of pectin (E 440i) and amidated pectin (E 440ii) as food additives.</em> EFSA J 2017. <a href="https://doi.org/10.2903/j.efsa.2017.4866" target="_blank" rel="noopener">doi:10.2903/j.efsa.2017.4866</a></li>
-        <li>EFSA FAF Panel. <em>Re-evaluation of phosphoric acid-phosphates (E 338-341, E 343, E 450-452) as food additives.</em> EFSA J 2019. <a href="https://doi.org/10.2903/j.efsa.2019.5674" target="_blank" rel="noopener">doi:10.2903/j.efsa.2019.5674</a></li>
-        <li>EFSA ANS Panel. <em>Re-evaluation of glutamic acid (E 620) and glutamates (E 621-625) as food additives.</em> EFSA J 2017. <a href="https://doi.org/10.2903/j.efsa.2017.4910" target="_blank" rel="noopener">doi:10.2903/j.efsa.2017.4910</a></li>
+        <li>EFSA FAF Panel. <em>Re-evaluation of phosphoric acid-phosphates - di-, tri- and polyphosphates (E 338-341, E 343, E 450-452) as food additives and the safety of proposed extension of use.</em> EFSA J 2019. <a href="https://doi.org/10.2903/j.efsa.2019.5674" target="_blank" rel="noopener">doi:10.2903/j.efsa.2019.5674</a></li>
+        <li>EFSA ANS Panel. <em>Re-evaluation of glutamic acid (E 620), sodium glutamate (E 621), potassium glutamate (E 622), calcium glutamate (E 623), ammonium glutamate (E 624) and magnesium glutamate (E 625) as food additives.</em> EFSA J 2017. <a href="https://doi.org/10.2903/j.efsa.2017.4910" target="_blank" rel="noopener">doi:10.2903/j.efsa.2017.4910</a></li>
         <li>EFSA. <em>EFSA completes full risk assessment on aspartame and concludes it is safe at current levels of exposure</em>, 10 Aralık 2013. <a href="https://www.efsa.europa.eu/en/press/news/131210" target="_blank" rel="noopener">efsa.europa.eu</a></li>
-        <li>EFSA FAF Panel. <em>Re-evaluation of sucralose (E 955) as a food additive.</em> EFSA J 2026. <a href="https://doi.org/10.2903/j.efsa.2026.9854" target="_blank" rel="noopener">doi:10.2903/j.efsa.2026.9854</a></li>
+        <li>EFSA FAF Panel. <em>Re-evaluation of sucralose (E 955) as a food additive and evaluation of a new application on extension of use of sucralose (E 955) in fine bakery wares.</em> EFSA J 2026. <a href="https://doi.org/10.2903/j.efsa.2026.9854" target="_blank" rel="noopener">doi:10.2903/j.efsa.2026.9854</a></li>
         <li>EFSA FAF Panel. <em>Re-evaluation of acesulfame K (E 950) as food additive.</em> EFSA J 2025. <a href="https://doi.org/10.2903/j.efsa.2025.9317" target="_blank" rel="noopener">doi:10.2903/j.efsa.2025.9317</a></li>
         <li>EFSA ANS Panel. <em>Scientific Opinion on the safety of steviol glycosides for the proposed uses as a food additive.</em> EFSA J 2010. <a href="https://doi.org/10.2903/j.efsa.2010.1537" target="_blank" rel="noopener">doi:10.2903/j.efsa.2010.1537</a></li>
         <li>EFSA FAF Panel. <em>Re-evaluation of erythritol (E 968) as a food additive.</em> EFSA J 2023. <a href="https://doi.org/10.2903/j.efsa.2023.8430" target="_blank" rel="noopener">doi:10.2903/j.efsa.2023.8430</a></li>
@@ -220,11 +230,11 @@
     </div>
 
     <p style="margin: 2rem 0 0; padding: 1rem 1.25rem; border-left: 4px solid #f59e0b; background: #fef3c7; color: #78350f; font-size: 0.9rem; line-height: 1.6; border-radius: 8px;"><strong>Uyarı:</strong> Bu içerik bilgilendirme amaçlıdır; hekim veya diyetisyen tavsiyesinin yerine geçmez. Gıda alerjisi, çölyak, diyabet, hamilelik gibi durumlarda beslenmenizi hekiminizle ya da diyetisyeninizle planlayın.</p>
-    <p class="ai-note">Bu yazı yapay zekâ (Claude) yardımıyla hazırlandı. Kaynaklar 15 Ekim 2026'da kontrol edildi. Hekim veya diyetisyen tarafından gözden geçirilmedi.</p>
+    <p class="ai-note">Bu yazı yapay zekâ (Claude) yardımıyla hazırlandı. Kaynaklar 15 Ekim 2026'da kontrol edildi. Hekim veya diyetisyen tarafından gözden geçirilmedi. 15 Ekim 2026'da kaynaklara göre güncellendi.</p>
 
     <div class="article-cta">
       <h2>E Kodunu Görevi ve EFSA Notuyla Gör</h2>
-      <p>Fit Dozi etiketteki katkı maddelerini EFSA verisine göre değerlendirir ve uyarının nedenini yazar.</p>
+      <p>Fit Dozi yaygın katkı maddeleri için kısa bir açıklama ve risk düzeyi gösterir, EFSA değerlendirmesine bağlantı verir.</p>
       <a href="https://apps.apple.com/tr/app/fit-dozi/id6762354057" class="btn btn-primary" target="_blank" rel="noopener"><span>📱</span><span>App Store'dan İndir</span></a>
     </div>
   </main>

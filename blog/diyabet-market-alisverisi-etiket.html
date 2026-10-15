@@ -31,6 +31,12 @@
     .data-table th, .data-table td { text-align: left; vertical-align: top; padding: 0.6rem 0.75rem; border-bottom: 1px solid #e2e8f0; color: #334155; line-height: 1.55; }
     .data-table th { background: #f8faf8; color: #1e293b; font-weight: 700; }
     .ai-note { font-size: 0.85rem; color: #64748b; margin: 1rem 0 0; line-height: 1.6; }
+    .top-row { display: flex; flex-wrap: wrap; justify-content: space-between; align-items: baseline; gap: 0.5rem 1rem; margin-bottom: 1.75rem; }
+    .top-row .back-link { margin-bottom: 0; }
+    .content-wrapper .lang-switch { font-size: 0.9rem; color: #64748b; margin: 0; line-height: 1.5; }
+    .content-wrapper .lang-switch a { font-weight: 700; }
+    .nav-links a.nav-lang { display: inline-block; border: 1px solid rgba(255, 255, 255, 0.4); border-radius: 100px; padding: 0.3rem 0.8rem; font-size: 0.85rem; font-weight: 700; }
+    @media (max-width: 960px) { .nav-links li:has(> a:not(.nav-cta):not(.nav-lang)) { display: none; } }
   </style>
 
   <script type="application/ld+json">
@@ -59,6 +65,7 @@
         <li><a href="/#science">Bilim</a></li>
         <li><a href="/blog/">Blog</a></li>
         <li><a href="/#family">Dozi Ailesi</a></li>
+        <li><a href="/blog/en/diabetes-grocery-shopping-labels.html" class="nav-lang" hreflang="en" lang="en" title="Read this article in English">EN</a></li>
         <li><a href="https://apps.apple.com/tr/app/fit-dozi/id6762354057" class="nav-cta" target="_blank" rel="noopener">App Store</a></li>
       </ul>
     </div>
@@ -72,10 +79,13 @@
   </header>
 
   <main class="content-wrapper">
-    <a href="/blog/" class="back-link">← Tüm Yazılar</a>
+    <div class="top-row">
+      <a href="/blog/" class="back-link">← Tüm Yazılar</a>
+      <p class="lang-switch">Türkçe · <a href="/blog/en/diabetes-grocery-shopping-labels.html" hreflang="en" lang="en">English</a></p>
+    </div>
     <p class="byline">Bardino · 15 Ekim 2026</p>
 
-    <p class="drop-cap">Diyabetle etiket okurken bakılacak ana satır "şekerler" değil, "karbonhidrat"tır. Türk Gıda Kodeksi'ne göre "şekerler" satırı yalnızca mono- ve disakkaritleri gösterir; nişasta ve şeker alkolleri (polioller) karbonhidrat toplamının içindedir<sup>1</sup>. ABD Hastalık Kontrol ve Önleme Merkezleri (CDC) bunu tek cümleyle özetliyor: şekerler ve nişastalar kan şekerini yükseltir, lif yükseltmez<sup>2</sup>. İkinci kural: değerler 100 g için yazılır, siz ise porsiyon yersiniz. Günde ne kadar karbonhidrat alacağınız ise kişiye göre değişir; bunu etiket değil, diyabet ekibiniz belirler.</p>
+    <p class="drop-cap">Diyabetle etiket okurken bakılacak ana satır "şekerler" değil, "karbonhidrat"tır. Türk Gıda Kodeksi'ne göre "şekerler" satırı yalnızca mono- ve disakkaritleri gösterir; nişasta ve şeker alkolleri (polioller) karbonhidrat toplamının içindedir<sup>1</sup>. ABD Hastalık Kontrol ve Önleme Merkezleri'nin (CDC) ifadesiyle şekerler ve nişastalar kan şekerini yükseltir, lif yükseltmez<sup>2</sup>. İkinci kural: değerler 100 g için yazılır, siz ise porsiyon yersiniz. Günde ne kadar karbonhidrat alacağınız ise kişiye göre değişir; bunu etiket değil, diyabet ekibiniz belirler.</p>
 
     <h2>Beslenme Tablosundaki Satırlar Ne Anlatır?</h2>
     <p>
@@ -85,12 +95,12 @@
     <div class="table-wrap">
       <table class="data-table">
         <thead>
-          <tr><th>Satır</th><th>Yönetmelikteki tanımı<sup>1</sup></th><th>Okurken</th></tr>
+          <tr><th>Satır</th><th>Yönetmelikte<sup>1</sup></th><th>Okurken</th></tr>
         </thead>
         <tbody>
           <tr><td>Karbonhidrat</td><td>Polioller dahil, insan vücudunda metabolize olan herhangi bir karbonhidrat</td><td>Şekerleri, nişastayı ve poliolleri birlikte kapsar. Ana satır budur.</td></tr>
           <tr><td>Şekerler</td><td>Polioller hariç, gıdada bulunan tüm monosakkaritler ve disakkaritler</td><td>Eklenmiş şekerle süt ve meyvenin kendi şekerini ayırmaz.</td></tr>
-          <tr><td>Nişasta (isteğe bağlı)</td><td>Ayrı satır olarak verilebilir</td><td>Verilmemişse karbonhidrat ile şekerler arasındaki farkın büyük kısmını oluşturabilir.</td></tr>
+          <tr><td>Nişasta (isteğe bağlı)</td><td>Tanımlanmamış; isteğe bağlı satır olarak verilebilir</td><td>Verilmemişse karbonhidrat ile şekerler arasındaki farkın büyük kısmını oluşturabilir.</td></tr>
           <tr><td>Polioller (isteğe bağlı)</td><td>İkiden fazla hidroksil grubu içeren alkoller (şeker alkolleri)</td><td>Karbonhidrata dahildir; enerji hesabında gram başına 2,4 kcal sayılır, eritritol 0.</td></tr>
           <tr><td>Lif (isteğe bağlı)</td><td>İnce bağırsakta sindirilemeyen, emilemeyen karbonhidrat polimerleri</td><td>Tanım gereği sindirilmez; karbonhidrat satırından ayrı yazılır.</td></tr>
         </tbody>
@@ -103,7 +113,7 @@
 
     <h2>100 Gramdan Porsiyona</h2>
     <p>
-      Beslenme değerlerinin 100 g ya da 100 ml için verilmesi zorunludur; porsiyon başına değer isteğe bağlıdır ve verilirse porsiyon büyüklüğü tablonun hemen yanında yazmalıdır<sup>1</sup>. Hesap şöyle:
+      Beslenme değerlerinin 100 g ya da 100 ml için verilmesi zorunludur; porsiyon başına değer isteğe bağlıdır ve verilirse porsiyon büyüklüğü beslenme bildirimine çok yakın bir yerde yazmalıdır<sup>1</sup>. Hesap şöyle:
     </p>
     <blockquote style="border-left: 3px solid #10b981; background: #f0fdf4; padding: 1rem 1.25rem; border-radius: 0 12px 12px 0; color: #065f46; font-size: 0.98rem; margin: 1.5rem 0;">
       <strong>Yediğiniz karbonhidrat = (100 g'daki karbonhidrat × yediğiniz gram) ÷ 100</strong><br />
@@ -111,7 +121,7 @@
     </blockquote>
     <h3>Etiketteki porsiyon kimin porsiyonu?</h3>
     <p>
-      Etikette porsiyon başına değer verildiğinde porsiyon büyüklüğü olarak yönetmeliğin Ek-12'sindeki miktarlar esas alınır<sup>1</sup>. Birkaç örnek: bisküvi 30 g, kraker 15 g, ekmek 50 g, kahvaltılık tahıl 30 g, müsli 40 g, kuru meyve 30 g, meyve suyu 250 ml, yoğurt 200 g. Bunlar standart hesap birimleridir, sizin kâsenize ya da tabağınıza göre ayarlanmamıştır. Sık yediğiniz bir ürünü bir kez tartmak, "1 porsiyon" ile gerçekte yediğiniz miktar arasındaki farkı gösterir.
+      Etikette porsiyon başına değer verildiğinde porsiyon büyüklüğü olarak yönetmeliğin Ek-12'sindeki miktarlar esas alınır<sup>1</sup>. Birkaç örnek: bisküvi 30 g, kraker 15 g, ekmek 50 g, kahvaltılık tahıl 30 g, müsli 40 g, kuru meyve 30 g, meyve suyu 250 ml, yoğurt 200 g. Bu değerler 4 yaş üstü için geçerlidir<sup>1</sup>. Bunlar standart hesap birimleridir, sizin kâsenize ya da tabağınıza göre ayarlanmamıştır. Sık yediğiniz bir ürünü bir kez tartmak, "1 porsiyon" ile gerçekte yediğiniz miktar arasındaki farkı gösterir.
     </p>
     <p>
       Etikette "%RA" yazan değerler ortalama bir yetişkinin günlük referansına göre hesaplanır; karbonhidrat için bu referans 260 g'dır<sup>1</sup>. Bu sayı sizin kişisel hedefiniz değildir. CDC'ye göre birçok diyabet hastası kan şekerini yönetmek için karbonhidrat sayar; yemek insülini kullananlar bunu insülin dozunu yediklerine göre ayarlamak için yapar. Ne kadar karbonhidrat alınacağının ise CDC'nin ifadesiyle "herkese uyan tek bir cevabı" yoktur; yaş, kilo ve hareket düzeyi gibi etkenlere göre değişir<sup>2</sup>. Hedefinizi ve hesap yöntemini hekiminiz, diyabet eğitim hemşireniz ya da diyetisyeninizle belirleyin.
@@ -127,7 +137,7 @@
       <li><strong>Şeker ilavesiz / ilave şeker içermez:</strong> mono- veya disakkarit ya da tatlandırma amacıyla eklenmiş başka bir gıda bulunmamalı; ürünün kendisinde şeker varsa "DOĞAL OLARAK ŞEKER İÇERİR." yazmalı.</li>
     </ul>
     <p>
-      Üç ifadenin üçü de yalnızca <strong>şekerler</strong> hakkındadır. "Şekersiz" bir bisküvi un içerdiği için yüksek karbonhidratlı olabilir; "şeker ilavesiz" bir meyve suyunun kendi şekeri yerinde durur. Ön yüzdeki ifadeyi gördükten sonra arka yüzdeki karbonhidrat satırına yine bakın.
+      Üç ifadenin üçü de yalnızca <strong>şekerler</strong> hakkındadır. "Şekersiz" bir bisküvi un içerdiği için yüksek karbonhidratlı olabilir; meyveden yapılmış "şeker ilavesiz" bir ürünün meyveden gelen şekeri yerinde durur. Ön yüzdeki ifadeyi gördükten sonra arka yüzdeki karbonhidrat satırına yine bakın.
     </p>
     <p>
       Varsayımsal sayılarla bir karşılaştırma: A bisküvisinin ön yüzünde "şeker ilavesiz" yazıyor, 100 g'ında 68 g karbonhidrat ve 4 g şeker var. B bisküvisinde böyle bir ifade yok, 100 g'ında 72 g karbonhidrat ve 24 g şeker var. 30 g'lık bir porsiyonda A'dan 20,4 g, B'den 21,6 g karbonhidrat alırsınız. Şeker satırları arasında altı kat fark varken karbonhidratta fark 1,2 g'dır; çünkü iki bisküvinin de karbonhidratının çoğu unun nişastasından gelir.
@@ -135,7 +145,7 @@
 
     <div class="warning-box">
       <h3>Tatlandırıcılar ve polioller</h3>
-      <p>2024 değişikliğiyle tatlandırıcı içeren gıdalarda "Tatlandırıcılı" ya da "Tatlandırıcı(lar) içerir" ifadesi gıdanın adıyla birlikte vurgulanarak yazılıyor; uyum için son tarih 31 Aralık 2026<sup>4</sup>. İlave poliolü yüzde 10'u aşan ürünlerde "Aşırı tüketimi laksatif etki yaratabilir." uyarısı bulunur<sup>1</sup>. DSÖ'nün 2023'te kilo kontrolü için şeker dışı tatlandırıcı kullanılmamasını öneren kılavuzu, önceden diyabeti olan kişileri kapsam dışında tutuyor ve şeker alkollerini şeker dışı tatlandırıcı saymıyor<sup>5</sup>. Tatlandırıcılı ürünlerin size uygun olup olmadığını diyabet ekibinizle konuşun.</p>
+      <p>Tatlandırıcı içeren gıdalarda 2017'den beri gıdanın adının yanında zorunlu olan "Tatlandırıcılı" ya da "Tatlandırıcı(lar) içerir" ifadesi, 2024 değişikliğiyle adın geçtiği her yerde vurgulanarak yazılıyor; uyum için son tarih 31 Aralık 2026<sup>1, 4</sup>. İlave poliolü yüzde 10'u aşan ürünlerde "Aşırı tüketimi laksatif etki yaratabilir." uyarısı bulunur<sup>1</sup>. DSÖ'nün 2023'te kilo kontrolü için şeker dışı tatlandırıcı kullanılmamasını öneren kılavuzu, önceden diyabeti olan kişileri kapsam dışında tutuyor ve şeker alkollerini şeker dışı tatlandırıcı saymıyor<sup>5</sup>. Tatlandırıcılı ürünlerin size uygun olup olmadığını diyabet ekibinizle konuşun.</p>
     </div>
 
     <h2>İçindekilerde Şeker Kaynaklarını Bulmak</h2>
@@ -157,7 +167,7 @@
 
     <h2>Fit Dozi ve Dozi</h2>
     <p>
-      Fit Dozi'de diyabetli profili, çocuk, hamile ve yaşlı profilleri gibi kendi eşikleriyle çalışır; aynı tarama her profil için ayrı sonuç verir. "100 g için" yazan değerler gerçek porsiyona çevrilir ve DSÖ günlük eşikleriyle karşılaştırılır. Fit Dozi bir diyabet yönetim aracı değildir: kan şekeri ölçmez, ilaç ya da insülin dozu önermez.
+      Fit Dozi'de aile üyeleri için, diyabetli bir kişi de dahil, ayrı profiller açabilirsiniz. Fit Dozi bir diyabet yönetim aracı değildir: kan şekeri ölçmez, ilaç ya da insülin dozu önermez.
     </p>
     <p>
       İlaç tarafı için Bardino'nun ilaç hatırlatma uygulaması Dozi'nin <a href="https://med.bardino.app/blog/diyabet-ilac-takibi.html" target="_blank" rel="noopener">tip 2 diyabette ilaç takibi yazısına</a> bakabilirsiniz.
@@ -166,7 +176,7 @@
     <div class="source-box">
       <h3>Kaynaklar</h3>
       <ol>
-        <li>T.C. Resmî Gazete, 26.01.2017, Sayı 29960 (Mükerrer). <em>Türk Gıda Kodeksi Gıda Etiketleme ve Tüketicileri Bilgilendirme Yönetmeliği</em>, madde 4, 21, 35, 37, 38, 40; Ek-2, Ek-4, Ek-9, Ek-10, Ek-12. <a href="https://www.resmigazete.gov.tr/eskiler/2017/01/20170126M1-6.htm" target="_blank" rel="noopener">Metin</a> · <a href="https://www.resmigazete.gov.tr/eskiler/2017/01/20170126M1-6-1.pdf" target="_blank" rel="noopener">Ekler (PDF)</a></li>
+        <li>T.C. Resmî Gazete, 26.01.2017, Sayı 29960 (Mükerrer). <em>Türk Gıda Kodeksi Gıda Etiketleme ve Tüketicileri Bilgilendirme Yönetmeliği</em>, madde 4, 21, 35, 37, 38, 40; Ek-2, Ek-4, Ek-9, Ek-10, Ek-11, Ek-12. <a href="https://www.resmigazete.gov.tr/eskiler/2017/01/20170126M1-6.htm" target="_blank" rel="noopener">Metin</a> · <a href="https://www.resmigazete.gov.tr/eskiler/2017/01/20170126M1-6-1.pdf" target="_blank" rel="noopener">Ekler (PDF)</a></li>
         <li>CDC. <em>Carb Counting to Manage Blood Sugar.</em> <a href="https://www.cdc.gov/diabetes/healthy-eating/carb-counting-manage-blood-sugar.html" target="_blank" rel="noopener">cdc.gov</a></li>
         <li>T.C. Resmî Gazete, 20.04.2023, Sayı 32169. <em>Türk Gıda Kodeksi Beslenme Beyanları Yönetmeliği</em>, Ek-1. <a href="https://www.resmigazete.gov.tr/eskiler/2023/04/20230420-2.htm" target="_blank" rel="noopener">Metin</a> · <a href="https://www.resmigazete.gov.tr/eskiler/2023/04/20230420-2-1.pdf" target="_blank" rel="noopener">Ek (PDF)</a></li>
         <li>T.C. Resmî Gazete, 06.04.2024, Sayı 32512. <em>Türk Gıda Kodeksi Gıda Etiketleme ve Tüketicileri Bilgilendirme Yönetmeliğinde Değişiklik Yapılmasına Dair Yönetmelik.</em> <a href="https://www.resmigazete.gov.tr/eskiler/2024/04/20240406-17.htm" target="_blank" rel="noopener">Metin</a></li>
@@ -176,11 +186,11 @@
     </div>
 
     <p style="margin: 2rem 0 0; padding: 1rem 1.25rem; border-left: 4px solid #f59e0b; background: #fef3c7; color: #78350f; font-size: 0.9rem; line-height: 1.6; border-radius: 8px;"><strong>Uyarı:</strong> Bu içerik bilgilendirme amaçlıdır; hekim veya diyetisyen tavsiyesinin yerine geçmez. Gıda alerjisi, çölyak, diyabet, hamilelik gibi durumlarda beslenmenizi hekiminizle ya da diyetisyeninizle planlayın.</p>
-    <p class="ai-note">Bu yazı yapay zekâ (Claude) yardımıyla hazırlandı. Kaynaklar 15 Ekim 2026'da kontrol edildi. Hekim veya diyetisyen tarafından gözden geçirilmedi.</p>
+    <p class="ai-note">Bu yazı yapay zekâ (Claude) yardımıyla hazırlandı. Kaynaklar 15 Ekim 2026'da kontrol edildi. Hekim veya diyetisyen tarafından gözden geçirilmedi. 15 Ekim 2026'da kaynaklara göre güncellendi.</p>
 
     <div class="article-cta">
-      <h2>Etiketi Porsiyona Çevir</h2>
-      <p>Fit Dozi "100 g için" yazan değeri yediğin miktara çevirir; diyabetli profili kendi eşikleriyle çalışır.</p>
+      <h2>Etiketi Sepete Girmeden Oku</h2>
+      <p>Fit Dozi barkoddan ya da etiket fotoğrafından içindekileri, alerjenleri ve Nutri-Score harfini gösterir; her aile üyesi için ayrı profil.</p>
       <a href="https://apps.apple.com/tr/app/fit-dozi/id6762354057" class="btn btn-primary" target="_blank" rel="noopener"><span>📱</span><span>App Store'dan İndir</span></a>
     </div>
   </main>
